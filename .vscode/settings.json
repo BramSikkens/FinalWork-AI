@@ -1,0 +1,5 @@
+{
+  "python.pythonPath": "/Users/BramSikkens/anaconda3/bin/python",
+  "python.dataScience.jupyterServerURI": "http://localhost:8888/?token=a37b3a7559ef47f33678bc227b1e5fbed4859790c8570a17",
+  "git.ignoreLimitWarning": true
+}
