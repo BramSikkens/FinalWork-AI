@@ -1,211 +1,394 @@
-,Date,Place,Time,Category,Sex,Country,Lane,Person 1,Person 2,split time 1,split time 2,split time 3,Total Time,Final Rank,Air Temp,Wind Speed,Wind Direction,Day,Month,Year,Team,Competiton Type_WORLD CHAMP,Competiton Type_WORLD CUP,Competition Round_FINAL A,Competition Round_FINAL B,Competition Round_HEAT,Competition Round_SEMIFINAL,D0,D1,D2,D3
-0,31.05.2013,Poznan,10:22,SEN,M,POL,3.0,SZANDRACH PAWEŁ,KUJAWSKI MARIUSZ,53,108,165,222,1.0,15.0,1 m/s,W,31.0,5.0,2013.0,SZANDRACH PAWEŁ_KUJAWSKI MARIUSZ,False,True,False,False,True,False,53.0,55.0,57.0,57.0
-1,31.05.2013,Poznan,10:22,SEN,M,BEL,5.0,CAUWENBERGH OLIVIER,PANNECOUCKE LAURENS,53,109,167,223,2.0,15.0,1 m/s,W,31.0,5.0,2013.0,CAUWENBERGH OLIVIER_PANNECOUCKE LAURENS,False,True,False,False,True,False,53.0,56.0,58.0,56.0
-2,31.05.2013,Poznan,10:22,SEN,M,GER,7.0,HARBRECHT GORDAN,FROESE TORBEN,52,107,166,226,3.0,15.0,1 m/s,W,31.0,5.0,2013.0,HARBRECHT GORDAN_FROESE TORBEN,False,True,False,False,True,False,52.0,55.0,59.0,60.0
-3,31.05.2013,Poznan,10:22,SEN,M,FRA,6.0,BURGER GUILLAUME,URBAN QUENTIN,52,110,170,230,4.0,15.0,1 m/s,W,31.0,5.0,2013.0,BURGER GUILLAUME_URBAN QUENTIN,False,True,False,False,True,False,52.0,58.0,60.0,60.0
-5,31.05.2013,Poznan,10:22,SEN,M,CAN,8.0,CLARKE ROB,JESSOP ANDREW,54,109,169,232,6.0,15.0,1 m/s,W,31.0,5.0,2013.0,CLARKE ROB_JESSOP ANDREW,False,True,False,False,True,False,54.0,55.0,60.0,63.0
-6,31.05.2013,Poznan,10:22,SEN,M,SWE,2.0,HEMSELIUS DANIEL,BARSK JOHANNES,54,111,172,233,7.0,15.0,1 m/s,W,31.0,5.0,2013.0,HEMSELIUS DANIEL_BARSK JOHANNES,False,True,False,False,True,False,54.0,57.0,61.0,61.0
-7,31.05.2013,Poznan,10:22,SEN,M,KAZ,1.0,SULTANBEKOV DAVLET,BEREZINTSEV YURIY,54,115,175,233,8.0,15.0,1 m/s,W,31.0,5.0,2013.0,SULTANBEKOV DAVLET_BEREZINTSEV YURIY,False,True,False,False,True,False,54.0,61.0,60.0,58.0
-9,31.05.2013,Poznan,10:29,SEN,M,CAN,4.0,VAN KOEVERDEN ADAM,REARDON BRADY,,107,164,219,1.0,15.0,1 m/s,W,31.0,5.0,2013.0,VAN KOEVERDEN ADAM_REARDON BRADY,False,True,False,False,True,False,,,57.0,55.0
-10,31.05.2013,Poznan,10:29,SEN,M,EST,2.0,ALUPERE KAAREL,TOOTSI TARMO,51,106,163,219,2.0,15.0,1 m/s,W,31.0,5.0,2013.0,ALUPERE KAAREL_TOOTSI TARMO,False,True,False,False,True,False,51.0,55.0,57.0,56.0
-11,31.05.2013,Poznan,10:29,SEN,M,GER,1.0,KUX FABIAN,SCHMUDE DAVID,51,106,163,219,3.0,15.0,1 m/s,W,31.0,5.0,2013.0,KUX FABIAN_SCHMUDE DAVID,False,True,False,False,True,False,51.0,55.0,57.0,56.0
-12,31.05.2013,Poznan,10:29,SEN,M,KAZ,3.0,DERGUNOV ALEXEY,ALEXEYEV YEVGENIY,51,111,167,224,4.0,15.0,1 m/s,W,31.0,5.0,2013.0,DERGUNOV ALEXEY_ALEXEYEV YEVGENIY,False,True,False,False,True,False,51.0,60.0,56.0,57.0
-13,31.05.2013,Poznan,10:29,SEN,M,AUT,6.0,WECHT ALEXANDER,TRUMMER ERWIN,53,112,171,230,5.0,15.0,1 m/s,W,31.0,5.0,2013.0,WECHT ALEXANDER_TRUMMER ERWIN,False,True,False,False,True,False,53.0,59.0,59.0,59.0
-14,31.05.2013,Poznan,10:29,SEN,M,NED,7.0,KALF WALTER,HOOGERS JASPER,,,170,231,6.0,15.0,1 m/s,W,31.0,5.0,2013.0,KALF WALTER_HOOGERS JASPER,False,True,False,False,True,False,,,,61.0
-15,31.05.2013,Poznan,10:29,SEN,M,POL,5.0,STABNO BARTOSZ,WARSZAWSKI OSKAR,54,,171,232,7.0,15.0,1 m/s,W,31.0,5.0,2013.0,STABNO BARTOSZ_WARSZAWSKI OSKAR,False,True,False,False,True,False,54.0,,,61.0
-17,31.05.2013,Poznan,14:58,SEN,M,SWE,8.0,HEMSELIUS DANIEL,BARSK JOHANNES,49,102,155,210,1.0,19.0,2 m/s,NE,31.0,5.0,2013.0,HEMSELIUS DANIEL_BARSK JOHANNES,False,True,False,False,False,True,49.0,53.0,53.0,55.0
-19,31.05.2013,Poznan,14:58,SEN,M,ARG,6.0,DE GESUS JUAN PABLO,CARRERAS GONZALO,50,102,156,211,3.0,19.0,2 m/s,NE,31.0,5.0,2013.0,DE GESUS JUAN PABLO_CARRERAS GONZALO,False,True,False,False,False,True,50.0,52.0,54.0,55.0
-20,31.05.2013,Poznan,14:58,SEN,M,CAN,2.0,CLARKE ROB,JESSOP ANDREW,51,103,158,214,4.0,19.0,2 m/s,NE,31.0,5.0,2013.0,CLARKE ROB_JESSOP ANDREW,False,True,False,False,False,True,51.0,52.0,55.0,56.0
-21,31.05.2013,Poznan,14:58,SEN,M,NED,7.0,KALF WALTER,HOOGERS JASPER,50,104,159,214,5.0,19.0,2 m/s,NE,31.0,5.0,2013.0,KALF WALTER_HOOGERS JASPER,False,True,False,False,False,True,50.0,54.0,55.0,55.0
-22,31.05.2013,Poznan,14:58,SEN,M,POL,1.0,STABNO BARTOSZ,WARSZAWSKI OSKAR,51,105,158,215,6.0,19.0,2 m/s,NE,31.0,5.0,2013.0,STABNO BARTOSZ_WARSZAWSKI OSKAR,False,True,False,False,False,True,51.0,54.0,53.0,57.0
-23,31.05.2013,Poznan,14:58,SEN,M,KAZ,4.0,DERGUNOV ALEXEY,ALEXEYEV YEVGENIY,48,105,161,215,7.0,19.0,2 m/s,NE,31.0,5.0,2013.0,DERGUNOV ALEXEY_ALEXEYEV YEVGENIY,False,True,False,False,False,True,48.0,57.0,56.0,54.0
-24,31.05.2013,Poznan,14:58,SEN,M,AUT,3.0,WECHT ALEXANDER,TRUMMER ERWIN,50,107,162,217,8.0,19.0,2 m/s,NE,31.0,5.0,2013.0,WECHT ALEXANDER_TRUMMER ERWIN,False,True,False,False,False,True,50.0,57.0,55.0,55.0
-38,17.05.2013,RACICE,10:58,SEN,M,RUS,5.0,SPESIVTSEV Maxim,CHERVOV Nikolay,51,89,151,205,2.0,18.0,,E,17.0,5.0,2013.0,SPESIVTSEV Maxim_CHERVOV Nikolay,False,True,False,False,True,False,51.0,38.0,62.0,54.0
-39,17.05.2013,RACICE,10:58,SEN,M,SRB,9.0,PAJIC Dejan,STANOJEVIC Dusko,49,98,154,207,3.0,18.0,,E,17.0,5.0,2013.0,PAJIC Dejan_STANOJEVIC Dusko,False,True,False,False,True,False,49.0,49.0,56.0,53.0
-40,17.05.2013,RACICE,10:58,SEN,M,CZE,7.0,ADAM Jakub,ODVÁRKO Michael,65,101,155,208,4.0,18.0,,E,17.0,5.0,2013.0,ADAM Jakub_ODVÁRKO Michael,False,True,False,False,True,False,65.0,36.0,54.0,53.0
-41,17.05.2013,RACICE,10:58,SEN,M,GBR,8.0,RUTHERFORD Edward,DANIELS Andrew,50,102,159,213,5.0,18.0,,E,17.0,5.0,2013.0,RUTHERFORD Edward_DANIELS Andrew,False,True,False,False,True,False,50.0,52.0,57.0,54.0
-43,17.05.2013,RACICE,10:58,SEN,M,KGZ,2.0,PAROL Aleksandr,DOROFEEV Igor,70,106,165,223,7.0,18.0,,E,17.0,5.0,2013.0,PAROL Aleksandr_DOROFEEV Igor,False,True,False,False,True,False,70.0,36.0,59.0,58.0
-44,17.05.2013,RACICE,10:58,SEN,M,CHN,6.0,XUE Yuan,ZHAO Yuefeng,74,112,168,225,8.0,18.0,,E,17.0,5.0,2013.0,XUE Yuan_ZHAO Yuefeng,False,True,False,False,True,False,74.0,38.0,56.0,57.0
-45,17.05.2013,RACICE,10:58,SEN,M,HKG,3.0,KWOK Ka Wai,NG Ka Chun,72,109,175,240,,,,,17.0,5.0,2013.0,KWOK Ka Wai_NG Ka Chun,False,False,False,False,False,False,72.0,37.0,66.0,65.0
-47,17.05.2013,RACICE,11:05,SEN,M,CZE,7.0,DAVÍDEK Pavel,KUČERA Patrik,51,,154,207,2.0,18.0,,E,17.0,5.0,2013.0,DAVÍDEK Pavel_KUČERA Patrik,False,True,False,False,True,False,51.0,,,53.0
-48,17.05.2013,RACICE,11:05,SEN,M,NZL,4.0,BATS Jasper,FITZGERALD Darryl,50,102,155,213,3.0,18.0,,E,17.0,5.0,2013.0,BATS Jasper_FITZGERALD Darryl,False,True,False,False,True,False,50.0,52.0,53.0,58.0
-49,17.05.2013,RACICE,11:05,SEN,M,RUS,5.0,MEDVEDEV Ilya,RYAKHOV Anton,51,101,153,214,4.0,18.0,,E,17.0,5.0,2013.0,MEDVEDEV Ilya_RYAKHOV Anton,False,True,False,False,True,False,51.0,50.0,52.0,61.0
-50,17.05.2013,RACICE,11:05,SEN,M,GBR,8.0,BOWLEY Mathew,TERRY Dean,52,104,159,215,5.0,18.0,,E,17.0,5.0,2013.0,BOWLEY Mathew_TERRY Dean,False,True,False,False,True,False,52.0,52.0,55.0,56.0
-51,17.05.2013,RACICE,11:05,SEN,M,KGZ,2.0,BONDAR Maksim,ALGIN Ilia,52,106,162,222,6.0,18.0,,E,17.0,5.0,2013.0,BONDAR Maksim_ALGIN Ilia,False,True,False,False,True,False,52.0,54.0,56.0,60.0
-52,17.05.2013,RACICE,11:05,SEN,M,CHN,6.0,LI Kai,LIU Lifan,54,110,169,230,7.0,18.0,,E,17.0,5.0,2013.0,LI Kai_LIU Lifan,False,True,False,False,True,False,54.0,56.0,59.0,61.0
-53,17.05.2013,RACICE,11:05,SEN,M,HKG,3.0,TSOI Yik San,NG Ka Nam,53,111,172,235,8.0,18.0,,E,17.0,5.0,2013.0,TSOI Yik San_NG Ka Nam,False,True,False,False,True,False,53.0,58.0,61.0,63.0
-54,17.05.2013,RACICE,11:05,SEN,M,SRB,9.0,HOLPERT Ervin,TERZIC Dejan,55,113,178,244,,,,,17.0,5.0,2013.0,HOLPERT Ervin_TERZIC Dejan,False,False,False,False,False,False,55.0,58.0,65.0,66.0
-56,17.05.2013,RACICE,11:12,SEN,M,CAN,1.0,VAN KOEVERDEN ADAM,REARDON BRADY,49,96,151,204,2.0,18.0,,E,17.0,5.0,2013.0,VAN KOEVERDEN ADAM_REARDON BRADY,False,True,False,False,True,False,49.0,47.0,55.0,53.0
-57,17.05.2013,RACICE,11:12,SEN,M,GER,4.0,RENDSCHMIDT Max,GROSS Marcus,47,96,151,205,3.0,18.0,,E,17.0,5.0,2013.0,RENDSCHMIDT Max_GROSS Marcus,False,True,False,False,True,False,47.0,49.0,55.0,54.0
-58,17.05.2013,RACICE,11:12,SEN,M,KAZ,74.0,DERGUNOV ALEXEY,ALEXEYEV YEVGENIY,50,101,156,207,4.0,18.0,,E,17.0,5.0,2013.0,DERGUNOV ALEXEY_ALEXEYEV YEVGENIY,False,True,False,False,True,False,50.0,51.0,55.0,51.0
-59,17.05.2013,RACICE,11:12,SEN,M,LTU,6.0,NEKRIOSIUS Ricardas,OLIJNIK Andrej,51,100,155,207,5.0,18.0,,E,17.0,5.0,2013.0,NEKRIOSIUS Ricardas_OLIJNIK Andrej,False,True,False,False,True,False,51.0,49.0,55.0,52.0
-60,17.05.2013,RACICE,11:12,SEN,M,BLR,2.0,ZHYHADLA Dzianis,BIALKO Vitaliy,57,102,156,209,6.0,18.0,,E,17.0,5.0,2013.0,ZHYHADLA Dzianis_BIALKO Vitaliy,False,True,False,False,True,False,57.0,45.0,54.0,53.0
-61,17.05.2013,RACICE,11:12,SEN,M,NOR,5.0,SALBU Daniel,SOLHAUG Jo Sondre,50,99,153,214,7.0,18.0,,E,17.0,5.0,2013.0,SALBU Daniel_SOLHAUG Jo Sondre,False,True,False,False,True,False,50.0,49.0,54.0,61.0
-62,17.05.2013,RACICE,11:12,SEN,M,ITA,3.0,CECCHINI Riccardo,CHIERINI Edoardo,48,104,164,224,8.0,18.0,,E,17.0,5.0,2013.0,CECCHINI Riccardo_CHIERINI Edoardo,False,True,False,False,True,False,48.0,56.0,60.0,60.0
-65,17.05.2013,RACICE,11:19,SEN,M,FRA,5.0,BURGER GUILLAUME,URBAN QUENTIN,48,,153,203,2.0,18.0,,E,17.0,5.0,2013.0,BURGER GUILLAUME_URBAN QUENTIN,False,True,False,False,True,False,48.0,,,50.0
-66,17.05.2013,RACICE,11:19,SEN,M,CAN,1.0,CLARKE ROB,JESSOP ANDREW,49,100,154,205,3.0,18.0,,E,17.0,5.0,2013.0,CLARKE ROB_JESSOP ANDREW,False,True,False,False,True,False,49.0,51.0,54.0,51.0
-67,17.05.2013,RACICE,11:19,SEN,M,DEN,7.0,BOE Niels,AXELSEN William,52,99,154,205,4.0,18.0,,E,17.0,5.0,2013.0,BOE Niels_AXELSEN William,False,True,False,False,True,False,52.0,47.0,55.0,51.0
-68,17.05.2013,RACICE,11:19,SEN,M,BLR,2.0,LIAPIOSHKA Aliksandr,LITVINCHUK Artur,51,101,155,210,5.0,18.0,,E,17.0,5.0,2013.0,LIAPIOSHKA Aliksandr_LITVINCHUK Artur,False,True,False,False,True,False,51.0,50.0,54.0,55.0
-69,17.05.2013,RACICE,11:19,SEN,M,BEL,3.0,BROEKX Toon,BROEKX Piet,51,102,157,211,6.0,18.0,,E,17.0,5.0,2013.0,BROEKX Toon_BROEKX Piet,False,True,False,False,True,False,51.0,51.0,55.0,54.0
-70,17.05.2013,RACICE,11:19,SEN,M,FIN,6.0,HAKALA Jeremy,NYKÄNEN Miika,53,103,158,211,7.0,18.0,,E,17.0,5.0,2013.0,HAKALA Jeremy_NYKÄNEN Miika,False,True,False,False,True,False,53.0,50.0,55.0,53.0
-72,17.05.2013,RACICE,15:34,SEN,M,GER,6.0,RENDSCHMIDT Max,GROSS Marcus,50,93,152,205,1.0,18.0,,E,17.0,5.0,2013.0,RENDSCHMIDT Max_GROSS Marcus,False,True,False,False,False,True,50.0,43.0,59.0,53.0
-73,17.05.2013,RACICE,15:34,SEN,M,RUS,5.0,SPESIVTSEV Maxim,CHERVOV Nikolay,52,102,153,206,2.0,18.0,,E,17.0,5.0,2013.0,SPESIVTSEV Maxim_CHERVOV Nikolay,False,True,False,False,False,True,52.0,50.0,51.0,53.0
-74,17.05.2013,RACICE,15:34,SEN,M,BLR,2.0,ZHYHADLA Dzianis,BIALKO Vitaliy,50,103,156,207,3.0,18.0,,E,17.0,5.0,2013.0,ZHYHADLA Dzianis_BIALKO Vitaliy,False,True,False,False,False,True,50.0,53.0,53.0,51.0
-75,17.05.2013,RACICE,15:34,SEN,M,DEN,3.0,BOE Niels,AXELSEN William,51,102,155,208,4.0,18.0,,E,17.0,5.0,2013.0,BOE Niels_AXELSEN William,False,True,False,False,False,True,51.0,51.0,53.0,53.0
-76,17.05.2013,RACICE,15:34,SEN,M,NZL,4.0,BATS Jasper,FITZGERALD Darryl,52,104,155,208,5.0,18.0,,E,17.0,5.0,2013.0,BATS Jasper_FITZGERALD Darryl,False,True,False,False,False,True,52.0,52.0,51.0,53.0
-77,17.05.2013,RACICE,15:34,SEN,M,NZL,8.0,FITZGERALD Jarrod,QUICKENDEN Zac,54,109,163,224,6.0,18.0,,E,17.0,5.0,2013.0,FITZGERALD Jarrod_QUICKENDEN Zac,False,True,False,False,False,True,54.0,55.0,54.0,61.0
-78,17.05.2013,RACICE,15:34,SEN,M,BLR,7.0,LIAPIOSHKA Aliksandr,LITVINCHUK Artur,53,106,164,228,7.0,18.0,,E,17.0,5.0,2013.0,LIAPIOSHKA Aliksandr_LITVINCHUK Artur,False,True,False,False,False,True,53.0,53.0,58.0,64.0
-79,17.05.2013,RACICE,15:34,SEN,M,CHN,1.0,LI Kai,LIU Lifan,55,112,171,233,8.0,18.0,,E,17.0,5.0,2013.0,LI Kai_LIU Lifan,False,True,False,False,False,True,55.0,57.0,59.0,62.0
-80,17.05.2013,RACICE,15:34,SEN,M,ITA,9.0,CECCHINI Riccardo,CHIERINI Edoardo,54,114,189,259,9.0,18.0,,E,17.0,5.0,2013.0,CECCHINI Riccardo_CHIERINI Edoardo,False,True,False,False,False,True,54.0,60.0,75.0,70.0
-102,18.05.2013,RACICE,9:54,SEN,M,FRA,4.0,BURGER GUILLAUME,URBAN QUENTIN,46,96,148,199,1.0,18.0,,E,18.0,5.0,2013.0,BURGER GUILLAUME_URBAN QUENTIN,False,True,False,True,False,False,46.0,50.0,52.0,51.0
-103,18.05.2013,RACICE,9:54,SEN,M,DEN,5.0,BOE Niels,AXELSEN William,50,100,149,200,2.0,18.0,,E,18.0,5.0,2013.0,BOE Niels_AXELSEN William,False,True,False,True,False,False,50.0,50.0,49.0,51.0
-104,18.05.2013,RACICE,9:54,SEN,M,CAN,3.0,CLARKE ROB,JESSOP ANDREW,48,99,150,201,3.0,18.0,,E,18.0,5.0,2013.0,CLARKE ROB_JESSOP ANDREW,False,True,False,True,False,False,48.0,51.0,51.0,51.0
-105,18.05.2013,RACICE,9:54,SEN,M,NZL,7.0,BATS Jasper,FITZGERALD Darryl,56,101,152,203,4.0,18.0,,E,18.0,5.0,2013.0,BATS Jasper_FITZGERALD Darryl,False,True,False,True,False,False,56.0,45.0,51.0,51.0
-106,18.05.2013,RACICE,9:54,SEN,M,BEL,8.0,BROEKX Toon,BROEKX Piet,49,98,151,204,5.0,18.0,,E,18.0,5.0,2013.0,BROEKX Toon_BROEKX Piet,False,True,False,True,False,False,49.0,49.0,53.0,53.0
-107,18.05.2013,RACICE,9:54,SEN,M,FIN,1.0,HAKALA Jeremy,NYKÄNEN Miika,51,102,154,207,6.0,18.0,,E,18.0,5.0,2013.0,HAKALA Jeremy_NYKÄNEN Miika,False,True,False,True,False,False,51.0,51.0,52.0,53.0
-108,18.05.2013,RACICE,9:54,SEN,M,KAZ,6.0,DERGUNOV ALEXEY,ALEXEYEV YEVGENIY,54,105,158,207,7.0,18.0,,E,18.0,5.0,2013.0,DERGUNOV ALEXEY_ALEXEYEV YEVGENIY,False,True,False,True,False,False,54.0,51.0,53.0,49.0
-109,18.05.2013,RACICE,9:54,SEN,M,GBR,9.0,BOWLEY Mathew,TERRY Dean,52,103,156,208,8.0,18.0,,E,18.0,5.0,2013.0,BOWLEY Mathew_TERRY Dean,False,True,False,True,False,False,52.0,51.0,53.0,52.0
-113,18.05.2013,RACICE,11:09,SEN,M,GER,,RENDSCHMIDT Max,GROSS Marcus,45,88,141,190,1.0,18.0,,E,18.0,5.0,2013.0,RENDSCHMIDT Max_GROSS Marcus,False,True,True,False,False,False,45.0,43.0,53.0,49.0
-114,18.05.2013,RACICE,11:09,SEN,M,SRB,,PAJIC Dejan,STANOJEVIC Dusko,46,97,142,191,2.0,18.0,,E,18.0,5.0,2013.0,PAJIC Dejan_STANOJEVIC Dusko,False,True,True,False,False,False,46.0,51.0,45.0,49.0
-115,18.05.2013,RACICE,11:09,SEN,M,RUS,,MEDVEDEV Ilya,RYAKHOV Anton,50,96,144,192,3.0,18.0,,E,18.0,5.0,2013.0,MEDVEDEV Ilya_RYAKHOV Anton,False,True,True,False,False,False,50.0,46.0,48.0,48.0
-116,18.05.2013,RACICE,11:09,SEN,M,BLR,,ZHYHADLA Dzianis,BIALKO Vitaliy,48,104,152,193,4.0,18.0,,E,18.0,5.0,2013.0,ZHYHADLA Dzianis_BIALKO Vitaliy,False,True,True,False,False,False,48.0,56.0,48.0,41.0
-117,18.05.2013,RACICE,11:09,SEN,M,LTU,,NEKRIOSIUS Ricardas,OLIJNIK Andrej,47,93,143,193,5.0,18.0,,E,18.0,5.0,2013.0,NEKRIOSIUS Ricardas_OLIJNIK Andrej,False,True,True,False,False,False,47.0,46.0,50.0,50.0
-118,18.05.2013,RACICE,11:09,SEN,M,CZE,,ADAM Jakub,ODVÁRKO Michael,,94,145,193,6.0,18.0,,E,18.0,5.0,2013.0,ADAM Jakub_ODVÁRKO Michael,False,True,True,False,False,False,,,51.0,48.0
-119,18.05.2013,RACICE,11:09,SEN,M,CZE,,DAVÍDEK Pavel,KUČERA Patrik,51,98,152,194,7.0,18.0,,E,18.0,5.0,2013.0,DAVÍDEK Pavel_KUČERA Patrik,False,True,True,False,False,False,51.0,47.0,54.0,42.0
-121,18.05.2013,RACICE,11:09,SEN,M,CAN,,VAN KOEVERDEN ADAM,REARDON BRADY,49,104,153,199,9.0,,,,18.0,5.0,2013.0,VAN KOEVERDEN ADAM_REARDON BRADY,False,False,False,False,False,False,49.0,55.0,49.0,46.0
-123,10.05.2013,SZEGED,10:41,SEN,M,HUN,7.0,Dombi Rudolf,Kökény Roland,49,102,158,209,1.0,,,,10.0,5.0,2013.0,Dombi Rudolf_Kökény Roland,False,True,False,False,True,False,49.0,53.0,56.0,51.0
-124,10.05.2013,SZEGED,10:41,SEN,M,CZE,9.0,Havel Daniel,Štěrba Jan,50,103,157,209,2.0,,,,10.0,5.0,2013.0,Havel Daniel_Štěrba Jan,False,True,False,False,True,False,50.0,53.0,54.0,52.0
-125,10.05.2013,SZEGED,10:41,SEN,M,ARG,4.0,De Gesus Juan Pablo,Carreras Gonzalo,51,107,163,218,3.0,,,,10.0,5.0,2013.0,De Gesus Juan Pablo_Carreras Gonzalo,False,True,False,False,True,False,51.0,56.0,56.0,55.0
-126,10.05.2013,SZEGED,10:41,SEN,M,SWE,2.0,Hemselius Daniel,Barsk Johannes,52,106,170,218,4.0,,,,10.0,5.0,2013.0,Hemselius Daniel_Barsk Johannes,False,True,False,False,True,False,52.0,54.0,64.0,48.0
-127,10.05.2013,SZEGED,10:41,SEN,M,POR,3.0,Fernandes David,Ribeiro João,50,106,165,219,5.0,,,,10.0,5.0,2013.0,Fernandes David_Ribeiro João,False,True,False,False,True,False,50.0,56.0,59.0,54.0
-128,10.05.2013,SZEGED,10:41,SEN,M,DEN,6.0,Larsen Martin,Axelsen William,55,108,165,220,6.0,,,,10.0,5.0,2013.0,Larsen Martin_Axelsen William,False,True,False,False,True,False,55.0,53.0,57.0,55.0
-129,10.05.2013,SZEGED,10:41,SEN,M,FIN,8.0,Hakala Jeremy,Nykänen Miika,52,106,164,226,7.0,,,,10.0,5.0,2013.0,Hakala Jeremy_Nykänen Miika,False,True,False,False,True,False,52.0,54.0,58.0,62.0
-130,10.05.2013,SZEGED,10:41,SEN,M,KGZ,1.0,Bondar Maksim,Algin Ilia,51,109,164,227,8.0,,,,10.0,5.0,2013.0,Bondar Maksim_Algin Ilia,False,True,False,False,True,False,51.0,58.0,55.0,63.0
-131,10.05.2013,SZEGED,10:41,SEN,M,CHN,5.0,Li Kai,Liu Lifan,54,119,188,250,9.0,,,,10.0,5.0,2013.0,Li Kai_Liu Lifan,False,True,False,False,True,False,54.0,65.0,69.0,62.0
-133,10.05.2013,SZEGED,10:48,SEN,M,POR,4.0,Pimenta Fernando,Silva Emanuel,48,104,162,218,1.0,,,,10.0,5.0,2013.0,Pimenta Fernando_Silva Emanuel,False,True,False,False,True,False,48.0,56.0,58.0,56.0
-134,10.05.2013,SZEGED,10:48,SEN,M,GBR,1.0,Rutherford Edward,Daniels Andrew,51,106,165,220,2.0,,,,10.0,5.0,2013.0,Rutherford Edward_Daniels Andrew,False,True,False,False,True,False,51.0,55.0,59.0,55.0
-135,10.05.2013,SZEGED,10:48,SEN,M,SRB,8.0,Pajic Dejan,Stanojevic Dusko,51,108,166,220,3.0,,,,10.0,5.0,2013.0,Pajic Dejan_Stanojevic Dusko,False,True,False,False,True,False,51.0,57.0,58.0,54.0
-136,10.05.2013,SZEGED,10:48,SEN,M,BLR,5.0,Liapioshka Aliaksandr,Bialko Vitaliy,49,108,167,220,4.0,,,,10.0,5.0,2013.0,Liapioshka Aliaksandr_Bialko Vitaliy,False,True,False,False,True,False,49.0,59.0,59.0,53.0
-137,10.05.2013,SZEGED,10:48,SEN,M,HUN,2.0,Bozsik Gábor,Császár Gergely,53,109,167,221,5.0,,,,10.0,5.0,2013.0,Bozsik Gábor_Császár Gergely,False,True,False,False,True,False,53.0,56.0,58.0,54.0
-138,10.05.2013,SZEGED,10:48,SEN,M,NOR,6.0,Salbu Daniel,Solhaug Jo Sondre,53,110,167,222,6.0,,,,10.0,5.0,2013.0,Salbu Daniel_Solhaug Jo Sondre,False,True,False,False,True,False,53.0,57.0,57.0,55.0
-139,10.05.2013,SZEGED,10:48,SEN,M,POL,3.0,Brzezinski Martin,Warszawski Oskar,54,109,166,223,7.0,,,,10.0,5.0,2013.0,Brzezinski Martin_Warszawski Oskar,False,True,False,False,True,False,54.0,55.0,57.0,57.0
-140,10.05.2013,SZEGED,10:48,SEN,M,MEX,7.0,Lopez Quintero Javier,Medinilla Agustín,52,111,169,228,8.0,,,,10.0,5.0,2013.0,Lopez Quintero Javier_Medinilla Agustín,False,True,False,False,True,False,52.0,59.0,58.0,59.0
-141,10.05.2013,SZEGED,10:48,SEN,M,CHN,9.0,Xue Yuan,Zhao Yuefeng,57,120,186,247,9.0,,,,10.0,5.0,2013.0,Xue Yuan_Zhao Yuefeng,False,True,False,False,True,False,57.0,63.0,66.0,61.0
-143,10.05.2013,SZEGED,10:55,SEN,M,RUS,1.0,Medvedev Ilya,Ryakhov Anton,49,104,159,213,1.0,,,,10.0,5.0,2013.0,Medvedev Ilya_Ryakhov Anton,False,True,False,False,True,False,49.0,55.0,55.0,54.0
-144,10.05.2013,SZEGED,10:55,SEN,M,POL,5.0,Szandrach Pawel,Kujawski Mariusz,50,105,162,217,2.0,,,,10.0,5.0,2013.0,Szandrach Pawel_Kujawski Mariusz,False,True,False,False,True,False,50.0,55.0,57.0,55.0
-145,10.05.2013,SZEGED,10:55,SEN,M,BLR,2.0,Zhyhadla Dzianis,Litvinchuk Artur,52,109,165,218,3.0,,,,10.0,5.0,2013.0,Zhyhadla Dzianis_Litvinchuk Artur,False,True,False,False,True,False,52.0,57.0,56.0,53.0
-146,10.05.2013,SZEGED,10:55,SEN,M,CUB,7.0,Zulueta Arencibia Maikel,Riveaux Reiner Torres,50,107,166,221,4.0,,,,10.0,5.0,2013.0,Zulueta Arencibia Maikel_Riveaux Reiner Torres,False,True,False,False,True,False,50.0,57.0,59.0,55.0
-147,10.05.2013,SZEGED,10:55,SEN,M,AUT,6.0,Wecht Alexander,Trummer Erwin,51,109,168,222,5.0,,,,10.0,5.0,2013.0,Wecht Alexander_Trummer Erwin,False,True,False,False,True,False,51.0,58.0,59.0,54.0
-148,10.05.2013,SZEGED,10:55,SEN,M,CZE,8.0,Davídek Pavel,Kučera Patrik,52,109,167,222,6.0,,,,10.0,5.0,2013.0,Davídek Pavel_Kučera Patrik,False,True,False,False,True,False,52.0,57.0,58.0,55.0
-149,10.05.2013,SZEGED,10:55,SEN,M,KGZ,3.0,Parol Aleksandr,Dorofeev Igor,54,114,179,241,7.0,,,,10.0,5.0,2013.0,Parol Aleksandr_Dorofeev Igor,False,True,False,False,True,False,54.0,60.0,65.0,62.0
-150,10.05.2013,SZEGED,10:55,SEN,M,HKG,4.0,Fung Wai Him,Ng Ka Chun,58,123,194,260,8.0,,,,10.0,5.0,2013.0,Fung Wai Him_Ng Ka Chun,False,True,False,False,True,False,58.0,65.0,71.0,66.0
-152,10.05.2013,SZEGED,15:24,SEN,M,POL,5.0,Szandrach Pawel,Kujawski Mariusz,51,105,162,216,1.0,,,,10.0,5.0,2013.0,Szandrach Pawel_Kujawski Mariusz,False,True,False,False,False,True,51.0,54.0,57.0,54.0
-153,10.05.2013,SZEGED,15:24,SEN,M,SRB,4.0,Pajic Dejan,Stanojevic Dusko,50,107,164,216,2.0,,,,10.0,5.0,2013.0,Pajic Dejan_Stanojevic Dusko,False,True,False,False,False,True,50.0,57.0,57.0,52.0
-154,10.05.2013,SZEGED,15:24,SEN,M,CUB,3.0,Zulueta Arencibia Maikel,Riveaux Reiner Torres,49,105,162,217,3.0,,,,10.0,5.0,2013.0,Zulueta Arencibia Maikel_Riveaux Reiner Torres,False,True,False,False,False,True,49.0,56.0,57.0,55.0
-155,10.05.2013,SZEGED,15:24,SEN,M,POR,2.0,Fernandes David,Ribeiro João,50,107,165,217,4.0,,,,10.0,5.0,2013.0,Fernandes David_Ribeiro João,False,True,False,False,False,True,50.0,57.0,58.0,52.0
-156,10.05.2013,SZEGED,15:24,SEN,M,ARG,6.0,De Gesus Juan Pablo,Carreras Gonzalo,53,109,164,218,5.0,,,,10.0,5.0,2013.0,De Gesus Juan Pablo_Carreras Gonzalo,False,True,False,False,False,True,53.0,56.0,55.0,54.0
-157,10.05.2013,SZEGED,15:24,SEN,M,NOR,8.0,Salbu Daniel,Solhaug Jo Sondre,52,109,166,222,6.0,,,,10.0,5.0,2013.0,Salbu Daniel_Solhaug Jo Sondre,False,True,False,False,False,True,52.0,57.0,57.0,56.0
-158,10.05.2013,SZEGED,15:24,SEN,M,DEN,9.0,Larsen Martin,Axelsen William,53,109,167,223,7.0,,,,10.0,5.0,2013.0,Larsen Martin_Axelsen William,False,True,False,False,False,True,53.0,56.0,58.0,56.0
-159,10.05.2013,SZEGED,15:24,SEN,M,BLR,7.0,Liapioshka Aliaksandr,Bialko Vitaliy,51,108,168,224,8.0,,,,10.0,5.0,2013.0,Liapioshka Aliaksandr_Bialko Vitaliy,False,True,False,False,False,True,51.0,57.0,60.0,56.0
-160,10.05.2013,SZEGED,15:24,SEN,M,KGZ,1.0,Parol Aleksandr,Dorofeev Igor,55,114,179,239,9.0,,,,10.0,5.0,2013.0,Parol Aleksandr_Dorofeev Igor,False,True,False,False,False,True,55.0,59.0,65.0,60.0
-162,10.05.2013,SZEGED,15:31,SEN,M,CZE,5.0,Havel Daniel,Štěrba Jan,50,106,161,215,1.0,,,,10.0,5.0,2013.0,Havel Daniel_Štěrba Jan,False,True,False,False,False,True,50.0,56.0,55.0,54.0
-163,10.05.2013,SZEGED,15:31,SEN,M,SWE,3.0,Hemselius Daniel,Barsk Johannes,52,108,164,217,2.0,,,,10.0,5.0,2013.0,Hemselius Daniel_Barsk Johannes,False,True,False,False,False,True,52.0,56.0,56.0,53.0
-164,10.05.2013,SZEGED,15:31,SEN,M,GRB,4.0,Rutherford Edward,Daniels Andrew,51,108,163,217,3.0,,,,10.0,5.0,2013.0,Rutherford Edward_Daniels Andrew,False,True,False,False,False,True,51.0,57.0,55.0,54.0
-165,10.05.2013,SZEGED,15:31,SEN,M,AUT,2.0,Wecht Alexander,Trummer Erwin,53,109,166,219,4.0,,,,10.0,5.0,2013.0,Wecht Alexander_Trummer Erwin,False,True,False,False,False,True,53.0,56.0,57.0,53.0
-166,10.05.2013,SZEGED,15:31,SEN,M,BLR,6.0,Zhyhadla Dzianis,Litvinchuk Artur,53,109,166,219,5.0,,,,10.0,5.0,2013.0,Zhyhadla Dzianis_Litvinchuk Artur,False,True,False,False,False,True,53.0,56.0,57.0,53.0
-167,10.05.2013,SZEGED,15:31,SEN,M,CZE,8.0,Davídek Pavel,Kučera Patrik,53,108,165,221,6.0,,,,10.0,5.0,2013.0,Davídek Pavel_Kučera Patrik,False,True,False,False,False,True,53.0,55.0,57.0,56.0
-168,10.05.2013,SZEGED,15:31,SEN,M,POL,1.0,Brzezinski Martin,Warszawski Oskar,54,110,168,221,7.0,,,,10.0,5.0,2013.0,Brzezinski Martin_Warszawski Oskar,False,True,False,False,False,True,54.0,56.0,58.0,53.0
-169,10.05.2013,SZEGED,15:31,SEN,M,HUN,7.0,Bozsik Gábor,Császár Gergely,54,111,167,222,8.0,,,,10.0,5.0,2013.0,Bozsik Gábor_Császár Gergely,False,True,False,False,False,True,54.0,57.0,56.0,55.0
-170,10.05.2013,SZEGED,15:31,SEN,M,FIN,9.0,Hakala Jeremy,Nykänen Miika,55,113,170,229,9.0,,,,10.0,5.0,2013.0,Hakala Jeremy_Nykänen Miika,False,True,False,False,False,True,55.0,58.0,57.0,59.0
-172,11.05.2013,SZEGED,10:01,SEN,M,NOR,7.0,Salbu Daniel,Solhaug Jo Sondre,50,102,155,206,1.0,,,,11.0,5.0,2013.0,Salbu Daniel_Solhaug Jo Sondre,False,True,False,True,False,False,50.0,52.0,53.0,51.0
-173,11.05.2013,SZEGED,10:01,SEN,M,CZE,2.0,Davídek Pavel,Kučera Patrik,49,102,157,209,2.0,,,,11.0,5.0,2013.0,Davídek Pavel_Kučera Patrik,False,True,False,True,False,False,49.0,53.0,55.0,52.0
-174,11.05.2013,SZEGED,10:01,SEN,M,DEN,1.0,Larsen Martin,Axelsen William,49,103,158,209,3.0,,,,11.0,5.0,2013.0,Larsen Martin_Axelsen William,False,True,False,True,False,False,49.0,54.0,55.0,51.0
-175,11.05.2013,SZEGED,10:01,SEN,M,ARG,3.0,De Gesus Juan Pablo,Carreras Gonzalo,50,104,159,211,4.0,,,,11.0,5.0,2013.0,De Gesus Juan Pablo_Carreras Gonzalo,False,True,False,True,False,False,50.0,54.0,55.0,52.0
-176,11.05.2013,SZEGED,10:01,SEN,M,BLR,6.0,Zhyhadla Dzianis,Litvinchuk Artur,49,104,162,212,5.0,,,,11.0,5.0,2013.0,Zhyhadla Dzianis_Litvinchuk Artur,False,True,False,True,False,False,49.0,55.0,58.0,50.0
-177,11.05.2013,SZEGED,10:01,SEN,M,HUN,9.0,Bozsik Gábor,Császár Gergely,51,106,161,213,6.0,,,,11.0,5.0,2013.0,Bozsik Gábor_Császár Gergely,False,True,False,True,False,False,51.0,55.0,55.0,52.0
-178,11.05.2013,SZEGED,10:01,SEN,M,POR,5.0,Fernandes David,Ribeiro João,49,104,161,213,7.0,,,,11.0,5.0,2013.0,Fernandes David_Ribeiro João,False,True,False,True,False,False,49.0,55.0,57.0,52.0
-179,11.05.2013,SZEGED,10:01,SEN,M,POL,8.0,Brzezinski Martin,Warszawski Oskar,52,107,163,213,8.0,,,,11.0,5.0,2013.0,Brzezinski Martin_Warszawski Oskar,False,True,False,True,False,False,52.0,55.0,56.0,50.0
-180,11.05.2013,SZEGED,10:01,SEN,M,AUT,4.0,Wecht Alexander,Trummer Erwin,50,105,163,216,9.0,,,,11.0,5.0,2013.0,Wecht Alexander_Trummer Erwin,False,True,False,True,False,False,50.0,55.0,58.0,53.0
-182,11.05.2013,SZEGED,11:12,SEN,M,HUN,5.0,Dombi Rudolf,Kökény Roland,47,98,151,200,1.0,,,,11.0,5.0,2013.0,Dombi Rudolf_Kökény Roland,False,True,True,False,False,False,47.0,51.0,53.0,49.0
-183,11.05.2013,SZEGED,11:12,SEN,M,RUS,6.0,Medvedev Ilya,Ryakhov Anton,48,101,152,201,2.0,,,,11.0,5.0,2013.0,Medvedev Ilya_Ryakhov Anton,False,True,True,False,False,False,48.0,53.0,51.0,49.0
-184,11.05.2013,SZEGED,11:12,SEN,M,POL,3.0,Szandrach Pawel,Kujawski Mariusz,48,100,153,202,3.0,,,,11.0,5.0,2013.0,Szandrach Pawel_Kujawski Mariusz,False,True,True,False,False,False,48.0,52.0,53.0,49.0
-185,11.05.2013,SZEGED,11:12,SEN,M,CZE,7.0,Havel Daniel,Štěrba Jan,48,100,153,203,4.0,,,,11.0,5.0,2013.0,Havel Daniel_Štěrba Jan,False,True,True,False,False,False,48.0,52.0,53.0,50.0
-186,11.05.2013,SZEGED,11:12,SEN,M,CUB,1.0,Zulueta Arencibia Maikel,Riveaux Reiner Torres,48,102,156,207,5.0,,,,11.0,5.0,2013.0,Zulueta Arencibia Maikel_Riveaux Reiner Torres,False,True,True,False,False,False,48.0,54.0,54.0,51.0
-187,11.05.2013,SZEGED,11:12,SEN,M,SRB,8.0,Pajic Dejan,Stanojevic Dusko,48,100,155,207,6.0,,,,11.0,5.0,2013.0,Pajic Dejan_Stanojevic Dusko,False,True,True,False,False,False,48.0,52.0,55.0,52.0
-188,11.05.2013,SZEGED,11:12,SEN,M,SWE,2.0,Hemselius Daniel,Barsk Johannes,48,103,158,209,7.0,,,,11.0,5.0,2013.0,Hemselius Daniel_Barsk Johannes,False,True,True,False,False,False,48.0,55.0,55.0,51.0
-189,11.05.2013,SZEGED,11:12,SEN,M,GRB,9.0,Rutherford Edward,Daniels Andrew,50,103,157,209,8.0,,,,11.0,5.0,2013.0,Rutherford Edward_Daniels Andrew,False,True,True,False,False,False,50.0,53.0,54.0,52.0
-190,11.05.2013,SZEGED,11:12,SEN,M,POR,4.0,Pimenta Fernando,Silva Emanuel,47,102,173,240,9.0,,,,11.0,5.0,2013.0,Pimenta Fernando_Silva Emanuel,False,True,True,False,False,False,47.0,55.0,71.0,67.0
-192,29.08.2013,DUISBURG,10:22,SEN,M,BLR,4.0,"MIADZVEDZEU, Pavel","YURENIA, Aleh",45,92,142,191,1.0,,"0,9 m/s",SSW,29.0,8.0,2013.0,"MIADZVEDZEU, Pavel_YURENIA, Aleh",True,False,False,False,True,False,45.0,47.0,50.0,49.0
-193,29.08.2013,DUISBURG,10:22,SEN,M,SVK,5.0,"VLCEK, Erik","TARR, Juraj",44,93,142,192,2.0,,"0,9 m/s",SSW,29.0,8.0,2013.0,"VLCEK, Erik_TARR, Juraj",True,False,False,False,True,False,44.0,49.0,49.0,50.0
-194,29.08.2013,DUISBURG,10:22,SEN,M,POL,7.0,"SZANDRACH, Pawel","KUJAWSKI, Mariusz",46,94,144,193,3.0,,"0,9 m/s",SSW,29.0,8.0,2013.0,"SZANDRACH, Pawel_KUJAWSKI, Mariusz",True,False,False,False,True,False,46.0,48.0,50.0,49.0
-195,29.08.2013,DUISBURG,10:22,SEN,M,UKR,2.0,"KOPYSTYNSKYI, Roman","BASHTOVYY, Serhiy",46,95,146,194,4.0,,"0,9 m/s",SSW,29.0,8.0,2013.0,"KOPYSTYNSKYI, Roman_BASHTOVYY, Serhiy",True,False,False,False,True,False,46.0,49.0,51.0,48.0
-196,29.08.2013,DUISBURG,10:22,SEN,M,CZE,6.0,"ŠPICAR, Jakub","ŠLOUF, Radek",46,94,145,194,5.0,,"0,9 m/s",SSW,29.0,8.0,2013.0,"ŠPICAR, Jakub_ŠLOUF, Radek",True,False,False,False,True,False,46.0,48.0,51.0,49.0
-197,29.08.2013,DUISBURG,10:22,SEN,M,NOR,3.0,"SOLHAUG, Jo Sondre","SALBU, Daniel",47,96,146,195,6.0,,"0,9 m/s",SSW,29.0,8.0,2013.0,"SOLHAUG, Jo Sondre_SALBU, Daniel",True,False,False,False,True,False,47.0,49.0,50.0,49.0
-198,29.08.2013,DUISBURG,10:22,SEN,M,FIN,9.0,"HAKALA, Jeremy","NYKÄNEN, Miika",47,97,149,201,7.0,,"0,9 m/s",SSW,29.0,8.0,2013.0,"HAKALA, Jeremy_NYKÄNEN, Miika",True,False,False,False,True,False,47.0,50.0,52.0,52.0
-199,29.08.2013,DUISBURG,10:22,SEN,M,KOR,8.0,"CHO, Jeonghyun","LEE, Jonghyun",47,98,154,208,8.0,,"0,9 m/s",SSW,29.0,8.0,2013.0,"CHO, Jeonghyun_LEE, Jonghyun",True,False,False,False,True,False,47.0,51.0,56.0,54.0
-201,29.08.2013,DUISBURG,10:29,SEN,M,POR,7.0,"SILVA, Emanuel","RIBEIRO, João",44,94,144,193,1.0,,"1,1 m/s",SES,29.0,8.0,2013.0,"SILVA, Emanuel_RIBEIRO, João",True,False,False,False,True,False,44.0,50.0,50.0,49.0
-202,29.08.2013,DUISBURG,10:29,SEN,M,AUS,4.0,"STEWART, Murray","CLEAR, Jacob",44,92,142,193,2.0,,"1,1 m/s",SES,29.0,8.0,2013.0,"STEWART, Murray_CLEAR, Jacob",True,False,False,False,True,False,44.0,48.0,50.0,51.0
-203,29.08.2013,DUISBURG,10:29,SEN,M,ESP,6.0,"COSGAYA NORIEGA, Diego","PEREZ RIAL, Carlos",44,93,144,195,3.0,,"1,1 m/s",SES,29.0,8.0,2013.0,"COSGAYA NORIEGA, Diego_PEREZ RIAL, Carlos",True,False,False,False,True,False,44.0,49.0,51.0,51.0
-204,29.08.2013,DUISBURG,10:29,SEN,M,SRB,3.0,"PAJIC, Dejan","STANOJEVIC, Dusko",45,94,145,195,4.0,,"1,1 m/s",SES,29.0,8.0,2013.0,"PAJIC, Dejan_STANOJEVIC, Dusko",True,False,False,False,True,False,45.0,49.0,51.0,50.0
-205,29.08.2013,DUISBURG,10:29,SEN,M,ROU,8.0,"PORCARASU, Iustin","COSTEA, Daniel",44,93,145,196,5.0,,"1,1 m/s",SES,29.0,8.0,2013.0,"PORCARASU, Iustin_COSTEA, Daniel",True,False,False,False,True,False,44.0,49.0,52.0,51.0
-206,29.08.2013,DUISBURG,10:29,SEN,M,CUB,2.0,"ZULUETA ARENCIBIA, Maikel","GARCIA RODRIGUEZ, Jorge A",44,94,146,198,6.0,,"1,1 m/s",SES,29.0,8.0,2013.0,"ZULUETA ARENCIBIA, Maikel_GARCIA RODRIGUEZ, Jorge A",True,False,False,False,True,False,44.0,50.0,52.0,52.0
-207,29.08.2013,DUISBURG,10:29,SEN,M,SWE,5.0,"HEMSELIUS, Daniel","NATHELL, Martin",46,96,148,200,7.0,,"1,1 m/s",SES,29.0,8.0,2013.0,"HEMSELIUS, Daniel_NATHELL, Martin",True,False,False,False,True,False,46.0,50.0,52.0,52.0
-209,29.08.2013,DUISBURG,10:22,SEN,M,HUN,6.0,"DOMBI, Rudolf","KÖKÉNY, Roland",45,94,144,192,1.0,,"2,7 m/s",SE,29.0,8.0,2013.0,"DOMBI, Rudolf_KÖKÉNY, Roland",True,False,False,False,True,False,45.0,49.0,50.0,48.0
-210,29.08.2013,DUISBURG,10:22,SEN,M,RUS,5.0,"MEDVEDEV, Ilya ","RYAKHOV, Anton",45,94,143,193,2.0,,"2,7 m/s",SE,29.0,8.0,2013.0,"MEDVEDEV, Ilya _RYAKHOV, Anton",True,False,False,False,True,False,45.0,49.0,49.0,50.0
-211,29.08.2013,DUISBURG,10:22,SEN,M,CAN,4.0,"VAN KOEVERDEN, Adam","REARDON, Brady",45,96,146,194,3.0,,"2,7 m/s",SE,29.0,8.0,2013.0,"VAN KOEVERDEN, Adam_REARDON, Brady",True,False,False,False,True,False,45.0,51.0,50.0,48.0
-212,29.08.2013,DUISBURG,10:22,SEN,M,MEX,8.0,"LABRADA REINOSA, Osvaldo","MONTALVO GARCIA, Carlos",46,95,146,195,4.0,,"2,7 m/s",SE,29.0,8.0,2013.0,"LABRADA REINOSA, Osvaldo_MONTALVO GARCIA, Carlos",True,False,False,False,True,False,46.0,49.0,51.0,49.0
-213,29.08.2013,DUISBURG,10:22,SEN,M,EST,2.0,"ALUPERE, Kaarel","TOOTSI, Tarmo",45,95,146,196,5.0,,"2,7 m/s",SE,29.0,8.0,2013.0,"ALUPERE, Kaarel_TOOTSI, Tarmo",True,False,False,False,True,False,45.0,50.0,51.0,50.0
-214,29.08.2013,DUISBURG,10:22,SEN,M,DEN,7.0,"KERRN, Mads Herbert","SIMENSEN, Emil Staer",46,95,147,198,6.0,,"2,7 m/s",SE,29.0,8.0,2013.0,"KERRN, Mads Herbert_SIMENSEN, Emil Staer",True,False,False,False,True,False,46.0,49.0,52.0,51.0
-215,29.08.2013,DUISBURG,10:22,SEN,M,VEN,9.0,"RAMOS, Jose Giovanny","AQUINO, Omar",45,95,147,200,7.0,,"2,7 m/s",SE,29.0,8.0,2013.0,"RAMOS, Jose Giovanny_AQUINO, Omar",True,False,False,False,True,False,45.0,50.0,52.0,53.0
-216,29.08.2013,DUISBURG,10:22,SEN,M,LAT,3.0,"ANDERSONS, Janis","ALKSNIS, Girts",48,99,157,214,8.0,,"2,7 m/s",SE,29.0,8.0,2013.0,"ANDERSONS, Janis_ALKSNIS, Girts",True,False,False,False,True,False,48.0,51.0,58.0,57.0
-218,29.08.2013,DUISBURG,10:43,SEN,M,GER,6.0,"RENDSCHMIDT, Max","GROSS, Marcus",44,93,142,192,1.0,,"1,9 m/s",EES,29.0,8.0,2013.0,"RENDSCHMIDT, Max_GROSS, Marcus",True,False,False,False,True,False,44.0,49.0,49.0,50.0
-219,29.08.2013,DUISBURG,10:43,SEN,M,BEL,5.0,"CAUWENBERGH, Olivier ","PANNECOUCKE, Laurens",45,93,143,193,2.0,,"1,9 m/s",EES,29.0,8.0,2013.0,"CAUWENBERGH, Olivier _PANNECOUCKE, Laurens",True,False,False,False,True,False,45.0,48.0,50.0,50.0
-220,29.08.2013,DUISBURG,10:43,SEN,M,LTU,7.0,"NEKRIOSIUS, Ricardas","OLIJNIK, Andrej",46,95,145,194,3.0,,"1,9 m/s",EES,29.0,8.0,2013.0,"NEKRIOSIUS, Ricardas_OLIJNIK, Andrej",True,False,False,False,True,False,46.0,49.0,50.0,49.0
-221,29.08.2013,DUISBURG,10:43,SEN,M,ARG,3.0,"DE GESÚS, Juan Pablo","CARRERAS, Gonzalo",45,94,145,195,4.0,,"1,9 m/s",EES,29.0,8.0,2013.0,"DE GESÚS, Juan Pablo_CARRERAS, Gonzalo",True,False,False,False,True,False,45.0,49.0,51.0,50.0
-222,29.08.2013,DUISBURG,10:43,SEN,M,ITA,8.0,"BENASSI, Maximilian","RICCHETTI, Alberto",46,95,146,196,5.0,,"1,9 m/s",EES,29.0,8.0,2013.0,"BENASSI, Maximilian_RICCHETTI, Alberto",True,False,False,False,True,False,46.0,49.0,51.0,50.0
-223,29.08.2013,DUISBURG,10:43,SEN,M,GBR,4.0,"RUTHERFORD, Edward","DANIELS, Andrew",46,96,147,198,6.0,,"1,9 m/s",EES,29.0,8.0,2013.0,"RUTHERFORD, Edward_DANIELS, Andrew",True,False,False,False,True,False,46.0,50.0,51.0,51.0
-224,29.08.2013,DUISBURG,10:43,SEN,M,KAZ,2.0,"ALEXEYEV, Yevgeniy","DERGUNOV, Alexey",48,101,157,209,7.0,,"1,9 m/s",EES,29.0,8.0,2013.0,"ALEXEYEV, Yevgeniy_DERGUNOV, Alexey",True,False,False,False,True,False,48.0,53.0,56.0,52.0
-226,29.08.2013,DUISBURG,17:17,SEN,M,BEL,4.0,"CAUWENBERGH, Olivier ","PANNECOUCKE, Laurens",46,97,149,196,1.0,,"0,7 m/s",W,29.0,8.0,2013.0,"CAUWENBERGH, Olivier _PANNECOUCKE, Laurens",True,False,False,False,False,True,46.0,51.0,52.0,47.0
-227,29.08.2013,DUISBURG,17:17,SEN,M,POL,6.0,"SZANDRACH, Pawel","KUJAWSKI, Mariusz",46,97,149,197,2.0,,"0,7 m/s",W,29.0,8.0,2013.0,"SZANDRACH, Pawel_KUJAWSKI, Mariusz",True,False,False,False,False,True,46.0,51.0,52.0,48.0
-228,29.08.2013,DUISBURG,17:17,SEN,M,POR,5.0,"SILVA, Emanuel","RIBEIRO, João",45,96,149,198,3.0,,"0,7 m/s",W,29.0,8.0,2013.0,"SILVA, Emanuel_RIBEIRO, João",True,False,False,False,False,True,45.0,51.0,53.0,49.0
-229,29.08.2013,DUISBURG,17:17,SEN,M,UKR,2.0,"KOPYSTYNSKYI, Roman","BASHTOVYY, Serhiy",46,97,150,200,4.0,,"0,7 m/s",W,29.0,8.0,2013.0,"KOPYSTYNSKYI, Roman_BASHTOVYY, Serhiy",True,False,False,False,False,True,46.0,51.0,53.0,50.0
-230,29.08.2013,DUISBURG,17:17,SEN,M,MEX,7.0,"LABRADA REINOSA, Osvaldo","MONTALVO GARCIA, Carlos",45,97,150,200,5.0,,"0,7 m/s",W,29.0,8.0,2013.0,"LABRADA REINOSA, Osvaldo_MONTALVO GARCIA, Carlos",True,False,False,False,False,True,45.0,52.0,53.0,50.0
-231,29.08.2013,DUISBURG,17:17,SEN,M,CAN,3.0,"VAN KOEVERDEN, Adam","REARDON, Brady",45,97,150,201,6.0,,"0,7 m/s",W,29.0,8.0,2013.0,"VAN KOEVERDEN, Adam_REARDON, Brady",True,False,False,False,False,True,45.0,52.0,53.0,51.0
-232,29.08.2013,DUISBURG,17:17,SEN,M,ROU,8.0,"PORCARASU, Iustin","COSTEA, Daniel",46,98,151,202,7.0,,"0,7 m/s",W,29.0,8.0,2013.0,"PORCARASU, Iustin_COSTEA, Daniel",True,False,False,False,False,True,46.0,52.0,53.0,51.0
-233,29.08.2013,DUISBURG,17:17,SEN,M,GBR,9.0,"RUTHERFORD, Edward","DANIELS, Andrew",46,98,152,207,8.0,,"0,7 m/s",W,29.0,8.0,2013.0,"RUTHERFORD, Edward_DANIELS, Andrew",True,False,False,False,False,True,46.0,52.0,54.0,55.0
-234,29.08.2013,DUISBURG,17:17,SEN,M,VEN,1.0,"RAMOS, Jose Giovanny","AQUINO, Omar",47,102,158,211,9.0,,"0,7 m/s",W,29.0,8.0,2013.0,"RAMOS, Jose Giovanny_AQUINO, Omar",True,False,False,False,False,True,47.0,55.0,56.0,53.0
-236,29.08.2013,DUISBURG,17:10,SEN,M,BLR,5.0,"MIADZVEDZEU, Pavel","YURENIA, Aleh",44,94,144,193,1.0,,"0,7 m/s",W,29.0,8.0,2013.0,"MIADZVEDZEU, Pavel_YURENIA, Aleh",True,False,False,False,False,True,44.0,50.0,50.0,49.0
-237,29.08.2013,DUISBURG,17:10,SEN,M,AUS,4.0,"STEWART, Murray","CLEAR, Jacob",45,93,143,194,2.0,,"0,7 m/s",W,29.0,8.0,2013.0,"STEWART, Murray_CLEAR, Jacob",True,False,False,False,False,True,45.0,48.0,50.0,51.0
-238,29.08.2013,DUISBURG,17:10,SEN,M,RUS,6.0,"MEDVEDEV, Ilya ","RYAKHOV, Anton",45,95,146,196,3.0,,"0,7 m/s",W,29.0,8.0,2013.0,"MEDVEDEV, Ilya _RYAKHOV, Anton",True,False,False,False,False,True,45.0,50.0,51.0,50.0
-239,29.08.2013,DUISBURG,17:10,SEN,M,LTU,3.0,"NEKRIOSIUS, Ricardas","OLIJNIK, Andrej",46,96,148,198,4.0,,"0,7 m/s",W,29.0,8.0,2013.0,"NEKRIOSIUS, Ricardas_OLIJNIK, Andrej",True,False,False,False,False,True,46.0,50.0,52.0,50.0
-240,29.08.2013,DUISBURG,17:10,SEN,M,CZE,8.0,"ŠPICAR, Jakub","ŠLOUF, Radek",46,96,148,198,5.0,,"0,7 m/s",W,29.0,8.0,2013.0,"ŠPICAR, Jakub_ŠLOUF, Radek",True,False,False,False,False,True,46.0,50.0,52.0,50.0
-241,29.08.2013,DUISBURG,17:10,SEN,M,EST,2.0,"ALUPERE, Kaarel","TOOTSI, Tarmo",46,97,149,199,6.0,,"0,7 m/s",W,29.0,8.0,2013.0,"ALUPERE, Kaarel_TOOTSI, Tarmo",True,False,False,False,False,True,46.0,51.0,52.0,50.0
-242,29.08.2013,DUISBURG,17:10,SEN,M,ARG,7.0,"DE GESÚS, Juan Pablo","CARRERAS, Gonzalo",45,96,149,199,7.0,,"0,7 m/s",W,29.0,8.0,2013.0,"DE GESÚS, Juan Pablo_CARRERAS, Gonzalo",True,False,False,False,False,True,45.0,51.0,53.0,50.0
-243,29.08.2013,DUISBURG,17:10,SEN,M,SWE,9.0,"HEMSELIUS, Daniel","NATHELL, Martin",46,97,153,206,8.0,,"0,7 m/s",W,29.0,8.0,2013.0,"HEMSELIUS, Daniel_NATHELL, Martin",True,False,False,False,False,True,46.0,51.0,56.0,53.0
-244,29.08.2013,DUISBURG,17:10,SEN,M,CUB,1.0,"ZULUETA ARENCIBIA, Maikel","GARCIA RODRIGUEZ, Jorge A",44,96,153,206,9.0,,"0,7 m/s",W,29.0,8.0,2013.0,"ZULUETA ARENCIBIA, Maikel_GARCIA RODRIGUEZ, Jorge A",True,False,False,False,False,True,44.0,52.0,57.0,53.0
-246,29.08.2013,DUISBURG,17:24,SEN,M,GER,5.0,"RENDSCHMIDT, Max","GROSS, Marcus",45,95,147,196,1.0,,"0,7 m/s",W,29.0,8.0,2013.0,"RENDSCHMIDT, Max_GROSS, Marcus",True,False,False,False,False,True,45.0,50.0,52.0,49.0
-247,29.08.2013,DUISBURG,17:24,SEN,M,SVK,6.0,"VLCEK, Erik","TARR, Juraj",46,97,148,197,2.0,,"0,7 m/s",W,29.0,8.0,2013.0,"VLCEK, Erik_TARR, Juraj",True,False,False,False,False,True,46.0,51.0,51.0,49.0
-248,29.08.2013,DUISBURG,17:24,SEN,M,HUN,4.0,Dombi Rudolf,Kökény Roland,46,96,148,199,3.0,,"0,7 m/s",W,29.0,8.0,2013.0,Dombi Rudolf_Kökény Roland,True,False,False,False,False,True,46.0,50.0,52.0,51.0
-249,29.08.2013,DUISBURG,17:24,SEN,M,SRB,7.0,"PAJIC, Dejan","STANOJEVIC, Dusko",46,97,149,199,4.0,,"0,7 m/s",W,29.0,8.0,2013.0,"PAJIC, Dejan_STANOJEVIC, Dusko",True,False,False,False,False,True,46.0,51.0,52.0,50.0
-250,29.08.2013,DUISBURG,17:24,SEN,M,ESP,3.0,"COSGAYA NORIEGA, Diego","PEREZ RIAL, Carlos",46,97,150,202,5.0,,"0,7 m/s",W,29.0,8.0,2013.0,"COSGAYA NORIEGA, Diego_PEREZ RIAL, Carlos",True,False,False,False,False,True,46.0,51.0,53.0,52.0
-251,29.08.2013,DUISBURG,17:24,SEN,M,DEN,8.0,"KERRN, Mads Herbert","SIMENSEN, Emil Staer",47,99,153,204,6.0,,"0,7 m/s",W,29.0,8.0,2013.0,"KERRN, Mads Herbert_SIMENSEN, Emil Staer",True,False,False,False,False,True,47.0,52.0,54.0,51.0
-252,29.08.2013,DUISBURG,17:24,SEN,M,FIN,9.0,"HAKALA, Jeremy","NYKÄNEN, Miika",47,100,154,205,7.0,,"0,7 m/s",W,29.0,8.0,2013.0,"HAKALA, Jeremy_NYKÄNEN, Miika",True,False,False,False,False,True,47.0,53.0,54.0,51.0
-253,29.08.2013,DUISBURG,17:24,SEN,M,NOR,1.0,"SOLHAUG, Jo Sondre","SALBU, Daniel",46,99,154,207,8.0,,"0,7 m/s",W,29.0,8.0,2013.0,"SOLHAUG, Jo Sondre_SALBU, Daniel",True,False,False,False,False,True,46.0,53.0,55.0,53.0
-255,31.08.2013,DUISBURG,12:16,SEN,M,LTU,5.0,"NEKRIOSIUS, Ricardas","OLIJNIK, Andrej",46,97,147,198,1.0,,"1,3 m/s",SW,31.0,8.0,2013.0,"NEKRIOSIUS, Ricardas_OLIJNIK, Andrej",True,False,False,True,False,False,46.0,51.0,50.0,51.0
-256,31.08.2013,DUISBURG,12:16,SEN,M,UKR,6.0,"KOPYSTYNSKYI, Roman","BASHTOVYY, Serhiy",46,97,149,199,2.0,,"1,3 m/s",SW,31.0,8.0,2013.0,"KOPYSTYNSKYI, Roman_BASHTOVYY, Serhiy",True,False,False,True,False,False,46.0,51.0,52.0,50.0
-257,31.08.2013,DUISBURG,12:16,SEN,M,SRB,4.0,"PAJIC, Dejan","STANOJEVIC, Dusko",46,96,147,199,3.0,,"1,3 m/s",SW,31.0,8.0,2013.0,"PAJIC, Dejan_STANOJEVIC, Dusko",True,False,False,True,False,False,46.0,50.0,51.0,52.0
-258,31.08.2013,DUISBURG,12:16,SEN,M,CAN,1.0,"VAN KOEVERDEN, Adam","REARDON, Brady",47,98,149,199,4.0,,"1,3 m/s",SW,31.0,8.0,2013.0,"VAN KOEVERDEN, Adam_REARDON, Brady",True,False,False,True,False,False,47.0,51.0,51.0,50.0
-259,31.08.2013,DUISBURG,12:16,SEN,M,CZE,7.0,"ŠPICAR, Jakub","ŠLOUF, Radek",47,97,149,200,5.0,,"1,3 m/s",SW,31.0,8.0,2013.0,"ŠPICAR, Jakub_ŠLOUF, Radek",True,False,False,True,False,False,47.0,50.0,52.0,51.0
-260,31.08.2013,DUISBURG,12:16,SEN,M,EST,2.0,"ALUPERE, Kaarel","TOOTSI, Tarmo",47,98,151,201,6.0,,"1,3 m/s",SW,31.0,8.0,2013.0,"ALUPERE, Kaarel_TOOTSI, Tarmo",True,False,False,True,False,False,47.0,51.0,53.0,50.0
-261,31.08.2013,DUISBURG,12:16,SEN,M,ESP,8.0,"COSGAYA NORIEGA, Diego","PEREZ RIAL, Carlos",46,97,150,202,7.0,,"1,3 m/s",SW,31.0,8.0,2013.0,"COSGAYA NORIEGA, Diego_PEREZ RIAL, Carlos",True,False,False,True,False,False,46.0,51.0,53.0,52.0
-262,31.08.2013,DUISBURG,12:16,SEN,M,MEX,3.0,"LABRADA REINOSA, Osvaldo","MONTALVO GARCIA, Carlos",46,99,153,203,8.0,,"1,3 m/s",SW,31.0,8.0,2013.0,"LABRADA REINOSA, Osvaldo_MONTALVO GARCIA, Carlos",True,False,False,True,False,False,46.0,53.0,54.0,50.0
-263,31.08.2013,DUISBURG,12:16,SEN,M,DEN,9.0,"KERRN, Mads Herbert","SIMENSEN, Emil Staer",48,99,153,205,9.0,,"1,3 m/s",SW,31.0,8.0,2013.0,"KERRN, Mads Herbert_SIMENSEN, Emil Staer",True,False,False,True,False,False,48.0,51.0,54.0,52.0
-265,31.08.2013,DUISBURG,15:46,SEN,M,GER,6.0,"RENDSCHMIDT, Max","GROSS, Marcus",47,99,152,202,1.0,,"1,7 m/s",W,31.0,8.0,2013.0,"RENDSCHMIDT, Max_GROSS, Marcus",True,False,True,False,False,False,47.0,52.0,53.0,50.0
-266,31.08.2013,DUISBURG,15:46,SEN,M,BLR,5.0,"MIADZVEDZEU, Pavel","YURENIA, Aleh",48,98,151,203,2.0,,"1,7 m/s",W,31.0,8.0,2013.0,"MIADZVEDZEU, Pavel_YURENIA, Aleh",True,False,True,False,False,False,48.0,50.0,53.0,52.0
-267,31.08.2013,DUISBURG,15:46,SEN,M,HUN,9.0,Dombi Rudolf,Kökény Roland,48,99,153,203,3.0,,"1,7 m/s",W,31.0,8.0,2013.0,Dombi Rudolf_Kökény Roland,True,False,True,False,False,False,48.0,51.0,54.0,50.0
-268,31.08.2013,DUISBURG,15:46,SEN,M,POL,7.0,"SZANDRACH, Pawel","KUJAWSKI, Mariusz",49,100,153,203,4.0,,"1,7 m/s",W,31.0,8.0,2013.0,"SZANDRACH, Pawel_KUJAWSKI, Mariusz",True,False,True,False,False,False,49.0,51.0,53.0,50.0
-269,31.08.2013,DUISBURG,15:46,SEN,M,AUS,3.0,"STEWART, Murray","CLEAR, Jacob",48,99,152,204,5.0,,"1,7 m/s",W,31.0,8.0,2013.0,"STEWART, Murray_CLEAR, Jacob",True,False,True,False,False,False,48.0,51.0,53.0,52.0
-270,31.08.2013,DUISBURG,15:46,SEN,M,BEL,4.0,"CAUWENBERGH, Olivier ","PANNECOUCKE, Laurens",49,100,154,205,6.0,,"1,7 m/s",W,31.0,8.0,2013.0,"CAUWENBERGH, Olivier _PANNECOUCKE, Laurens",True,False,True,False,False,False,49.0,51.0,54.0,51.0
-271,31.08.2013,DUISBURG,15:46,SEN,M,POR,1.0,"SILVA, Emanuel","RIBEIRO, João",47,100,154,206,7.0,,"1,7 m/s",W,31.0,8.0,2013.0,"SILVA, Emanuel_RIBEIRO, João",True,False,True,False,False,False,47.0,53.0,54.0,52.0
-272,31.08.2013,DUISBURG,15:46,SEN,M,RUS,8.0,"MEDVEDEV, Ilya ","RYAKHOV, Anton",49,101,154,206,8.0,,"1,7 m/s",W,31.0,8.0,2013.0,"MEDVEDEV, Ilya _RYAKHOV, Anton",True,False,True,False,False,False,49.0,52.0,53.0,52.0
-273,31.08.2013,DUISBURG,15:46,SEN,M,SVK,2.0,"VLCEK, Erik","TARR, Juraj",48,100,154,207,9.0,,"1,7 m/s",W,31.0,8.0,2013.0,"VLCEK, Erik_TARR, Juraj",True,False,True,False,False,False,48.0,52.0,54.0,53.0
+,Date,Place,Time,Category,Sex,Country,Lane,Person 1,Person 2,split time 1,split time 2,split time 3,Total Time,Final Rank,Air Temp,Wind Speed,Wind Direction,Competiton Type,Competition Round,Unnamed: 19,Day,Month,Year
+0,31.05.2013,Poznan,10:22,SEN,M,POL,3.0,SZANDRACH PAWEŁ,KUJAWSKI MARIUSZ,53,108,165,222,1.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+1,31.05.2013,Poznan,10:22,SEN,M,BEL,5.0,CAUWENBERGH OLIVIER,PANNECOUCKE LAURENS,53,,167,223,2.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+2,31.05.2013,Poznan,10:22,SEN,M,GER,7.0,HARBRECHT GORDAN,FROESE TORBEN,52,107,166,226,3.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+3,31.05.2013,Poznan,10:22,SEN,M,FRA,6.0,BURGER GUILLAUME,URBAN QUENTIN,52,110,,230,4.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+5,31.05.2013,Poznan,10:22,SEN,M,CAN,8.0,CLARKE ROB,JESSOP ANDREW,54,109,,232,6.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+6,31.05.2013,Poznan,10:22,SEN,M,SWE,2.0,HEMSELIUS DANIEL,BARSK JOHANNES,54,111,172,233,7.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+7,31.05.2013,Poznan,10:22,SEN,M,KAZ,1.0,SULTANBEKOV DAVLET,BEREZINTSEV YURIY,54,115,175,233,8.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+9,31.05.2013,Poznan,10:29,SEN,M,CAN,4.0,VAN KOEVERDEN ADAM,REARDON BRADY,,107,,219,1.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+10,31.05.2013,Poznan,10:29,SEN,M,EST,2.0,ALUPERE KAAREL,TOOTSI TARMO,51,106,163,219,2.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+11,31.05.2013,Poznan,10:29,SEN,M,GER,1.0,KUX FABIAN,SCHMUDE DAVID,51,,163,219,3.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+12,31.05.2013,Poznan,10:29,SEN,M,KAZ,3.0,DERGUNOV ALEXEY,ALEXEYEV YEVGENIY,51,,167,224,4.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+13,31.05.2013,Poznan,10:29,SEN,M,AUT,6.0,WECHT ALEXANDER,TRUMMER ERWIN,53,112,,230,5.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+14,31.05.2013,Poznan,10:29,SEN,M,NED,7.0,KALF WALTER,HOOGERS JASPER,,,170,231,6.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+15,31.05.2013,Poznan,10:29,SEN,M,POL,5.0,STABNO BARTOSZ,WARSZAWSKI OSKAR,54,112,171,232,7.0,15.0,1 m/s,W,WORLD CUP,HEAT,,31.0,5.0,2013.0
+17,31.05.2013,Poznan,14:58,SEN,M,SWE,8.0,HEMSELIUS DANIEL,BARSK JOHANNES,49,102,155,210,1.0,19.0,2 m/s,NE,WORLD CUP,SEMIFINAL,,31.0,5.0,2013.0
+19,31.05.2013,Poznan,14:58,SEN,M,ARG,6.0,DE GESUS JUAN PABLO,CARRERAS GONZALO,50,102,,211,3.0,19.0,2 m/s,NE,WORLD CUP,SEMIFINAL,,31.0,5.0,2013.0
+20,31.05.2013,Poznan,14:58,SEN,M,CAN,2.0,CLARKE ROB,JESSOP ANDREW,51,,158,214,4.0,19.0,2 m/s,NE,WORLD CUP,SEMIFINAL,,31.0,5.0,2013.0
+21,31.05.2013,Poznan,14:58,SEN,M,NED,7.0,KALF WALTER,HOOGERS JASPER,50,104,159,214,5.0,19.0,2 m/s,NE,WORLD CUP,SEMIFINAL,,31.0,5.0,2013.0
+22,31.05.2013,Poznan,14:58,SEN,M,POL,1.0,STABNO BARTOSZ,WARSZAWSKI OSKAR,51,,,215,6.0,19.0,2 m/s,NE,WORLD CUP,SEMIFINAL,,31.0,5.0,2013.0
+23,31.05.2013,Poznan,14:58,SEN,M,KAZ,4.0,DERGUNOV ALEXEY,ALEXEYEV YEVGENIY,48,105,,215,7.0,19.0,2 m/s,NE,WORLD CUP,SEMIFINAL,,31.0,5.0,2013.0
+24,31.05.2013,Poznan,14:58,SEN,M,AUT,3.0,WECHT ALEXANDER,TRUMMER ERWIN,50,107,,217,8.0,19.0,2 m/s,NE,WORLD CUP,SEMIFINAL,,31.0,5.0,2013.0
+38,17.05.2013,RACICE,10:58,SEN,M,RUS,5.0,SPESIVTSEV Maxim,CHERVOV Nikolay,51,89,151,,2.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+39,17.05.2013,RACICE,10:58,SEN,M,SRB,9.0,PAJIC Dejan,STANOJEVIC Dusko,49,98,154,,3.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+40,17.05.2013,RACICE,10:58,SEN,M,CZE,7.0,ADAM Jakub,ODVÁRKO Michael,65,101,155,,4.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+41,17.05.2013,RACICE,10:58,SEN,M,GBR,8.0,RUTHERFORD Edward,DANIELS Andrew,50,102,159,213,5.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+43,17.05.2013,RACICE,10:58,SEN,M,KGZ,2.0,PAROL Aleksandr,DOROFEEV Igor,70,106,165,223,7.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+44,17.05.2013,RACICE,10:58,SEN,M,CHN,6.0,XUE Yuan,ZHAO Yuefeng,74,112,168,225,8.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+45,17.05.2013,RACICE,10:58,SEN,M,HKG,3.0,KWOK Ka Wai,NG Ka Chun,72,109,175,240,,,,,,,,17.0,5.0,2013.0
+47,17.05.2013,RACICE,11:05,SEN,M,CZE,7.0,DAVÍDEK Pavel,KUČERA Patrik,51,,154,207,2.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+48,17.05.2013,RACICE,11:05,SEN,M,NZL,4.0,BATS Jasper,FITZGERALD Darryl,50,102,155,213,3.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+49,17.05.2013,RACICE,11:05,SEN,M,RUS,5.0,MEDVEDEV Ilya,RYAKHOV Anton,51,101,153,214,4.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+50,17.05.2013,RACICE,11:05,SEN,M,GBR,8.0,BOWLEY Mathew,TERRY Dean,52,104,159,215,5.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+51,17.05.2013,RACICE,11:05,SEN,M,KGZ,2.0,BONDAR Maksim,ALGIN Ilia,52,106,162,222,6.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+52,17.05.2013,RACICE,11:05,SEN,M,CHN,6.0,LI Kai,LIU Lifan,54,110,169,230,7.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+53,17.05.2013,RACICE,11:05,SEN,M,HKG,3.0,TSOI Yik San,NG Ka Nam,53,111,172,235,8.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+54,17.05.2013,RACICE,11:05,SEN,M,SRB,9.0,HOLPERT Ervin,TERZIC Dejan,55,113,178,244,,,,,,,,17.0,5.0,2013.0
+56,17.05.2013,RACICE,11:12,SEN,M,CAN,1.0,VAN KOEVERDEN ADAM,REARDON BRADY,49,96,151,204,2.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+57,17.05.2013,RACICE,11:12,SEN,M,GER,4.0,RENDSCHMIDT Max,GROSS Marcus,47,96,151,205,3.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+58,17.05.2013,RACICE,11:12,SEN,M,KAZ,74.0,DERGUNOV ALEXEY,ALEXEYEV YEVGENIY,50,101,156,207,4.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+59,17.05.2013,RACICE,11:12,SEN,M,LTU,6.0,NEKRIOSIUS Ricardas,OLIJNIK Andrej,51,100,155,207,5.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+60,17.05.2013,RACICE,11:12,SEN,M,BLR,2.0,ZHYHADLA Dzianis,BIALKO Vitaliy,57,102,156,209,6.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+61,17.05.2013,RACICE,11:12,SEN,M,NOR,5.0,SALBU Daniel,SOLHAUG Jo Sondre,50,99,153,214,7.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+62,17.05.2013,RACICE,11:12,SEN,M,ITA,3.0,CECCHINI Riccardo,CHIERINI Edoardo,48,104,164,224,8.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+65,17.05.2013,RACICE,11:19,SEN,M,FRA,5.0,BURGER GUILLAUME,URBAN QUENTIN,48,,153,203,2.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+66,17.05.2013,RACICE,11:19,SEN,M,CAN,1.0,CLARKE ROB,JESSOP ANDREW,49,100,154,205,3.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+67,17.05.2013,RACICE,11:19,SEN,M,DEN,7.0,BOE Niels,AXELSEN William,52,99,154,205,4.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+68,17.05.2013,RACICE,11:19,SEN,M,BLR,2.0,LIAPIOSHKA Aliksandr,LITVINCHUK Artur,51,101,155,210,5.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+69,17.05.2013,RACICE,11:19,SEN,M,BEL,3.0,BROEKX Toon,BROEKX Piet,51,102,157,211,6.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+70,17.05.2013,RACICE,11:19,SEN,M,FIN,6.0,HAKALA Jeremy,NYKÄNEN Miika,53,103,158,211,7.0,18.0,,E,WORLD CUP,HEAT,,17.0,5.0,2013.0
+72,17.05.2013,RACICE,15:34,SEN,M,GER,6.0,RENDSCHMIDT Max,GROSS Marcus,50,93,152,205,1.0,18.0,,E,WORLD CUP,SEMIFINAL,,17.0,5.0,2013.0
+73,17.05.2013,RACICE,15:34,SEN,M,RUS,5.0,SPESIVTSEV Maxim,CHERVOV Nikolay,52,102,153,206,2.0,18.0,,E,WORLD CUP,SEMIFINAL,,17.0,5.0,2013.0
+74,17.05.2013,RACICE,15:34,SEN,M,BLR,2.0,ZHYHADLA Dzianis,BIALKO Vitaliy,50,103,156,207,3.0,18.0,,E,WORLD CUP,SEMIFINAL,,17.0,5.0,2013.0
+75,17.05.2013,RACICE,15:34,SEN,M,DEN,3.0,BOE Niels,AXELSEN William,51,102,155,208,4.0,18.0,,E,WORLD CUP,SEMIFINAL,,17.0,5.0,2013.0
+76,17.05.2013,RACICE,15:34,SEN,M,NZL,4.0,BATS Jasper,FITZGERALD Darryl,52,104,155,208,5.0,18.0,,E,WORLD CUP,SEMIFINAL,,17.0,5.0,2013.0
+77,17.05.2013,RACICE,15:34,SEN,M,NZL,8.0,FITZGERALD Jarrod,QUICKENDEN Zac,54,109,163,224,6.0,18.0,,E,WORLD CUP,SEMIFINAL,,17.0,5.0,2013.0
+78,17.05.2013,RACICE,15:34,SEN,M,BLR,7.0,LIAPIOSHKA Aliksandr,LITVINCHUK Artur,53,106,164,228,7.0,18.0,,E,WORLD CUP,SEMIFINAL,,17.0,5.0,2013.0
+79,17.05.2013,RACICE,15:34,SEN,M,CHN,1.0,LI Kai,LIU Lifan,55,112,171,233,8.0,18.0,,E,WORLD CUP,SEMIFINAL,,17.0,5.0,2013.0
+80,17.05.2013,RACICE,15:34,SEN,M,ITA,9.0,CECCHINI Riccardo,CHIERINI Edoardo,54,114,189,259,9.0,18.0,,E,WORLD CUP,SEMIFINAL,,17.0,5.0,2013.0
+102,18.05.2013,RACICE,09:54,SEN,M,FRA,4.0,BURGER GUILLAUME,URBAN QUENTIN,46,96,148,199,1.0,18.0,,E,WORLD CUP,FINAL B,,18.0,5.0,2013.0
+103,18.05.2013,RACICE,09:54,SEN,M,DEN,5.0,BOE Niels,AXELSEN William,50,100,149,200,2.0,18.0,,E,WORLD CUP,FINAL B,,18.0,5.0,2013.0
+104,18.05.2013,RACICE,09:54,SEN,M,CAN,3.0,CLARKE ROB,JESSOP ANDREW,48,99,150,201,3.0,18.0,,E,WORLD CUP,FINAL B,,18.0,5.0,2013.0
+105,18.05.2013,RACICE,09:54,SEN,M,NZL,7.0,BATS Jasper,FITZGERALD Darryl,56,101,152,203,4.0,18.0,,E,WORLD CUP,FINAL B,,18.0,5.0,2013.0
+106,18.05.2013,RACICE,09:54,SEN,M,BEL,8.0,BROEKX Toon,BROEKX Piet,49,98,151,204,5.0,18.0,,E,WORLD CUP,FINAL B,,18.0,5.0,2013.0
+107,18.05.2013,RACICE,09:54,SEN,M,FIN,1.0,HAKALA Jeremy,NYKÄNEN Miika,51,102,154,207,6.0,18.0,,E,WORLD CUP,FINAL B,,18.0,5.0,2013.0
+108,18.05.2013,RACICE,09:54,SEN,M,KAZ,6.0,DERGUNOV ALEXEY,ALEXEYEV YEVGENIY,54,105,158,207,7.0,18.0,,E,WORLD CUP,FINAL B,,18.0,5.0,2013.0
+109,18.05.2013,RACICE,09:54,SEN,M,GBR,9.0,BOWLEY Mathew,TERRY Dean,52,103,156,208,8.0,18.0,,E,WORLD CUP,FINAL B,,18.0,5.0,2013.0
+113,18.05.2013,RACICE,11:09,SEN,M,GER,,RENDSCHMIDT Max,GROSS Marcus,45,88,141,190,1.0,18.0,,E,WORLD CUP,FINAL A,,18.0,5.0,2013.0
+114,18.05.2013,RACICE,11:09,SEN,M,SRB,,PAJIC Dejan,STANOJEVIC Dusko,46,97,142,191,2.0,18.0,,E,WORLD CUP,FINAL A,,18.0,5.0,2013.0
+115,18.05.2013,RACICE,11:09,SEN,M,RUS,,MEDVEDEV Ilya,RYAKHOV Anton,50,96,144,192,3.0,18.0,,E,WORLD CUP,FINAL A,,18.0,5.0,2013.0
+116,18.05.2013,RACICE,11:09,SEN,M,BLR,,ZHYHADLA Dzianis,BIALKO Vitaliy,48,104,152,193,4.0,18.0,,E,WORLD CUP,FINAL A,,18.0,5.0,2013.0
+117,18.05.2013,RACICE,11:09,SEN,M,LTU,,NEKRIOSIUS Ricardas,OLIJNIK Andrej,47,93,143,193,5.0,18.0,,E,WORLD CUP,FINAL A,,18.0,5.0,2013.0
+118,18.05.2013,RACICE,11:09,SEN,M,CZE,,ADAM Jakub,ODVÁRKO Michael,,94,145,193,6.0,18.0,,E,WORLD CUP,FINAL A,,18.0,5.0,2013.0
+119,18.05.2013,RACICE,11:09,SEN,M,CZE,,DAVÍDEK Pavel,KUČERA Patrik,51,98,152,194,7.0,18.0,,E,WORLD CUP,FINAL A,,18.0,5.0,2013.0
+121,18.05.2013,RACICE,11:09,SEN,M,CAN,,VAN KOEVERDEN ADAM,REARDON BRADY,49,104,153,199,9.0,,,,,,,18.0,5.0,2013.0
+123,10.05.2013,SZEGED,10:41,SEN,M,HUN,7.0,Dombi Rudolf,Kökény Roland,49,102,158,209,1.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+124,10.05.2013,SZEGED,10:41,SEN,M,CZE,9.0,Havel Daniel,Štěrba Jan,50,103,157,209,2.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+125,10.05.2013,SZEGED,10:41,SEN,M,ARG,4.0,De Gesus Juan Pablo,Carreras Gonzalo,51,107,163,218,3.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+126,10.05.2013,SZEGED,10:41,SEN,M,SWE,2.0,Hemselius Daniel,Barsk Johannes,52,106,170,218,4.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+127,10.05.2013,SZEGED,10:41,SEN,M,POR,3.0,Fernandes David,Ribeiro João,50,106,165,219,5.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+128,10.05.2013,SZEGED,10:41,SEN,M,DEN,6.0,Larsen Martin,Axelsen William,55,108,165,220,6.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+129,10.05.2013,SZEGED,10:41,SEN,M,FIN,8.0,Hakala Jeremy,Nykänen Miika,52,106,164,226,7.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+130,10.05.2013,SZEGED,10:41,SEN,M,KGZ,1.0,Bondar Maksim,Algin Ilia,51,109,164,227,8.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+131,10.05.2013,SZEGED,10:41,SEN,M,CHN,5.0,Li Kai,Liu Lifan,54,119,188,250,9.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+133,10.05.2013,SZEGED,10:48,SEN,M,POR,4.0,Pimenta Fernando,Silva Emanuel,48,104,162,218,1.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+134,10.05.2013,SZEGED,10:48,SEN,M,GBR,1.0,Rutherford Edward,Daniels Andrew,51,106,165,220,2.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+135,10.05.2013,SZEGED,10:48,SEN,M,SRB,8.0,Pajic Dejan,Stanojevic Dusko,51,108,166,220,3.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+136,10.05.2013,SZEGED,10:48,SEN,M,BLR,5.0,Liapioshka Aliaksandr,Bialko Vitaliy,49,108,167,220,4.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+137,10.05.2013,SZEGED,10:48,SEN,M,HUN,2.0,Bozsik Gábor,Császár Gergely,53,109,167,221,5.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+138,10.05.2013,SZEGED,10:48,SEN,M,NOR,6.0,Salbu Daniel,Solhaug Jo Sondre,53,110,167,222,6.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+139,10.05.2013,SZEGED,10:48,SEN,M,POL,3.0,Brzezinski Martin,Warszawski Oskar,54,109,166,223,7.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+140,10.05.2013,SZEGED,10:48,SEN,M,MEX,7.0,Lopez Quintero Javier,Medinilla Agustín,52,111,169,228,8.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+141,10.05.2013,SZEGED,10:48,SEN,M,CHN,9.0,Xue Yuan,Zhao Yuefeng,57,120,186,247,9.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+143,10.05.2013,SZEGED,10:55,SEN,M,RUS,1.0,Medvedev Ilya,Ryakhov Anton,49,104,159,213,1.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+144,10.05.2013,SZEGED,10:55,SEN,M,POL,5.0,Szandrach Pawel,Kujawski Mariusz,50,105,162,217,2.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+145,10.05.2013,SZEGED,10:55,SEN,M,BLR,2.0,Zhyhadla Dzianis,Litvinchuk Artur,52,109,165,218,3.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+146,10.05.2013,SZEGED,10:55,SEN,M,CUB,7.0,Zulueta Arencibia Maikel,Riveaux Reiner Torres,50,107,166,221,4.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+147,10.05.2013,SZEGED,10:55,SEN,M,AUT,6.0,Wecht Alexander,Trummer Erwin,51,109,168,222,5.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+148,10.05.2013,SZEGED,10:55,SEN,M,CZE,8.0,Davídek Pavel,Kučera Patrik,52,109,167,222,6.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+149,10.05.2013,SZEGED,10:55,SEN,M,KGZ,3.0,Parol Aleksandr,Dorofeev Igor,54,114,179,241,7.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+150,10.05.2013,SZEGED,10:55,SEN,M,HKG,4.0,Fung Wai Him,Ng Ka Chun,58,123,194,260,8.0,,,,WORLD CUP,HEAT,,10.0,5.0,2013.0
+152,10.05.2013,SZEGED,15:24,SEN,M,POL,5.0,Szandrach Pawel,Kujawski Mariusz,51,105,162,216,1.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+153,10.05.2013,SZEGED,15:24,SEN,M,SRB,4.0,Pajic Dejan,Stanojevic Dusko,50,107,164,216,2.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+154,10.05.2013,SZEGED,15:24,SEN,M,CUB,3.0,Zulueta Arencibia Maikel,Riveaux Reiner Torres,49,105,162,217,3.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+155,10.05.2013,SZEGED,15:24,SEN,M,POR,2.0,Fernandes David,Ribeiro João,50,107,165,217,4.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+156,10.05.2013,SZEGED,15:24,SEN,M,ARG,6.0,De Gesus Juan Pablo,Carreras Gonzalo,53,109,164,218,5.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+157,10.05.2013,SZEGED,15:24,SEN,M,NOR,8.0,Salbu Daniel,Solhaug Jo Sondre,52,109,166,222,6.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+158,10.05.2013,SZEGED,15:24,SEN,M,DEN,9.0,Larsen Martin,Axelsen William,53,109,167,223,7.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+159,10.05.2013,SZEGED,15:24,SEN,M,BLR,7.0,Liapioshka Aliaksandr,Bialko Vitaliy,51,108,168,224,8.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+160,10.05.2013,SZEGED,15:24,SEN,M,KGZ,1.0,Parol Aleksandr,Dorofeev Igor,55,114,179,239,9.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+162,10.05.2013,SZEGED,15:31,SEN,M,CZE,5.0,Havel Daniel,Štěrba Jan,50,106,161,215,1.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+163,10.05.2013,SZEGED,15:31,SEN,M,SWE,3.0,Hemselius Daniel,Barsk Johannes,52,108,164,217,2.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+164,10.05.2013,SZEGED,15:31,SEN,M,GRB,4.0,Rutherford Edward,Daniels Andrew,51,108,163,217,3.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+165,10.05.2013,SZEGED,15:31,SEN,M,AUT,2.0,Wecht Alexander,Trummer Erwin,53,109,166,219,4.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+166,10.05.2013,SZEGED,15:31,SEN,M,BLR,6.0,Zhyhadla Dzianis,Litvinchuk Artur,53,109,166,219,5.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+167,10.05.2013,SZEGED,15:31,SEN,M,CZE,8.0,Davídek Pavel,Kučera Patrik,53,108,165,221,6.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+168,10.05.2013,SZEGED,15:31,SEN,M,POL,1.0,Brzezinski Martin,Warszawski Oskar,54,110,168,221,7.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+169,10.05.2013,SZEGED,15:31,SEN,M,HUN,7.0,Bozsik Gábor,Császár Gergely,54,111,167,222,8.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+170,10.05.2013,SZEGED,15:31,SEN,M,FIN,9.0,Hakala Jeremy,Nykänen Miika,55,113,170,229,9.0,,,,WORLD CUP,SEMIFINAL,,10.0,5.0,2013.0
+172,11.05.2013,SZEGED,10:01,SEN,M,NOR,7.0,Salbu Daniel,Solhaug Jo Sondre,50,102,155,206,1.0,,,,WORLD CUP,FINAL B,,11.0,5.0,2013.0
+173,11.05.2013,SZEGED,10:01,SEN,M,CZE,2.0,Davídek Pavel,Kučera Patrik,49,102,157,209,2.0,,,,WORLD CUP,FINAL B,,11.0,5.0,2013.0
+174,11.05.2013,SZEGED,10:01,SEN,M,DEN,1.0,Larsen Martin,Axelsen William,49,103,158,209,3.0,,,,WORLD CUP,FINAL B,,11.0,5.0,2013.0
+175,11.05.2013,SZEGED,10:01,SEN,M,ARG,3.0,De Gesus Juan Pablo,Carreras Gonzalo,50,104,159,211,4.0,,,,WORLD CUP,FINAL B,,11.0,5.0,2013.0
+176,11.05.2013,SZEGED,10:01,SEN,M,BLR,6.0,Zhyhadla Dzianis,Litvinchuk Artur,49,104,162,212,5.0,,,,WORLD CUP,FINAL B,,11.0,5.0,2013.0
+177,11.05.2013,SZEGED,10:01,SEN,M,HUN,9.0,Bozsik Gábor,Császár Gergely,51,106,161,213,6.0,,,,WORLD CUP,FINAL B,,11.0,5.0,2013.0
+178,11.05.2013,SZEGED,10:01,SEN,M,POR,5.0,Fernandes David,Ribeiro João,49,104,161,213,7.0,,,,WORLD CUP,FINAL B,,11.0,5.0,2013.0
+179,11.05.2013,SZEGED,10:01,SEN,M,POL,8.0,Brzezinski Martin,Warszawski Oskar,52,107,163,213,8.0,,,,WORLD CUP,FINAL B,,11.0,5.0,2013.0
+180,11.05.2013,SZEGED,10:01,SEN,M,AUT,4.0,Wecht Alexander,Trummer Erwin,50,105,163,216,9.0,,,,WORLD CUP,FINAL B,,11.0,5.0,2013.0
+182,11.05.2013,SZEGED,11:12,SEN,M,HUN,5.0,Dombi Rudolf,Kökény Roland,47,98,151,200,1.0,,,,WORLD CUP,FINAL A,,11.0,5.0,2013.0
+183,11.05.2013,SZEGED,11:12,SEN,M,RUS,6.0,Medvedev Ilya,Ryakhov Anton,48,101,152,201,2.0,,,,WORLD CUP,FINAL A,,11.0,5.0,2013.0
+184,11.05.2013,SZEGED,11:12,SEN,M,POL,3.0,Szandrach Pawel,Kujawski Mariusz,48,100,153,202,3.0,,,,WORLD CUP,FINAL A,,11.0,5.0,2013.0
+185,11.05.2013,SZEGED,11:12,SEN,M,CZE,7.0,Havel Daniel,Štěrba Jan,48,100,153,203,4.0,,,,WORLD CUP,FINAL A,,11.0,5.0,2013.0
+186,11.05.2013,SZEGED,11:12,SEN,M,CUB,1.0,Zulueta Arencibia Maikel,Riveaux Reiner Torres,48,102,156,207,5.0,,,,WORLD CUP,FINAL A,,11.0,5.0,2013.0
+187,11.05.2013,SZEGED,11:12,SEN,M,SRB,8.0,Pajic Dejan,Stanojevic Dusko,48,100,155,207,6.0,,,,WORLD CUP,FINAL A,,11.0,5.0,2013.0
+188,11.05.2013,SZEGED,11:12,SEN,M,SWE,2.0,Hemselius Daniel,Barsk Johannes,48,103,158,209,7.0,,,,WORLD CUP,FINAL A,,11.0,5.0,2013.0
+189,11.05.2013,SZEGED,11:12,SEN,M,GRB,9.0,Rutherford Edward,Daniels Andrew,50,103,157,209,8.0,,,,WORLD CUP,FINAL A,,11.0,5.0,2013.0
+190,11.05.2013,SZEGED,11:12,SEN,M,POR,4.0,Pimenta Fernando,Silva Emanuel,47,102,173,240,9.0,,,,WORLD CUP,FINAL A,,11.0,5.0,2013.0
+192,29.08.2013,DUISBURG,10:22,SEN,M,BLR,4.0,"MIADZVEDZEU, Pavel","YURENIA, Aleh",45,92,142,191,1.0,,"0,9 m/s",SSW,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+193,29.08.2013,DUISBURG,10:22,SEN,M,SVK,5.0,"VLCEK, Erik","TARR, Juraj",44,93,142,192,2.0,,"0,9 m/s",SSW,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+194,29.08.2013,DUISBURG,10:22,SEN,M,POL,7.0,"SZANDRACH, Pawel","KUJAWSKI, Mariusz",46,94,144,193,3.0,,"0,9 m/s",SSW,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+195,29.08.2013,DUISBURG,10:22,SEN,M,UKR,2.0,"KOPYSTYNSKYI, Roman","BASHTOVYY, Serhiy",46,95,146,194,4.0,,"0,9 m/s",SSW,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+196,29.08.2013,DUISBURG,10:22,SEN,M,CZE,6.0,"ŠPICAR, Jakub","ŠLOUF, Radek",46,94,145,194,5.0,,"0,9 m/s",SSW,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+197,29.08.2013,DUISBURG,10:22,SEN,M,NOR,3.0,"SOLHAUG, Jo Sondre","SALBU, Daniel",47,96,146,195,6.0,,"0,9 m/s",SSW,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+198,29.08.2013,DUISBURG,10:22,SEN,M,FIN,9.0,"HAKALA, Jeremy","NYKÄNEN, Miika",47,97,149,201,7.0,,"0,9 m/s",SSW,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+199,29.08.2013,DUISBURG,10:22,SEN,M,KOR,8.0,"CHO, Jeonghyun","LEE, Jonghyun",47,98,154,208,8.0,,"0,9 m/s",SSW,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+201,29.08.2013,DUISBURG,10:29,SEN,M,POR,7.0,"SILVA, Emanuel","RIBEIRO, João",44,94,144,193,1.0,,"1,1 m/s",SES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+202,29.08.2013,DUISBURG,10:29,SEN,M,AUS,4.0,"STEWART, Murray","CLEAR, Jacob",44,92,142,193,2.0,,"1,1 m/s",SES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+203,29.08.2013,DUISBURG,10:29,SEN,M,ESP,6.0,"COSGAYA NORIEGA, Diego","PEREZ RIAL, Carlos",44,93,144,195,3.0,,"1,1 m/s",SES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+204,29.08.2013,DUISBURG,10:29,SEN,M,SRB,3.0,"PAJIC, Dejan","STANOJEVIC, Dusko",45,94,145,195,4.0,,"1,1 m/s",SES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+205,29.08.2013,DUISBURG,10:29,SEN,M,ROU,8.0,"PORCARASU, Iustin","COSTEA, Daniel",44,93,145,196,5.0,,"1,1 m/s",SES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+206,29.08.2013,DUISBURG,10:29,SEN,M,CUB,2.0,"ZULUETA ARENCIBIA, Maikel","GARCIA RODRIGUEZ, Jorge A",44,94,146,198,6.0,,"1,1 m/s",SES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+207,29.08.2013,DUISBURG,10:29,SEN,M,SWE,5.0,"HEMSELIUS, Daniel","NATHELL, Martin",46,96,148,200,7.0,,"1,1 m/s",SES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+209,29.08.2013,DUISBURG,10:22,SEN,M,HUN,6.0,"DOMBI, Rudolf","KÖKÉNY, Roland",45,94,144,192,1.0,,"2,7 m/s",SE,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+210,29.08.2013,DUISBURG,10:22,SEN,M,RUS,5.0,"MEDVEDEV, Ilya ","RYAKHOV, Anton",45,94,143,193,2.0,,"2,7 m/s",SE,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+211,29.08.2013,DUISBURG,10:22,SEN,M,CAN,4.0,"VAN KOEVERDEN, Adam","REARDON, Brady",45,96,146,194,3.0,,"2,7 m/s",SE,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+212,29.08.2013,DUISBURG,10:22,SEN,M,MEX,8.0,"LABRADA REINOSA, Osvaldo","MONTALVO GARCIA, Carlos",46,95,146,195,4.0,,"2,7 m/s",SE,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+213,29.08.2013,DUISBURG,10:22,SEN,M,EST,2.0,"ALUPERE, Kaarel","TOOTSI, Tarmo",45,95,146,196,5.0,,"2,7 m/s",SE,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+214,29.08.2013,DUISBURG,10:22,SEN,M,DEN,7.0,"KERRN, Mads Herbert","SIMENSEN, Emil Staer",46,95,147,198,6.0,,"2,7 m/s",SE,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+215,29.08.2013,DUISBURG,10:22,SEN,M,VEN,9.0,"RAMOS, Jose Giovanny","AQUINO, Omar",45,95,147,200,7.0,,"2,7 m/s",SE,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+216,29.08.2013,DUISBURG,10:22,SEN,M,LAT,3.0,"ANDERSONS, Janis","ALKSNIS, Girts",48,99,157,214,8.0,,"2,7 m/s",SE,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+218,29.08.2013,DUISBURG,10:43,SEN,M,GER,6.0,"RENDSCHMIDT, Max","GROSS, Marcus",44,93,142,192,1.0,,"1,9 m/s",EES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+219,29.08.2013,DUISBURG,10:43,SEN,M,BEL,5.0,"CAUWENBERGH, Olivier ","PANNECOUCKE, Laurens",45,93,143,193,2.0,,"1,9 m/s",EES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+220,29.08.2013,DUISBURG,10:43,SEN,M,LTU,7.0,"NEKRIOSIUS, Ricardas","OLIJNIK, Andrej",46,95,145,194,3.0,,"1,9 m/s",EES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+221,29.08.2013,DUISBURG,10:43,SEN,M,ARG,3.0,"DE GESÚS, Juan Pablo","CARRERAS, Gonzalo",45,94,145,195,4.0,,"1,9 m/s",EES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+222,29.08.2013,DUISBURG,10:43,SEN,M,ITA,8.0,"BENASSI, Maximilian","RICCHETTI, Alberto",46,95,146,196,5.0,,"1,9 m/s",EES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+223,29.08.2013,DUISBURG,10:43,SEN,M,GBR,4.0,"RUTHERFORD, Edward","DANIELS, Andrew",46,96,147,198,6.0,,"1,9 m/s",EES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+224,29.08.2013,DUISBURG,10:43,SEN,M,KAZ,2.0,"ALEXEYEV, Yevgeniy","DERGUNOV, Alexey",48,101,157,209,7.0,,"1,9 m/s",EES,WORLD CHAMP,HEAT,,29.0,8.0,2013.0
+226,29.08.2013,DUISBURG,17:17,SEN,M,BEL,4.0,"CAUWENBERGH, Olivier ","PANNECOUCKE, Laurens",46,97,149,196,1.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+227,29.08.2013,DUISBURG,17:17,SEN,M,POL,6.0,"SZANDRACH, Pawel","KUJAWSKI, Mariusz",46,97,149,197,2.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+228,29.08.2013,DUISBURG,17:17,SEN,M,POR,5.0,"SILVA, Emanuel","RIBEIRO, João",45,96,149,198,3.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+229,29.08.2013,DUISBURG,17:17,SEN,M,UKR,2.0,"KOPYSTYNSKYI, Roman","BASHTOVYY, Serhiy",46,97,150,200,4.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+230,29.08.2013,DUISBURG,17:17,SEN,M,MEX,7.0,"LABRADA REINOSA, Osvaldo","MONTALVO GARCIA, Carlos",45,97,150,200,5.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+231,29.08.2013,DUISBURG,17:17,SEN,M,CAN,3.0,"VAN KOEVERDEN, Adam","REARDON, Brady",45,97,150,201,6.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+232,29.08.2013,DUISBURG,17:17,SEN,M,ROU,8.0,"PORCARASU, Iustin","COSTEA, Daniel",46,98,151,202,7.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+233,29.08.2013,DUISBURG,17:17,SEN,M,GBR,9.0,"RUTHERFORD, Edward","DANIELS, Andrew",46,98,152,207,8.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+234,29.08.2013,DUISBURG,17:17,SEN,M,VEN,1.0,"RAMOS, Jose Giovanny","AQUINO, Omar",47,102,158,211,9.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+236,29.08.2013,DUISBURG,17:10,SEN,M,BLR,5.0,"MIADZVEDZEU, Pavel","YURENIA, Aleh",44,94,144,193,1.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+237,29.08.2013,DUISBURG,17:10,SEN,M,AUS,4.0,"STEWART, Murray","CLEAR, Jacob",45,93,143,194,2.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+238,29.08.2013,DUISBURG,17:10,SEN,M,RUS,6.0,"MEDVEDEV, Ilya ","RYAKHOV, Anton",45,95,146,196,3.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+239,29.08.2013,DUISBURG,17:10,SEN,M,LTU,3.0,"NEKRIOSIUS, Ricardas","OLIJNIK, Andrej",46,96,148,198,4.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+240,29.08.2013,DUISBURG,17:10,SEN,M,CZE,8.0,"ŠPICAR, Jakub","ŠLOUF, Radek",46,96,148,198,5.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+241,29.08.2013,DUISBURG,17:10,SEN,M,EST,2.0,"ALUPERE, Kaarel","TOOTSI, Tarmo",46,97,149,199,6.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+242,29.08.2013,DUISBURG,17:10,SEN,M,ARG,7.0,"DE GESÚS, Juan Pablo","CARRERAS, Gonzalo",45,96,149,199,7.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+243,29.08.2013,DUISBURG,17:10,SEN,M,SWE,9.0,"HEMSELIUS, Daniel","NATHELL, Martin",46,97,153,206,8.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+244,29.08.2013,DUISBURG,17:10,SEN,M,CUB,1.0,"ZULUETA ARENCIBIA, Maikel","GARCIA RODRIGUEZ, Jorge A",44,96,153,206,9.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+246,29.08.2013,DUISBURG,17:24,SEN,M,GER,5.0,"RENDSCHMIDT, Max","GROSS, Marcus",45,95,147,196,1.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+247,29.08.2013,DUISBURG,17:24,SEN,M,SVK,6.0,"VLCEK, Erik","TARR, Juraj",46,97,148,197,2.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+248,29.08.2013,DUISBURG,17:24,SEN,M,HUN,4.0,Dombi Rudolf,Kökény Roland,46,96,148,199,3.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+249,29.08.2013,DUISBURG,17:24,SEN,M,SRB,7.0,"PAJIC, Dejan","STANOJEVIC, Dusko",46,97,149,199,4.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+250,29.08.2013,DUISBURG,17:24,SEN,M,ESP,3.0,"COSGAYA NORIEGA, Diego","PEREZ RIAL, Carlos",46,97,150,202,5.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+251,29.08.2013,DUISBURG,17:24,SEN,M,DEN,8.0,"KERRN, Mads Herbert","SIMENSEN, Emil Staer",47,99,153,204,6.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+252,29.08.2013,DUISBURG,17:24,SEN,M,FIN,9.0,"HAKALA, Jeremy","NYKÄNEN, Miika",47,100,154,205,7.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+253,29.08.2013,DUISBURG,17:24,SEN,M,NOR,1.0,"SOLHAUG, Jo Sondre","SALBU, Daniel",46,99,154,207,8.0,,"0,7 m/s",W,WORLD CHAMP,SEMIFINAL,,29.0,8.0,2013.0
+255,31.08.2013,DUISBURG,12:16,SEN,M,LTU,5.0,"NEKRIOSIUS, Ricardas","OLIJNIK, Andrej",46,97,147,198,1.0,,"1,3 m/s",SW,WORLD CHAMP,FINAL B,,31.0,8.0,2013.0
+256,31.08.2013,DUISBURG,12:16,SEN,M,UKR,6.0,"KOPYSTYNSKYI, Roman","BASHTOVYY, Serhiy",46,97,149,199,2.0,,"1,3 m/s",SW,WORLD CHAMP,FINAL B,,31.0,8.0,2013.0
+257,31.08.2013,DUISBURG,12:16,SEN,M,SRB,4.0,"PAJIC, Dejan","STANOJEVIC, Dusko",46,96,147,199,3.0,,"1,3 m/s",SW,WORLD CHAMP,FINAL B,,31.0,8.0,2013.0
+258,31.08.2013,DUISBURG,12:16,SEN,M,CAN,1.0,"VAN KOEVERDEN, Adam","REARDON, Brady",47,98,149,199,4.0,,"1,3 m/s",SW,WORLD CHAMP,FINAL B,,31.0,8.0,2013.0
+259,31.08.2013,DUISBURG,12:16,SEN,M,CZE,7.0,"ŠPICAR, Jakub","ŠLOUF, Radek",47,97,149,200,5.0,,"1,3 m/s",SW,WORLD CHAMP,FINAL B,,31.0,8.0,2013.0
+260,31.08.2013,DUISBURG,12:16,SEN,M,EST,2.0,"ALUPERE, Kaarel","TOOTSI, Tarmo",47,98,151,201,6.0,,"1,3 m/s",SW,WORLD CHAMP,FINAL B,,31.0,8.0,2013.0
+261,31.08.2013,DUISBURG,12:16,SEN,M,ESP,8.0,"COSGAYA NORIEGA, Diego","PEREZ RIAL, Carlos",46,97,150,202,7.0,,"1,3 m/s",SW,WORLD CHAMP,FINAL B,,31.0,8.0,2013.0
+262,31.08.2013,DUISBURG,12:16,SEN,M,MEX,3.0,"LABRADA REINOSA, Osvaldo","MONTALVO GARCIA, Carlos",46,99,153,203,8.0,,"1,3 m/s",SW,WORLD CHAMP,FINAL B,,31.0,8.0,2013.0
+263,31.08.2013,DUISBURG,12:16,SEN,M,DEN,9.0,"KERRN, Mads Herbert","SIMENSEN, Emil Staer",48,99,153,205,9.0,,"1,3 m/s",SW,WORLD CHAMP,FINAL B,,31.0,8.0,2013.0
+265,31.08.2013,DUISBURG,15:46,SEN,M,GER,6.0,"RENDSCHMIDT, Max","GROSS, Marcus",47,99,152,202,1.0,,"1,7 m/s",W,WORLD CHAMP,FINAL A,,31.0,8.0,2013.0
+266,31.08.2013,DUISBURG,15:46,SEN,M,BLR,5.0,"MIADZVEDZEU, Pavel","YURENIA, Aleh",48,98,151,203,2.0,,"1,7 m/s",W,WORLD CHAMP,FINAL A,,31.0,8.0,2013.0
+267,31.08.2013,DUISBURG,15:46,SEN,M,HUN,9.0,Dombi Rudolf,Kökény Roland,48,99,153,203,3.0,,"1,7 m/s",W,WORLD CHAMP,FINAL A,,31.0,8.0,2013.0
+268,31.08.2013,DUISBURG,15:46,SEN,M,POL,7.0,"SZANDRACH, Pawel","KUJAWSKI, Mariusz",49,100,153,203,4.0,,"1,7 m/s",W,WORLD CHAMP,FINAL A,,31.0,8.0,2013.0
+269,31.08.2013,DUISBURG,15:46,SEN,M,AUS,3.0,"STEWART, Murray","CLEAR, Jacob",48,99,152,204,5.0,,"1,7 m/s",W,WORLD CHAMP,FINAL A,,31.0,8.0,2013.0
+270,31.08.2013,DUISBURG,15:46,SEN,M,BEL,4.0,"CAUWENBERGH, Olivier ","PANNECOUCKE, Laurens",49,100,154,205,6.0,,"1,7 m/s",W,WORLD CHAMP,FINAL A,,31.0,8.0,2013.0
+271,31.08.2013,DUISBURG,15:46,SEN,M,POR,1.0,"SILVA, Emanuel","RIBEIRO, João",47,100,154,206,7.0,,"1,7 m/s",W,WORLD CHAMP,FINAL A,,31.0,8.0,2013.0
+272,31.08.2013,DUISBURG,15:46,SEN,M,RUS,8.0,"MEDVEDEV, Ilya ","RYAKHOV, Anton",49,101,154,206,8.0,,"1,7 m/s",W,WORLD CHAMP,FINAL A,,31.0,8.0,2013.0
+273,31.08.2013,DUISBURG,15:46,SEN,M,SVK,2.0,"VLCEK, Erik","TARR, Juraj",48,100,154,207,9.0,,"1,7 m/s",W,WORLD CHAMP,FINAL A,,31.0,8.0,2013.0
+275,16.05.2014,RACICE,11:05,SEN,M,GER,8.0,RENDSCHMIDT Max,GROSS Marcus,48,96,148,202,1.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+276,16.05.2014,RACICE,11:05,SEN,M,FRA,3.0,HYBOIS Arnaud,HUBERT Etienne,49,97,152,205,2.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+277,16.05.2014,RACICE,11:05,SEN,M,HUN,4.0,JANZA Richárd,KORONDY Tamás,51,101,155,206,3.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+278,16.05.2014,RACICE,11:05,SEN,M,GBR,6.0,BOYTON Jonathan,RUTHERFORD Edward,52,104,155,206,4.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+279,16.05.2014,RACICE,11:05,SEN,M,CAN,2.0,CLARKE Rob,JESSOP Andrew,48,98,154,208,5.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+280,16.05.2014,RACICE,11:05,SEN,M,TUR,5.0,GYÖKÖS Layos,MARQUES Carlos,52,102,158,209,6.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+281,16.05.2014,RACICE,11:05,SEN,M,BEL,1.0,BROEKX Toon,BROEKX Piet,50,100,157,209,7.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+282,16.05.2014,RACICE,11:05,SEN,M,SIN,7.0,TAY Zi Qiang,"LEE Wei Liang, Bill",53,110,165,234,8.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+284,16.05.2014,RACICE,11:12,SEN,M,SVK,8.0,KRAJÈOVIÈ Marek,JAKUBÍK Gábor,47,96,149,203,1.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+285,16.05.2014,RACICE,11:12,SEN,M,ARG,6.0,DAL BO Daniel,CARRERAS Gonzalo,48,99,152,206,2.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+286,16.05.2014,RACICE,11:12,SEN,M,IRI,4.0,AGHAMIRZAEIJENAGHRAD Ali,FAZLOULA Saeid,53,103,157,208,3.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+287,16.05.2014,RACICE,11:12,SEN,M,FIN,5.0,HAKALA Jeremy,NYKÄNEN Miika,52,101,155,208,4.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+288,16.05.2014,RACICE,11:12,SEN,M,KAZ,2.0,ALEXEYEV Yevgeniy,DERGUNOV Alexey,51,104,160,215,5.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+291,16.05.2014,RACICE,11:19,SEN,M,SVK,6.0,VLÈEK Erik,TARR Juraj,50,99,153,201,1.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+292,16.05.2014,RACICE,11:19,SEN,M,RUS,1.0,LUCHKIN Kirill,NIKOLAEV Pavel,49,98,153,202,2.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+293,16.05.2014,RACICE,11:19,SEN,M,CZE,2.0,ADAM Jakub,TREFIL Lukáš,52,101,154,207,3.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+294,16.05.2014,RACICE,11:19,SEN,M,ARG,5.0,CÁCERES Juan Ignacio,DE TORRES Pablo,49,101,155,207,4.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+295,16.05.2014,RACICE,11:19,SEN,M,CAN,4.0,REARDON Brady,DUCHESNEAU Phillipe,51,102,156,209,5.0,13.0,,,WORLD CUP,HEAT,,16.0,5.0,2014.0
+297,16.05.2014,RACICE,15:34,SEN,M,FRA,5.0,HYBOIS Arnaud,HUBERT Etienne,51,101,156,208,1.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+298,16.05.2014,RACICE,16:34,SEN,M,CZE,6.0,ADAM Jakub,TREFIL Lukáš,52,103,157,209,2.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+299,16.05.2014,RACICE,17:34,SEN,M,KAZ,2.0,ALEXEYEV Yevgeniy,DERGUNOV Alexey,49,101,157,210,3.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+300,16.05.2014,RACICE,18:34,SEN,M,GBR,7.0,BOYTON Jonathan,RUTHERFORD Edward,54,106,160,211,4.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+301,16.05.2014,RACICE,19:34,SEN,M,IRI,4.0,AGHAMIRZAEIJENAGHRAD Ali,FAZLOULA Saeid,57,104,161,213,5.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+302,16.05.2014,RACICE,20:34,SEN,M,TUR,1.0,GYÖKÖS Layos,MARQUES Carlos,56,105,162,215,6.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+303,16.05.2014,RACICE,21:34,SEN,M,ARG,3.0,CÁCERES Juan Ignacio,DE TORRES Pablo,50,102,159,215,7.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+305,16.05.2014,RACICE,15:41,SEN,M,RUS,4.0,LUCHKIN Kirill,NIKOLAEV Pavel,50,99,152,205,1.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+306,16.05.2014,RACICE,15:41,SEN,M,ARG,5.0,DAL BO Daniel,CARRERAS Gonzalo,54,103,156,206,2.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+307,16.05.2014,RACICE,15:41,SEN,M,CAN,7.0,CLARKE Rob,JESSOP Andrew,53,101,155,206,3.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+308,16.05.2014,RACICE,15:41,SEN,M,HUN,6.0,JANZA Richárd,KORONDY Tamás,55,104,158,207,4.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+309,16.05.2014,RACICE,15:41,SEN,M,CAN,2.0,REARDON Brady,DUCHESNEAU Phillipe,51,102,158,207,5.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+310,16.05.2014,RACICE,15:41,SEN,M,FIN,3.0,HAKALA Jeremy,NYKÄNEN Miika,56,105,159,210,6.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+311,16.05.2014,RACICE,15:41,SEN,M,BEL,1.0,BROEKX Toon,BROEKX Piet,50,100,157,213,7.0,13.0,13,,WORLDCUP,SEMIFINAL,,16.0,5.0,2014.0
+313,17.05.2014,RACICE,09:54,SEN,M,HUN,4.0,JANZA Richárd,KORONDY Tamás,50,101,156,205,1.0,13.0,13,,WORLDCUP,FINAL B,,17.0,5.0,2014.0
+314,17.05.2014,RACICE,09:54,SEN,M,GBR,5.0,BOYTON Jonathan,RUTHERFORD Edward,52,100,153,205,2.0,13.0,13,,WORLDCUP,FINAL B,,17.0,5.0,2014.0
+315,17.05.2014,RACICE,09:54,SEN,M,CAN,6.0,REARDON Brady,DUCHESNEAU Phillipe,53,103,157,205,3.0,13.0,13,,WORLDCUP,FINAL B,,17.0,5.0,2014.0
+316,17.05.2014,RACICE,09:54,SEN,M,BEL,8.0,BROEKX Toon,BROEKX Piet,49,99,152,205,4.0,13.0,13,,WORLDCUP,FINAL B,,17.0,5.0,2014.0
+317,17.05.2014,RACICE,09:54,SEN,M,ARG,1.0,CÁCERES Juan Ignacio,DE TORRES Pablo,49,100,154,206,5.0,13.0,13,,WORLDCUP,FINAL B,,17.0,5.0,2014.0
+318,17.05.2014,RACICE,09:54,SEN,M,TUR,7.0,GYÖKÖS Layos,MARQUES Carlos,54,102,156,207,6.0,13.0,13,,WORLDCUP,FINAL B,,17.0,5.0,2014.0
+319,17.05.2014,RACICE,09:54,SEN,M,IRI,3.0,AGHAMIRZAEIJENAGHRAD Ali,FAZLOULA Saeid,57,104,158,210,7.0,13.0,13,,WORLDCUP,FINAL B,,17.0,5.0,2014.0
+320,17.05.2014,RACICE,09:54,SEN,M,FIN,2.0,HAKALA Jeremy,NYKÄNEN Miika,56,105,159,212,8.0,13.0,13,,WORLDCUP,FINAL B,,17.0,5.0,2014.0
+322,17.05.2014,RACICE,11:03,SEN,M,GER,5.0,RENDSCHMIDT Max,GROSS Marcus,48,98,150,201,1.0,13.0,13,,WORLDCUP,FINAL A,,17.0,5.0,2014.0
+323,17.05.2014,RACICE,11:03,SEN,M,SVK,6.0,VLÈEK Erik,TARR Juraj,52,99,153,203,2.0,13.0,13,,WORLDCUP,FINAL A,,17.0,5.0,2014.0
+324,17.05.2014,RACICE,11:03,SEN,M,FRA,3.0,HYBOIS Arnaud,HUBERT Etienne,50,103,156,203,3.0,13.0,13,,WORLDCUP,FINAL A,,17.0,5.0,2014.0
+325,17.05.2014,RACICE,11:03,SEN,M,RUS,7.0,LUCHKIN Kirill,NIKOLAEV Pavel,52,100,153,204,4.0,13.0,13,,WORLDCUP,FINAL A,,17.0,5.0,2014.0
+326,17.05.2014,RACICE,11:03,SEN,M,CZE,8.0,ADAM Jakub,TREFIL Lukáš,53,102,154,206,5.0,13.0,13,,WORLDCUP,FINAL A,,17.0,5.0,2014.0
+327,17.05.2014,RACICE,11:03,SEN,M,CAN,9.0,CLARKE Rob,JESSOP Andrew,50,102,157,207,6.0,13.0,13,,WORLDCUP,FINAL A,,17.0,5.0,2014.0
+328,17.05.2014,RACICE,11:03,SEN,M,ARG,2.0,DAL BO Daniel,CARRERAS Gonzalo,56,104,159,209,7.0,13.0,13,,WORLDCUP,FINAL A,,17.0,5.0,2014.0
+329,17.05.2014,RACICE,11:03,SEN,M,SVK,4.0,KRAJÈOVIÈ Marek,JAKUBÍK Gábor,55,101,156,209,8.0,13.0,13,,WORLDCUP,FINAL A,,17.0,5.0,2014.0
+330,17.05.2014,RACICE,11:03,SEN,M,KAZ,1.0,DERGUNOV Alexey,ALEXEYEV Yevgeniy,57,105,160,213,9.0,13.0,13,,WORLDCUP,FINAL A,,17.0,5.0,2014.0
+332,23.05.2014,SZEGED,10:46,SEN,M,FRA,4.0,Hybois Arnaud ,Hubert Etienne ,49,103,,210,1.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+333,23.05.2014,SZEGED,10:46,SEN,M,ITA,7.0,Dressino Giulio,Torneo Matteo,49,,,211,2.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+334,23.05.2014,SZEGED,10:46,SEN,M,GER,3.0,Rendschmidt Max,Gross Marcus,50,103,160,211,3.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+335,23.05.2014,SZEGED,10:46,SEN,M,DEN,2.0,Pretzmann Casper,Stær Emil,51,105,161,212,4.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+336,23.05.2014,SZEGED,10:46,SEN,M,TUR,6.0,Gyökös Layos,Marques Carlos,50,106,163,213,5.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+337,23.05.2014,SZEGED,10:46,SEN,M,SRB,5.0,Dzigurski Marko,Palfi Krisztian,49,104,163,213,6.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+338,23.05.2014,SZEGED,10:46,SEN,M,JPN,1.0,Mizumoto Keiji,Suzuki Yasuhiro,50,104,163,215,7.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+340,23.05.2014,SZEGED,10:53,SEN,M,LTU,6.0,Nekriosius Ricardas,Olijnik Andrej,49,101,156,209,1.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+342,23.05.2014,SZEGED,10:53,SEN,M,RUS,2.0,Sergeev Aleksandr,Vostrikov Alexey,48,101,160,213,3.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+343,23.05.2014,SZEGED,10:53,SEN,M,BEL,4.0,Broekx Toon,Broekx Piet,48,101,159,213,4.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+344,23.05.2014,SZEGED,10:53,SEN,M,GBR,7.0,Boyton Jonathon,Rutherford Edward,49,103,160,214,5.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+345,23.05.2014,SZEGED,10:53,SEN,M,SVK,8.0,Mysak Denis,Linka Tibor,51,106,164,220,6.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+347,23.05.2014,SZEGED,11:00,SEN,M,HUN,5.0,Dombi Rudolf,Kökény Roland,49,102,157,210,1.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+348,23.05.2014,SZEGED,11:00,SEN,M,HUN,1.0,Mandrazhiev Vladislav,Spesivtsev Maxim,49,102,156,212,2.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+349,23.05.2014,SZEGED,11:00,SEN,M,HUN,7.0,Li Zhenyu,Cai Chuyu,51,105,162,212,3.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+350,23.05.2014,SZEGED,11:00,SEN,M,HUN,4.0,Cho Jeonghyun,Kim Jiwon,51,105,162,213,4.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+351,23.05.2014,SZEGED,11:00,SEN,M,HUN,3.0,Miller Chris,Collins Stanton,53,109,166,225,5.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+352,23.05.2014,SZEGED,11:00,SEN,M,HUN,6.0,Tay Zi Qiang,Lee Wei Liang Bill,54,112,174,234,6.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+354,23.05.2014,SZEGED,11:07,SEN,M,SVK,2.0,Vlèek Erik,Tarr Juraj,48,102,157,206,1.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+355,23.05.2014,SZEGED,11:07,SEN,M,HUN,4.0,Petrovics Máté,Gere Bálint,49,102,155,208,2.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+356,23.05.2014,SZEGED,11:07,SEN,M,SRB,3.0,Zoric Milenko,Aleksic Aleksandar,47,100,156,209,3.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+357,23.05.2014,SZEGED,11:07,SEN,M,EST,5.0,Alupere Kaarel,Tootsi Tarmo,48,101,157,210,4.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+358,23.05.2014,SZEGED,11:07,SEN,M,CHN,1.0,Liu Chao,Wu Xiaojun,50,104,159,210,5.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+359,23.05.2014,SZEGED,11:07,SEN,M,ROM,7.0,Turceag Catalin,Burciu Daniel,49,102,158,211,6.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+360,23.05.2014,SZEGED,11:07,SEN,M,SLO,8.0,Apollonio Alan,Blazevic Simon,51,103,159,212,7.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+361,23.05.2014,SZEGED,11:07,SEN,M,RSA,6.0,Glass Alasdair Stuart,Collopy Antony,50,103,159,213,8.0,,,,WORLDCUP,HEAT,,23.0,5.0,2014.0
+364,23.05.2014,SZEGED,15:27,SEN,M,SVK,5.0,Vlèek Erik,Tarr Juraj,48,102,156,204,2.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+365,23.05.2014,SZEGED,15:27,SEN,M,ITA,4.0,Dressino Giulio,Torneo Matteo,49,102,155,205,3.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+366,23.05.2014,SZEGED,15:27,SEN,M,CHN,3.0,Li Zhenyu,Cai Chuyu,50,104,158,206,4.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+367,23.05.2014,SZEGED,15:27,SEN,M,CHN,2.0,Liu Chao,Wu Xiaojun,51,106,159,210,5.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+368,23.05.2014,SZEGED,15:27,SEN,M,SVK,1.0,Mysak Denis,Linka Tibor,49,105,160,212,6.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+369,23.05.2014,SZEGED,15:27,SEN,M,SLO,9.0,Apollonio Alan,Blazevic Simon,51,107,163,214,7.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+370,23.05.2014,SZEGED,15:27,SEN,M,KOR,7.0,Cho Jeonghyun,Kim Jiwon,50,105,162,218,8.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+371,23.05.2014,SZEGED,15:27,SEN,M,SRB,8.0,Dzigurski Marko,Palfi Krisztian,65,109,167,218,9.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+373,23.05.2014,SZEGED,15:34,SEN,M,HUN,5.0,Dombi Rudolf,Kökény Roland,48,99,154,202,1.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+374,23.05.2014,SZEGED,15:34,SEN,M,GER,6.0,Rendschmidt Max,Gross Marcus,47,100,155,202,2.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+375,23.05.2014,SZEGED,15:34,SEN,M,EST,2.0,Alupere Kaarel,Tootsi Tarmo,47,99,153,202,3.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+376,23.05.2014,SZEGED,15:34,SEN,M,RUS,3.0,Sergeev Aleksandr,Vostrikov Alexey,48,101,155,202,4.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+377,23.05.2014,SZEGED,15:34,SEN,M,HUN,4.0,Petrovics Máté,Gere Bálint,49,102,156,206,5.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+378,23.05.2014,SZEGED,15:34,SEN,M,RSA,1.0,Glass Alasdair Stuart,Collopy Antony,50,102,158,208,6.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+379,23.05.2014,SZEGED,15:34,SEN,M,BEL,7.0,Broekx Toon,Broekx Piet,49,102,159,210,7.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+380,23.05.2014,SZEGED,15:34,SEN,M,TUR,8.0,Gyökös Layos,Marques Carlos,51,105,160,210,8.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+381,23.05.2014,SZEGED,15:34,SEN,M,SIN,9.0,Tay Zi Qiang,Lee Wei Liang Bill,56,118,183,242,9.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+383,23.05.2014,SZEGED,15:41,SEN,M,GRB,2.0,Boyton Jonathon,Rutherford Edward,47,99,152,203,1.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+384,23.05.2014,SZEGED,15:41,SEN,M,FRA,5.0,Hybois Arnaud,Hubert Etienne,48,101,155,203,2.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+385,23.05.2014,SZEGED,15:41,SEN,M,RUS,4.0,Mandrazhiev Vladislav,Spesivtsev Maxim,48,100,154,204,3.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+386,23.05.2014,SZEGED,15:41,SEN,M,SRB,3.0,Zoric Milenko,Aleksic Aleksandar,47,99,155,206,4.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+387,23.05.2014,SZEGED,15:41,SEN,M,IRA,6.0,Aghamirzaeijenaghrad Ali,Fazloula Saeid,51,105,160,209,5.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+388,23.05.2014,SZEGED,15:41,SEN,M,DEN,7.0,Pretzmann Casper,Stær Emil,50,103,160,214,6.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+389,23.05.2014,SZEGED,15:41,SEN,M,JPN,1.0,Mizumoto Keiji,Suzuki Yasuhiro,49,104,163,215,7.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+390,23.05.2014,SZEGED,15:41,SEN,M,ROM,9.0,Turceag Catalin,Burciu Daniel,47,100,159,221,8.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+391,23.05.2014,SZEGED,15:41,SEN,M,USA,8.0,Miller Chris,Collins Stanton,53,109,173,230,9.0,,,,WORLDCUP,SEMIFINAL,,23.0,5.0,2014.0
+393,24.05.2014,SZEGED,09:54,SEN,M,HUN,3.0,Petrovics Máté,Gere Bálint,48,101,155,208,1.0,,,,WORLDCUP,FINAL B,,24.0,5.0,2014.0
+394,24.05.2014,SZEGED,09:54,SEN,M,SRB,4.0,Zoric Milenko,Aleksic Aleksandar,48,103,157,209,2.0,,,,WORLDCUP,FINAL B,,24.0,5.0,2014.0
+395,24.05.2014,SZEGED,09:54,SEN,M,SVK,2.0,Mysak Denis,Linka Tibor,51,106,160,212,3.0,,,,WORLDCUP,FINAL B,,24.0,5.0,2014.0
+396,24.05.2014,SZEGED,09:54,SEN,M,IRA,8.0,Aghamirzaeijenaghrad Ali,Fazloula Saeid,51,105,161,213,4.0,,,,WORLDCUP,FINAL B,,24.0,5.0,2014.0
+397,24.05.2014,SZEGED,09:54,SEN,M,CHN,5.0,Li Zhenyu,Cai Chuyu,51,104,160,213,5.0,,,,WORLDCUP,FINAL B,,24.0,5.0,2014.0
+398,24.05.2014,SZEGED,09:54,SEN,M,RSA,1.0,Glass Alasdair Stuart,Collopy Antony,49,103,159,214,6.0,,,,WORLDCUP,FINAL B,,24.0,5.0,2014.0
+399,24.05.2014,SZEGED,09:54,SEN,M,RUS,6.0,Sergeev Aleksandr,Vostrikov Alexey,49,104,161,215,7.0,,,,WORLDCUP,FINAL B,,24.0,5.0,2014.0
+400,24.05.2014,SZEGED,09:54,SEN,M,CHN,7.0,Liu Chao,Wu Xiaojun,52,106,163,215,8.0,,,,WORLDCUP,FINAL B,,24.0,5.0,2014.0
+401,24.05.2014,SZEGED,09:54,SEN,M,DEN,9.0,Pretzmann Casper,Stær Emil,50,106,164,216,9.0,,,,WORLDCUP,FINAL B,,24.0,5.0,2014.0
+403,24.05.2014,SZEGED,11:16,SEN,M,FRA,2.0,Hybois Arnaud,Hubert Etienne,47,99,154,204,1.0,,,,WORLDCUP,FINAL A,,24.0,5.0,2014.0
+404,24.05.2014,SZEGED,11:16,SEN,M,GER,7.0,Rendschmidt Max,Gross Marcus,47,100,155,204,2.0,,,,WORLDCUP,FINAL A,,24.0,5.0,2014.0
+405,24.05.2014,SZEGED,11:16,SEN,M,LTU,5.0,Nekriosius Ricardas,Olijnik Andrej,47,99,153,204,3.0,,,,WORLDCUP,FINAL A,,24.0,5.0,2014.0
+406,24.05.2014,SZEGED,11:16,SEN,M,HUN,4.0,Dombi Rudolf,Kökény Roland,48,100,155,204,4.0,,,,WORLDCUP,FINAL A,,24.0,5.0,2014.0
+407,24.05.2014,SZEGED,11:16,SEN,M,SVK,3.0,Vlèek Erik,Tarr Juraj,47,101,156,206,5.0,,,,WORLDCUP,FINAL A,,24.0,5.0,2014.0
+408,24.05.2014,SZEGED,11:16,SEN,M,EST,1.0,Alupere Kaarel,Tootsi Tarmo,47,101,156,209,6.0,,,,WORLDCUP,FINAL A,,24.0,5.0,2014.0
+409,24.05.2014,SZEGED,11:16,SEN,M,ITA,8.0,Dressino Giulio,Torneo Matteo,48,101,157,209,7.0,,,,WORLDCUP,FINAL A,,24.0,5.0,2014.0
+410,24.05.2014,SZEGED,11:16,SEN,M,RUS,9.0,Mandrazhiev Vladislav,Spesivtsev Maxim,48,101,158,211,8.0,,,,WORLDCUP,FINAL A,,24.0,5.0,2014.0
+411,24.05.2014,SZEGED,11:16,SEN,M,GRB,6.0,Boyton Jonathon,Rutherford Edward,48,101,159,211,9.0,,,,WORLDCUP,FINAL A,,24.0,5.0,2014.0
+413,2.05.2014,MILAN,10:50,SEN,M,AUS,6.0,STEWART Murray,CLEAR Jacob,48,97,148,202,1.0,13.0,,,WORLDCUP,HEAT,,2.0,5.0,2014.0
+414,2.05.2014,MILAN,10:50,SEN,M,SLO,5.0,APOLLONIO Alan,BLAZEVIC Simon,49,101,153,206,2.0,13.0,,,WORLDCUP,HEAT,,2.0,5.0,2014.0
+415,2.05.2014,MILAN,10:50,SEN,M,HUN,7.0,HUFNAGEL Tibor,CEINER Benjamin,49,100,153,206,3.0,13.0,,,WORLDCUP,HEAT,,2.0,5.0,2014.0
+416,2.05.2014,MILAN,10:50,SEN,M,SUI,3.0,DOMEISEN Stefan,SUMMERMATTER Andri,51,104,159,215,4.0,13.0,,,WORLDCUP,HEAT,,2.0,5.0,2014.0
+417,2.05.2014,MILAN,10:50,SEN,M,FIN,8.0,HAKALA Jeremy,NYKANEN Miika,49,102,156,215,5.0,13.0,,,WORLDCUP,HEAT,,2.0,5.0,2014.0
+418,2.05.2014,MILAN,10:50,SEN,M,KGZ,4.0,BONDAR Maksim,DOROFEEV Igor,50,107,167,229,6.0,13.0,,,WORLDCUP,HEAT,,2.0,5.0,2014.0
+426,2.05.2014,MILAN,15:23,SEN,M,FIN,3.0,HAKALA Jeremy,NYKANEN Miika,52,107,162,217,1.0,17.0,5 m/s,,WORLDCUP,SEMI FINAL,,2.0,5.0,2014.0
+427,2.05.2014,MILAN,15:23,SEN,M,NED,6.0,HOOGERS Jasper,KALF Walter,52,105,162,217,2.0,17.0,5 m/s,,WORLDCUP,SEMI FINAL,,2.0,5.0,2014.0
+428,2.05.2014,MILAN,15:23,SEN,M,AUT,5.0,WECHT Alexander,TRUMMER Erwin,52,108,164,217,3.0,17.0,5 m/s,,WORLDCUP,SEMI FINAL,,2.0,5.0,2014.0
+429,2.05.2014,MILAN,15:23,SEN,M,SUI,4.0,DOMEISEN Stefan,SUMMERMATTER Andri,53,107,163,219,4.0,17.0,5 m/s,,WORLDCUP,SEMI FINAL,,2.0,5.0,2014.0
+430,2.05.2014,MILAN,15:23,SEN,M,KGZ,7.0,BONDAR Maksim,DOROFEEV Igor,56,116,179,242,5.0,17.0,5 m/s,,WORLDCUP,SEMI FINAL,,2.0,5.0,2014.0
+432,3.05.2014,MILAN,09:40,SEN,M,POL,4.0,SZANDRACH Pawel,KUJAWSKI Mariusz,49,95,144,194,1.0,15.0,0 m/s,,WORLDCUP,FINAL A,,3.0,5.0,2014.0
+433,3.05.2014,MILAN,09:40,SEN,M,AUS,5.0,STEWART Murray,CLEAR Jacob,47,95,145,195,2.0,15.0,0 m/s,,WORLDCUP,FINAL A,,3.0,5.0,2014.0
+434,3.05.2014,MILAN,09:40,SEN,M,ITA,6.0,DRESSINO Giulio,TORNEO Matteo,49,96,147,197,3.0,15.0,0 m/s,,WORLDCUP,FINAL A,,3.0,5.0,2014.0
+435,3.05.2014,MILAN,09:40,SEN,M,HUN,7.0,HUFNAGEL Tibor,CEINER Benjamin,48,98,149,198,4.0,15.0,0 m/s,,WORLDCUP,FINAL A,,3.0,5.0,2014.0
+436,3.05.2014,MILAN,09:40,SEN,M,HUN,2.0,GACSAL Akos,ILYES Robert,47,98,149,200,5.0,15.0,0 m/s,,WORLDCUP,FINAL A,,3.0,5.0,2014.0
+437,3.05.2014,MILAN,09:40,SEN,M,FIN,8.0,HAKALA Jeremy,NYKANEN Miika,50,102,154,205,6.0,15.0,0 m/s,,WORLDCUP,FINAL A,,3.0,5.0,2014.0
+438,3.05.2014,MILAN,09:40,SEN,M,SLO,3.0,APOLLONIO Alan,BLAZEVIC Simon,49,101,154,205,7.0,15.0,0 m/s,,WORLDCUP,FINAL A,,3.0,5.0,2014.0
+439,3.05.2014,MILAN,09:40,SEN,M,AUT,9.0,WECHT Alexander,TRUMMER Erwin,51,104,157,209,8.0,15.0,0 m/s,,WORLDCUP,FINAL A,,3.0,5.0,2014.0
+440,3.05.2014,MILAN,09:40,SEN,M,NED,1.0,HOOGERS Jasper,KALF Walter,50,103,157,212,9.0,15.0,0 m/s,,WORLDCUP,FINAL A,,3.0,5.0,2014.0
+442,7.08.2014,MOSCOW,10:57,SEN,M,GER,5.0,"RENDSCHMIDT, Max","GROSS, Marcus",45,93,144,192,,,"2,4 m/s",SES,WORLDCHAMPIONSHIPS  ,HEAT,,7.0,8.0,2014.0
+443,7.08.2014,MOSCOW,10:57,SEN,M,SRB,6.0,"TOMICEVIC, Marko","TORUBAROV, Vladimir",45,93,144,192,,,"2,4 m/s",SES,WORLDCHAMPIONSHIPS  ,HEAT,,7.0,8.0,2014.0
+444,7.08.2014,MOSCOW,10:57,SEN,M,FRA,3.0,"HYBOIS, Arnaud","HUBERT, Etienne",45,94,145,194,,,"2,4 m/s",SES,WORLDCHAMPIONSHIPS  ,HEAT,,7.0,8.0,2014.0
+445,7.08.2014,MOSCOW,10:57,SEN,M,UKR,4.0,"KOPYSTYNSKYI, Roman","BASHTOVYY, Serhiy",46,96,145,194,,,"2,4 m/s",SES,WORLDCHAMPIONSHIPS  ,HEAT,,7.0,8.0,2014.0
+446,7.08.2014,MOSCOW,10:57,SEN,M,NOR,2.0,"ULLVANG, Lars Magne","VOLD, Eivind",46,96,146,194,,,"2,4 m/s",SES,WORLDCHAMPIONSHIPS  ,HEAT,,7.0,8.0,2014.0
+447,7.08.2014,MOSCOW,10:57,SEN,M,GBR,7.0,"BOYTON, Jonathan","RUTHERFORD, Edward",46,95,146,197,,,"2,4 m/s",SES,WORLDCHAMPIONSHIPS  ,HEAT,,7.0,8.0,2014.0
+448,7.08.2014,MOSCOW,10:57,SEN,M,RSA,8.0,"GLASS, Alasdair","COLLOPY, Antony",47,97,147,199,,,"2,4 m/s",SES,WORLDCHAMPIONSHIPS  ,HEAT,,7.0,8.0,2014.0
+449,7.08.2014,MOSCOW,10:57,SEN,M,BRA,1.0,"Junior Souta, Vagner","Schu Fagundes, Eduardo",47,98,153,210,,,"2,4 m/s",SES,WORLDCHAMPIONSHIPS  ,HEAT,,7.0,8.0,2014.0
+451,7.08.2014,MOSCOW,11:04,SEN,M,HUN,5.0,"HUFNÁGEL, Tibor","KÖKÉNY, Roland",47,96,146,195,,,"3,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+452,7.08.2014,MOSCOW,11:04,SEN,M,CAN,6.0,"REARDON, Brady Daniel Heim","JESSOP, Andrew Dennis",47,96,146,195,,,"3,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+453,7.08.2014,MOSCOW,11:04,SEN,M,LTU,4.0,"NEKRIOSIUS, Ricardas","OLIJNIK, Andrej",46,96,148,196,,,"3,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+454,7.08.2014,MOSCOW,11:04,SEN,M,CHN,1.0,"LI, Zhenyu","SUN, Xinchang",47,98,149,197,,,"3,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+455,7.08.2014,MOSCOW,11:04,SEN,M,FIN,3.0,"HAKALA, Jeremy","NYKÄNEN, Miika",49,99,150,199,,,"3,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+456,7.08.2014,MOSCOW,11:04,SEN,M,SIN,8.0,"LEE, Wei Liang, Bill","OOI, Brandon, Wei Cheng",49,100,153,207,,,"3,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+457,7.08.2014,MOSCOW,11:04,SEN,M,INA,7.0,"GANDIE, Gandie","RIYONDRA, Maizir",49,102,155,214,,,"3,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+458,7.08.2014,MOSCOW,11:04,SEN,M,MAC,2.0,"CHE, Man Tou","CHEONG, Ieng Hei",58,120,185,248,,,"3,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+460,7.08.2014,MOSCOW,11:11,SEN,M,POL,5.0,"SZANDRACH, Pawel","KUJAWSKI, Mariusz",45,92,142,190,,,"2,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+461,7.08.2014,MOSCOW,11:11,SEN,M,SVK,4.0,"VLCEK, Erik","TARR, Juraj",45,93,143,191,,,"2,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+462,7.08.2014,MOSCOW,11:11,SEN,M,CZE,6.0,"ADAM, Jakub","DAVIDEK, Pavel",48,96,145,193,,,"2,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+463,7.08.2014,MOSCOW,11:11,SEN,M,ARG,3.0,"DAL BO, Daniel","CARRERAS, Gonzalo",45,95,145,193,,,"2,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+464,7.08.2014,MOSCOW,11:11,SEN,M,UZB,1.0,"TROPIN, Aleksandr","GORN, Vyacheslav",48,98,148,198,,,"2,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+465,7.08.2014,MOSCOW,11:11,SEN,M,TJK,8.0,"SALIMOV, Ruslan","GAFUROV, Abdusattor",47,100,154,205,,,"2,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+466,7.08.2014,MOSCOW,11:11,SEN,M,KGZ,2.0,"SAIFULIN, Ruslan","PAROL, Aleksandr",48,101,153,210,,,"2,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+467,7.08.2014,MOSCOW,11:11,SEN,M,IND,7.0,"KATHET, Narender Singh","CHIGAHALLY KENGASHETTY, Mahesha",51,108,167,225,,,"2,9 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+469,7.08.2014,MOSCOW,11:18,SEN,M,AUS,5.0,"WALLACE, Kenny","TAME, Lachlan",45,93,142,188,,,"3,3 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+470,7.08.2014,MOSCOW,11:18,SEN,M,BLR,3.0,"MIADZVEDZEU, Pavel","YURENIA, Aleh",45,92,141,190,,,"3,3 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+471,7.08.2014,MOSCOW,11:18,SEN,M,RUS,4.0,"MEDVEDEV, Ilya","RYAKHOV, Anton",46,95,144,192,,,"3,3 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+472,7.08.2014,MOSCOW,11:18,SEN,M,IRL,7.0,"FITZSIMON, Michael","WATKINS, Barry",48,96,145,193,,,"3,3 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+473,7.08.2014,MOSCOW,11:18,SEN,M,KAZ,2.0,"SULTANBEKOV, Daulet","YERGUCHYOV, Andrey",47,96,147,195,,,"3,3 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+474,7.08.2014,MOSCOW,11:18,SEN,M,EST,6.0,"ALUPERE, Kaarel","TOOTSI, Tarmo",48,98,147,197,,,"3,3 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+475,7.08.2014,MOSCOW,11:18,SEN,M,NED,1.0,"HOOGERS, Jasper","FLIER, Albart",49,99,149,198,,,"3,3 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+476,7.08.2014,MOSCOW,11:18,SEN,M,TPE,8.0,"TUAN, Yen-yu","LIN, Yung-chieh",53,103,150,199,,,"3,3 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+478,7.08.2014,MOSCOW,11:25,SEN,M,POR,4.0,"SILVA, Emanuel","RIBEIRO, João",45,93,143,193,,,"2,6 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+479,7.08.2014,MOSCOW,11:25,SEN,M,BEL,5.0,"CAUWENBERGH, Olivier","PANNECOUCKE, Laurens",46,93,142,195,,,"2,6 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+480,7.08.2014,MOSCOW,11:25,SEN,M,ITA,7.0,"DRESSINO, Giulio","TORNEO, Matteo",45,94,145,198,,,"2,6 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+481,7.08.2014,MOSCOW,11:25,SEN,M,ESP,6.0,"RODRIGUEZ, Víctor","COSGAYA NORIEGA, Diego",46,96,147,201,,,"2,6 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+482,7.08.2014,MOSCOW,11:25,SEN,M,MEX,3.0,"LOPEZ QUINTERO, Javier","FUENTES JUAREZ, Osbaldo",47,97,148,203,,,"2,6 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+483,7.08.2014,MOSCOW,11:25,SEN,M,JPN,2.0,"MIZUMOTO, Keiji","SUZUKI, Yasuhiro",48,100,151,208,,,"2,6 m/s",S,WORLDCHAMPIONSHIPS,HEAT,,7.0,8.0,2014.0
+485,7.08.2014,MOSCOW,16:56,SEN,M,SRB,6.0,"TOMICEVIC, Marko","TORUBAROV, Vladimir",47,97,147,197,,,"2,4  m/s",SES,,,,7.0,8.0,2014.0
+495,7.08.2014,MOSCOW,17:03,SEN,M,GER,5.0,"RENDSCHMIDT, Max","GROSS, Marcus",47,99,153,205,,,"4,5 m/S",WSW,,,,7.0,8.0,2014.0
+505,7.08.2014,MOSCOW,17:10,SEN,M,RUS,3.0,"MEDVEDEV, Ilya","RYAKHOV, Anton",47,98,149,199,,,"4,5 m/S",WSW,,,,7.0,8.0,2014.0
+514,7.08.2014,MOSCOW,17:10,SEN,M,AUS,5.0,"WALLACE, Kenny","TAME, Lachlan",46,96,147,196,,,"3,5 m/S",WSW,,,,7.0,8.0,2014.0
+524,7.08.2014,MOSCOW,17:10,SEN,M,IRL,4.0,"FITZSIMON, Michael","WATKINS, Barry",48,97,147,195,,,"3,2 m/s",NWN,,FINAL C,,7.0,8.0,2014.0
+534,7.08.2014,MOSCOW,17:10,SEN,M,POR,5.0,"SILVA, Emanuel","RIBEIRO, João",44,92,143,190,,,"0,5 m/s",N,,FINAL B,,7.0,8.0,2014.0
