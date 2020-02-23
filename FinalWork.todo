@@ -1,0 +1,20 @@
+✔ GET COMPETITION @done (2/21/2020, 4:07:05 PM)
+☐ GET ALL COMPETITION
+✔ POST COMPETITION @done (2/21/2020, 4:07:26 PM)
+✔ DELETE COMPETITION @done (2/21/2020, 4:07:13 PM)
+☐ UPDATE COMPETITION
+
+
+#Get complete race with all teams competing in that races
+☐ GET RACE
+☐ GET MULTIPLE RACES
+#Upload a whole race -> Array of single team_race Entries of particular race
+☐ POST RACE
+☐ DELETE RACE
+☐ UPDATE RACE
+
+✔ GET TEAM @done (2/21/2020, 4:07:58 PM)
+☐ GET  ALL TEAM
+✔ POST TEAM @done (2/21/2020, 4:08:02 PM)
+✔ DELETE TEAM @done (2/21/2020, 4:08:06 PM)
+☐ UPDATE TEAM

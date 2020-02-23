@@ -1,0 +1,12 @@
+{
+  "dbConfig": {
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "Final Work"
+  },
+  "rabbitConfig": {
+    "conn_url": "amqp://rsmilhrs:6mzmPZPPUg_2U-pUFgen2JFlaDcmy9Xm@kangaroo.rmq.cloudamqp.com/rsmilhrs"
+
+  }
+}
