@@ -91,7 +91,7 @@ class RabbitService:
         )
         channel.start_consuming()
 
-    def handleIncommingMessages(self):
+    def handleIncomingMessages(self):
         while True:
             if len(self.incomingMessages) > 0:
                 message = self.incomingMessages[0]  # FIFO
@@ -99,6 +99,5 @@ class RabbitService:
                 self.incomingMessages.pop(0)
 
             else:
-                print("[*] No events -> sleep 5sec")
                 sleep(5)
 

@@ -1,4 +1,5 @@
 import mysql.connector
+import pandas as pd
 
 
 class dbService:
@@ -12,4 +13,16 @@ class dbService:
         )
         print("[#] DbConnection Established")
         return mydb
+
+    def getCompetitionDF(self):
+        competitionDF = pd.read_csv(
+            "/Users/BramSikkens/Desktop/AI-FinalWork/PythonML/Research/Data/Competition_Dataset.csv"
+        )
+        return competitionDF
+
+    def getRaceDF(self):
+        raceDF = pd.read_csv(
+            "/Users/BramSikkens/Desktop/AI-FinalWork/PythonML/Research/Data/Race_Dataset.csv"
+        )
+        return raceDF
 
