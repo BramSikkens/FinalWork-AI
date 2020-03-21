@@ -1,8 +1,47 @@
-import React from "react";
+import React, { setState } from "react";
 import Header from "../components/Header";
 import DashboardSideMenu from "../components/DashboardSideMenu";
 import Footer from "../components/Footer";
+
+//Sections
+import CreateCompetitionSection from "../components/CreateCompetitionSection";
+import MyCompetionsSection from "../components/MyCompetionsSection";
+
 class Dashboard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeMenu: "SHOW_COMPETITIONS"
+    };
+  }
+
+  componentDidMount() {
+    const menu = require("qs").parse(this.props.location.search, {
+      ignoreQueryPrefix: true
+    }).menu;
+
+    if (menu) {
+      this.setState({ activeMenu: menu });
+    }
+  }
+
+  renderSection = menu => {
+    switch (menu) {
+      case "SHOW_COMPETITIONS":
+        return <MyCompetionsSection />;
+      case "CREATE_COMPETITION":
+        return <CreateCompetitionSection />;
+      case "EDIT_PROFILE":
+        return <p>Edit Profile</p>;
+      case "CHANGE_PASSWORD":
+        return <p>Change Password</p>;
+    }
+  };
+
+  changeMenuHandler = menu => {
+    this.setState({ activeMenu: menu });
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -100,10 +139,20 @@ class Dashboard extends React.Component {
                 </div>
               </section>
 
-              {/**Begin  DashboardSideMenu */}
-              <DashboardSideMenu />
+              <section class="gray-bg main-dashboard-sec" id="sec1">
+                <div class="container">
+                  {/**Begin  DashboardSideMenu */}
+                  <DashboardSideMenu
+                    onMenuClick={this.changeMenuHandler}
+                    activeMenu={this.state.activeMenu}
+                  />
 
-              {/**End  DashboardSideMenu */}
+                  {/**End  DashboardSideMenu */}
+                  {/**Begin Sections */}
+                  {this.renderSection(this.state.activeMenu)}
+                  {/*End Sections */}
+                </div>
+              </section>
 
               <div class="limit-box fl-wrap"></div>
             </div>

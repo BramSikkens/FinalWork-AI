@@ -5,7 +5,7 @@ class Header extends React.Component {
     return (
       <header class="main-header dsh-header">
         <a href="index.html" class="logo-holder">
-          <img src="images/logo.png" alt=""></img>
+          <span>CompetitionHub</span>
         </a>
 
         <div class="header-search_btn show-search-button">

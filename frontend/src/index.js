@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import Competitions from "./pages/Competitions";
 import SingleCompetition from "./pages/SingleCompetition";
+import CategoryResults from "./pages/CategoryResults";
 
 const routing = (
   <Router>
@@ -15,6 +16,7 @@ const routing = (
       <Route path="/dashboard" component={Dashboard} />
       <Route path="/competitions" component={Competitions} />
       <Route path="/competition" component={SingleCompetition} />
+      <Route path="/categoryResult" component={CategoryResults} />
       <Route path="/404" component={NotFound} />
     </div>
   </Router>
