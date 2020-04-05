@@ -1,6 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default class CompetitionCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      competition: props.Competition
+    };
+  }
+
   render() {
     return (
       <div class="listing-item">
@@ -21,13 +29,14 @@ export default class CompetitionCard extends React.Component {
             <div class="geodir-category-content-title fl-wrap">
               <div class="geodir-category-content-title-item">
                 <h3 class="title-sin_map">
-                  <a href="competition">
-                    2019 ICF Canoe Sprint World Championships
-                  </a>
+                  <Link to={"competition?id=" + this.state.competition.Id}>
+                    {this.state.competition.title || "No Title"}
+                  </Link>
                 </h3>
                 <div class="geodir-category-location fl-wrap">
                   <a href="#">
-                    <i class="fas fa-map-marker-alt"></i> Hungary
+                    <i class="fas fa-map-marker-alt"></i>{" "}
+                    {this.state.competition.place || "No Place"}
                   </a>
                 </div>
               </div>
@@ -35,7 +44,7 @@ export default class CompetitionCard extends React.Component {
             <div class="geodir-category-text fl-wrap">
               <div class="facilities-list fl-wrap">
                 <div class="facilities-list-title">
-                  Type: Worldchampionship{" "}
+                  Type: {this.state.competition.type || "No Type"}
                 </div>
               </div>
             </div>

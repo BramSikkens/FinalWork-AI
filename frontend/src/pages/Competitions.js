@@ -4,22 +4,30 @@ import Footer from "../components/Footer";
 import CompetitionCard from "../components/CompetitionCard";
 import CompetitionList from "../components/CompetitionList";
 
+import { fetchAllCompetitions } from "../services/competitionService";
+
 export default class Competitions extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      competitions: [{}, {}, {}, {}, {}, {}, {}]
+      loading: true,
+      competitions: []
     };
   }
 
-  renderCompetitions = () => {
-    return;
-  };
+  async componentDidMount() {
+    let fetchedCompetitons = await fetchAllCompetitions();
+    this.setState(previousState => ({
+      competitions: fetchedCompetitons,
+      loading: false
+    }));
+  }
 
   render() {
-    return (
-      <React.Fragment>
-        <Header />
+    if (this.state.loading == true) {
+      return <p>Loading</p>;
+    } else {
+      return (
         <div id="wrapper">
           <div class="content">
             <section
@@ -196,8 +204,7 @@ export default class Competitions extends React.Component {
             <div class="limit-box fl-wrap"></div>
           </div>
         </div>
-        <Footer />
-      </React.Fragment>
-    );
+      );
+    }
   }
 }

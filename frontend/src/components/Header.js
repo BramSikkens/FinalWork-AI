@@ -1,6 +1,70 @@
 import React from "react";
-
+import { connect } from "react-redux";
+import {
+  OpenLoginModal,
+  CloseLoginModal
+} from "../redux/actions/componentStateAction";
+import { logout } from "../redux/actions/authentication";
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showMenuOverLay: false
+    };
+  }
+
+  renderAccount(user) {
+    if (user) {
+      return (
+        <div class="header-user-menu">
+          <div
+            class="header-user-name"
+            onClick={() => {
+              this.setState({ showMenuOverLay: true });
+            }}
+          >
+            <span>
+              <img src="images/avatar/1.jpg" alt=""></img>
+            </span>
+            Hello , {user.username || "No Username"}
+          </div>
+          <ul
+            className={this.state.showMenuOverLay ? "hu-menu-vis" : undefined}
+          >
+            <li>
+              <a href="dashboard-myprofile.html"> Edit profile</a>
+            </li>
+            <li>
+              <a href="dashboard-add-listing.html"> Add Competition</a>
+            </li>
+            <li>
+              <a href="dashboard-bookings.html"> My Competitions </a>
+            </li>
+            <li
+              onClick={() => {
+                this.props.Logout();
+              }}
+            >
+              <a href="#">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      );
+    } else {
+      return (
+        <div
+          onClick={() => {
+            this.props.OpenLoginModal();
+          }}
+          class="show-reg-form modal-open avatar-img"
+          data-srcav="images/avatar/3.jpg"
+        >
+          <i class="fal fa-user"></i>Sign In
+        </div>
+      );
+    }
+  }
+
   render() {
     return (
       <header class="main-header dsh-header">
@@ -14,7 +78,7 @@ class Header extends React.Component {
         </div>
 
         <a href="dashboard-add-listing.html" class="add-list color-bg">
-          Add Listing{" "}
+          Add Competition{" "}
           <span>
             <i class="fal fa-layer-plus"></i>
           </span>
@@ -29,31 +93,7 @@ class Header extends React.Component {
           <span class="cart-counter green-bg"></span>{" "}
         </div>
 
-        <div class="header-user-menu">
-          <div class="header-user-name">
-            <span>
-              <img src="images/avatar/1.jpg" alt=""></img>
-            </span>
-            Hello , Alisa
-          </div>
-          <ul>
-            <li>
-              <a href="dashboard-myprofile.html"> Edit profile</a>
-            </li>
-            <li>
-              <a href="dashboard-add-listing.html"> Add Listing</a>
-            </li>
-            <li>
-              <a href="dashboard-bookings.html"> Bookings </a>
-            </li>
-            <li>
-              <a href="dashboard-review.html"> Reviews </a>
-            </li>
-            <li>
-              <a href="#">Log Out</a>
-            </li>
-          </ul>
-        </div>
+        {this.renderAccount(this.props.auth.user)}
 
         <div class="nav-button-wrap color-bg">
           <div class="nav-button">
@@ -91,108 +131,18 @@ class Header extends React.Component {
               </li>
               <li>
                 <a href="#">
-                  Listings <i class="fa fa-caret-down"></i>
+                  Competitions <i class="fa fa-caret-down"></i>
                 </a>
 
                 <ul>
                   <li>
-                    <a href="listing.html">Column map</a>
+                    <a href="listing.html">2020</a>
                   </li>
                   <li>
-                    <a href="listing2.html">Column map 2</a>
+                    <a href="listing2.html">2019</a>
                   </li>
                   <li>
-                    <a href="listing3.html">Fullwidth Map</a>
-                  </li>
-                  <li>
-                    <a href="listing4.html">Fullwidth Map 2</a>
-                  </li>
-                  <li>
-                    <a href="listing5.html">Without Map</a>
-                  </li>
-                  <li>
-                    <a href="listing6.html">Without Map 2</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Single <i class="fa fa-caret-down"></i>
-                    </a>
-
-                    <ul>
-                      <li>
-                        <a href="listing-single.html">Style 1</a>
-                      </li>
-                      <li>
-                        <a href="listing-single2.html">Style 2</a>
-                      </li>
-                      <li>
-                        <a href="listing-single3.html">Style 3</a>
-                      </li>
-                      <li>
-                        <a href="listing-single4.html">Style 4</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="blog.html">News</a>
-              </li>
-              <li>
-                <a href="#" class="act-link">
-                  Pages <i class="fa fa-caret-down"></i>
-                </a>
-
-                <ul>
-                  <li>
-                    <a href="#">
-                      Shop<i class="fa fa-caret-down"></i>
-                    </a>
-
-                    <ul>
-                      <li>
-                        <a href="shop.html">Products</a>
-                      </li>
-                      <li>
-                        <a href="product-single.html">Product single</a>
-                      </li>
-                      <li>
-                        <a href="cart.html">Cart</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="about.html">About</a>
-                  </li>
-                  <li>
-                    <a href="contacts.html">Contacts</a>
-                  </li>
-                  <li>
-                    <a href="author-single.html">User single</a>
-                  </li>
-                  <li>
-                    <a href="help.html">How it Works</a>
-                  </li>
-                  <li>
-                    <a href="booking.html">Booking</a>
-                  </li>
-                  <li>
-                    <a href="pricing-tables.html">Pricing</a>
-                  </li>
-                  <li>
-                    <a href="dashboard.html">User Dasboard</a>
-                  </li>
-                  <li>
-                    <a href="blog-single.html">Blog Single</a>
-                  </li>
-                  <li>
-                    <a href="dashboard-add-listing.html">Add Listing</a>
-                  </li>
-                  <li>
-                    <a href="invoice.html">Invoice</a>
-                  </li>
-                  <li>
-                    <a href="404.html">404</a>
+                    <a href="listing3.html">2018</a>
                   </li>
                 </ul>
               </li>
@@ -390,4 +340,21 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+function mapStateToProps(state) {
+  return {
+    auth: state.authentication
+  };
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    OpenLoginModal: () => {
+      dispatch(OpenLoginModal());
+    },
+    Logout: () => {
+      dispatch(logout());
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

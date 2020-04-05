@@ -31,8 +31,19 @@ class DashboardSideMenu extends React.Component {
             </div>
 
             <div class="user-profile-menu">
-              <h3>Listings</h3>
+              <h3>Racing</h3>
               <ul class="no-list-style">
+                <li>
+                  <a>
+                    <i class="fal fa-th-list"></i> My Results (Athlete){" "}
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <i class="fal fa-th-list"></i> My Team (Coach){" "}
+                  </a>
+                </li>
+
                 <li>
                   <a
                     className={
@@ -42,10 +53,9 @@ class DashboardSideMenu extends React.Component {
                     }
                     onClick={() => this.props.onMenuClick("SHOW_COMPETITIONS")}
                   >
-                    <i class="fal fa-th-list"></i> My Competitions{" "}
+                    <i class="fal fa-th-list"></i> My Competition (Organizer){" "}
                   </a>
                 </li>
-
                 <li>
                   <a
                     onClick={() => this.props.onMenuClick("CREATE_COMPETITION")}
@@ -55,10 +65,15 @@ class DashboardSideMenu extends React.Component {
                         : ""
                     }
                   >
-                    <i class="fal fa-file-plus"></i> Create Competition
+                    <i class="fal fa-file-plus"></i> Add Competition (Organizer)
                   </a>
                 </li>
               </ul>
+            </div>
+
+            <div class="user-profile-menu">
+              <h3>Analytics</h3>
+              <ul class="no-list-style"></ul>
             </div>
 
             <button class="logout_btn color2-bg">

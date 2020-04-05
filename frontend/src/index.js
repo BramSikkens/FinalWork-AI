@@ -1,25 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./pages/App";
-
-import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import Competitions from "./pages/Competitions";
 import SingleCompetition from "./pages/SingleCompetition";
 import CategoryResults from "./pages/CategoryResults";
+import Login from "./pages/Login";
+import createHistory from "history/createBrowserHistory";
+import createSagaMiddleware from "redux-saga";
+import { Provider } from "react-redux";
+import configureStore from "./redux/store";
+import Header from "./components/Header";
+
+const history = createHistory();
+const sagaMiddleware = createSagaMiddleware();
+const store = configureStore();
 
 const routing = (
-  <Router>
-    <div>
-      <Route exact path="/" component={App} />
-      <Route path="/dashboard" component={Dashboard} />
-      <Route path="/competitions" component={Competitions} />
-      <Route path="/competition" component={SingleCompetition} />
-      <Route path="/categoryResult" component={CategoryResults} />
-      <Route path="/404" component={NotFound} />
-    </div>
-  </Router>
+  <Provider store={store}>
+    <Router history={history}>
+      <App />
+    </Router>
+  </Provider>
 );
 
 ReactDOM.render(routing, document.getElementById("root"));
