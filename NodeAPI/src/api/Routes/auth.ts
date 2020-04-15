@@ -27,8 +27,10 @@ router.post("/login", function(req, res, next) {
 router.post("/register", async function(req, res, next) {
   const { username, email, password } = req.body;
   const newUser = new User();
+  const bcrypt = require("bcrypt");
+
   newUser.email = email;
-  newUser.password = password;
+  newUser.password = bcrypt.hashSync(password, 10);
   newUser.username = username;
   newUser.role = "NORMAL";
 

@@ -6,9 +6,9 @@ import pandas as pd
 
 
 def createRabbitListeners():
-    _thread.start_new_thread(_rabbitService.createCompetitionListener, ())
-    _thread.start_new_thread(_rabbitService.createRaceListener, ())
-    _thread.start_new_thread(_rabbitService.createTeamListener, ())
+    _thread.start_new_thread(_rabbitService.createCompetitionListener, ()) #Luister naar Competitie berichten
+    #_thread.start_new_thread(_rabbitService.createRaceListener, ())
+    #_thread.start_new_thread(_rabbitService.createTeamListener, ())
 
 
 def handleIncomingRabbitMessages():
@@ -18,12 +18,12 @@ def handleIncomingRabbitMessages():
         # DOE DB STUFF
         # IF OK -> GA VERDER
         # IF NOT OK push terug naar service
-        _ca.doAnalasing()
+        #_ca.doAnalasing()
 
 
 if __name__ == "__main__":
     _rabbitService = RabbitService()
-    createRabbitListeners()
-    _thread.start_new_thread(handleIncomingRabbitMessages, ())
+    createRabbitListeners() #Luister naar rabbit messages 
+    _thread.start_new_thread(handleIncomingRabbitMessages, ()) #Verwerk messages
     while 1:
         time.sleep(0.1)

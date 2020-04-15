@@ -2,14 +2,15 @@ import React from "react";
 import { connect } from "react-redux";
 import {
   OpenLoginModal,
-  CloseLoginModal
+  CloseLoginModal,
 } from "../redux/actions/componentStateAction";
 import { logout } from "../redux/actions/authentication";
+import { Link } from "react-router-dom";
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showMenuOverLay: false
+      showMenuOverLay: false,
     };
   }
 
@@ -35,10 +36,14 @@ class Header extends React.Component {
               <a href="dashboard-myprofile.html"> Edit profile</a>
             </li>
             <li>
-              <a href="dashboard-add-listing.html"> Add Competition</a>
+              <Link to="dashboard/addCompetition">
+                <a href="#"> Add Competition</a>
+              </Link>
             </li>
             <li>
-              <a href="dashboard-bookings.html"> My Competitions </a>
+              <Link to="dashboard/myCompetitions">
+                <a> My Competitions </a>
+              </Link>
             </li>
             <li
               onClick={() => {
@@ -68,21 +73,28 @@ class Header extends React.Component {
   render() {
     return (
       <header class="main-header dsh-header">
-        <a href="index.html" class="logo-holder">
-          <span>CompetitionHub</span>
-        </a>
+        <Link to="/">
+          <a class="logo-holder">
+            <span>
+              <b style={{ color: "white", fontSize: "2vw" }}>Canolytica.com</b>
+            </span>
+          </a>
+        </Link>
 
         <div class="header-search_btn show-search-button">
           <i class="fal fa-search"></i>
           <span>Search</span>
         </div>
 
-        <a href="dashboard-add-listing.html" class="add-list color-bg">
-          Add Competition{" "}
-          <span>
-            <i class="fal fa-layer-plus"></i>
-          </span>
-        </a>
+        <Link to="/dashboard">
+          <a class="add-list color-bg">
+            Go To Dashboard
+            <span>
+              <i class="fal fa-layer-plus"></i>
+            </span>
+          </a>
+        </Link>
+
         <div
           class="cart-btn   show-header-modal"
           data-microtip-position="bottom"
@@ -342,18 +354,18 @@ class Header extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    auth: state.authentication
+    auth: state.authentication,
   };
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
     OpenLoginModal: () => {
       dispatch(OpenLoginModal());
     },
     Logout: () => {
       dispatch(logout());
-    }
+    },
   };
 };
 

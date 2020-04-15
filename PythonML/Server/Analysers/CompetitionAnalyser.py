@@ -1,21 +1,20 @@
-from dbService import dbService
+from mongoDbService import mongoDbService
 import pandas as pd
 
 
 class CompetitionAnalyser:
     def __init__(self):
         super().__init__()
-        self._dbService = dbService()
-        self._competitions = self.fetchCompetitionData
+        self._mongoDbService = mongoDbService()  # Create connection to db
         print("[CompetitionAnalyser]: Created")
 
     def fetchCompetitionData(self):
-        return self._dbService.getCompetitionDF()
+        return self._mongoDbService.getCompetitionDF()
 
     def fetchRaceData(self):
-        return self._dbService.getRaceDF()
+        return self._mongoDbService.getRaceDF()
 
-    def transformColumns():
+    def transformColumns(self):
         pass
 
     def doAnalasing(self):
@@ -34,7 +33,3 @@ class CompetitionAnalyser:
 
     def N1TSemiCompetition(self):
         pass
-
-    def N1TSemiCompetition(self):
-        pass
-

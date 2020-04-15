@@ -4,6 +4,7 @@ import { createConnection } from "typeorm";
 import auth from "../src/api/Routes/auth";
 import competition from "../src/api/Routes/competition";
 import race from "../src/api/Routes/race";
+import user from "../src/api/Routes/user";
 
 import passport = require("./services/passport");
 import cors = require("cors");
@@ -25,5 +26,6 @@ createConnection().then(async (connection) => {
   app.use("/competition", competition);
   app.use("/race", race);
   app.use("/auth", auth);
+  app.use("/user", user);
   app.listen(port, () => console.log(`App Listening on Port ${port}`));
 });

@@ -93,11 +93,11 @@ class RabbitService:
 
     def handleIncomingMessages(self):
         while True:
-            if len(self.incomingMessages) > 0:
+            
+            if len(self.incomingMessages) > 0: # Als er een message is
                 message = self.incomingMessages[0]  # FIFO
-                yield self.incomingMessages[0]
-                self.incomingMessages.pop(0)
+                yield self.incomingMessages[0] 
+                self.incomingMessages.pop(0) # Haal message uit de queue
 
             else:
                 sleep(5)
-

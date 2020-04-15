@@ -5,7 +5,7 @@ export default class CompetitionCard extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      competition: props.Competition
+      competition: props.Competition,
     };
   }
 
@@ -22,7 +22,7 @@ export default class CompetitionCard extends React.Component {
               href="listing-single.html"
               class="geodir-category-img-wrap fl-wrap"
             >
-              <img src="images/all/1.jpg" alt="" />
+              <img src="/images/all/1.jpg" alt="" />
             </a>
           </div>
           <div class="geodir-category-content fl-wrap title-sin_item">

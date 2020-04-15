@@ -5,7 +5,7 @@ import {
   OneToMany,
   Unique,
   OneToOne,
-  JoinColumn,
+  JoinColumn
 } from "typeorm";
 import { Race } from "./Race";
 import { User } from "./User";
@@ -13,8 +13,8 @@ import { User } from "./User";
 @Entity("competition", { schema: "final work" })
 @Unique(["year", "place", "type"])
 export class Competition {
-  @PrimaryGeneratedColumn()
-  Id: number;
+  @PrimaryGeneratedColumn("uuid")
+  Id: string;
 
   @Column("varchar", { name: "Place", length: 24 })
   place: string | null;
@@ -34,13 +34,17 @@ export class Competition {
   @Column("datetime", { name: "EndDate", nullable: true })
   endDate: Date;
 
-  @OneToMany((type) => Race, (race) => race.competition, {
-    cascade: true,
-    nullable: true,
-  })
+  @OneToMany(
+    type => Race,
+    race => race.competition,
+    {
+      cascade: true,
+      nullable: true
+    }
+  )
   races: Race[];
 
-  @OneToOne((type) => User, { nullable: true })
+  @OneToOne(type => User, { nullable: true, cascade: true })
   @JoinColumn()
   createdBy: User;
 

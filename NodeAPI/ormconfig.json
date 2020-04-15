@@ -6,7 +6,7 @@
     "port": 3306,
     "username": "root",
     "password": "",
-    "database": "Final Work",
+    "database": "Final Work2",
     "schema": "",
     "synchronize": true,
     "entities": [

@@ -7,22 +7,25 @@
 
 import React from "react";
 import { CompetitionRaceTable } from "./CompetitionRaceTable";
+import { DateTimePicker } from "../components/DateTimePicker";
+
 export default class CreateCompetitionSection extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       uploadedCompetitions: {
-        races: [],
+        races: []
       },
       competitionToUpload: {
         title: "",
         place: "",
         startDate: "",
         endDate: "",
-        type: "",
+        type: ""
       },
       upLoadingCompetitions: false,
-      fileToUpload: null,
+      fileToUpload: null
     };
   }
 
@@ -33,11 +36,12 @@ export default class CreateCompetitionSection extends React.Component {
   async onSubmit(e) {
     e.preventDefault();
     const formdata = new FormData();
-    formdata.append("place", "test");
-    formdata.append("startDate", "3.03.1996");
-    formdata.append("type", "wC");
-    formdata.append("endDate", "1.04.1996");
-    formdata.append("title", "okidoki");
+    formdata.append("place", "Poznaddd");
+    formdata.append("startDate", "3.03.2019");
+    formdata.append("type", "WORLDCUP");
+    formdata.append("endDate", "1.04.2019");
+    formdata.append("title", "WorldCup Poznan");
+    formdata.append("user", this.props.User.id);
     formdata.append("csv", this.state.fileToUpload);
 
     try {
@@ -45,11 +49,9 @@ export default class CreateCompetitionSection extends React.Component {
         "http://localhost:3000/competition/races/csv",
         {
           method: "POST",
-          body: formdata,
+          body: formdata
         }
       );
-
-      console.log(respone);
 
       const data = await respone.json();
       console.log(data);
@@ -73,17 +75,41 @@ export default class CreateCompetitionSection extends React.Component {
             </label>
             <input
               type="text"
-              placeholder="Name of your business"
-              defaultValue
+              placeholder="Name of your competition"
+              onChange={e => {
+                let competitionToUpload = { ...this.state.competitionToUpload };
+                competitionToUpload.title = e.target.value;
+
+                this.setState({
+                  competitionToUpload: competitionToUpload
+                });
+              }}
             />
             <label>
               Place <i className="fal fa-briefcase" />
             </label>
             <input
               type="text"
-              placeholder="Name of your business"
-              defaultValue
+              placeholder="Place of your competition"
+              onChange={e => {
+                let newState = { ...this.state.competitionToUpload };
+                newState.place = e.target.value;
+
+                this.setState({
+                  competitionToUpload: newState
+                });
+              }}
             />
+
+            <label>
+              StartDate <i className="fal fa-briefcase" />
+            </label>
+            <DateTimePicker />
+
+            <label>
+              EndDate <i className="fal fa-briefcase" />
+            </label>
+            <DateTimePicker />
 
             <label>
               Type <i className="fal fa-briefcase" />
@@ -124,29 +150,6 @@ export default class CreateCompetitionSection extends React.Component {
                 </li>
               </ul>
             </div>
-
-            <div className="row">
-              <div className="col-md-6">
-                <label>
-                  StartDate <i className="fal fa-briefcase" />
-                </label>
-                <input
-                  type="text"
-                  placeholder="Name of your business"
-                  defaultValue
-                />
-              </div>
-              <div className="col-md-6">
-                <label>
-                  EndDate <i className="fal fa-briefcase" />
-                </label>
-                <input
-                  type="text"
-                  placeholder="Name of your business"
-                  defaultValue
-                />
-              </div>
-            </div>
           </div>
         </div>
 
@@ -157,18 +160,40 @@ export default class CreateCompetitionSection extends React.Component {
             </span>
             <input
               type="file"
-              onChange={(e) => this.onHandleChange(e)}
+              onChange={e => this.onHandleChange(e)}
               className="upload"
             />
           </div>
-          <button onClick={(e) => this.onSubmit(e)}>Send</button>
+
+          <a
+            class="back-tofilters color2-bg  fl-wrap"
+            onClick={e => this.onSubmit(e)}
+          >
+            send
+          </a>
         </div>
 
-        {this.state.uploadedCompetitions.races.length > 0
-          ? this.state.uploadedCompetitions.races.map((race) => {
+        {this.state.uploadedCompetitions &&
+        this.state.uploadedCompetitions.races.length > 0
+          ? this.state.uploadedCompetitions.races.map(race => {
               return <CompetitionRaceTable race={race} />;
             })
           : undefined}
+
+        <div
+          class="soc-log fl-wrap"
+          style={
+            this.state.uploadedCompetitions &&
+            this.state.uploadedCompetitions.races.length > 0
+              ? { display: "block" }
+              : { display: "none" }
+          }
+        >
+          <a href="#" class="facebook-log">
+            {" "}
+            Save Competitions
+          </a>
+        </div>
       </div>
     );
   }

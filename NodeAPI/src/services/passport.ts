@@ -16,18 +16,19 @@ passport.use(
   new LocalStrategy(function(username, password, done) {
     getRepository(User)
       .findOne({ where: { email: username } })
-      .then(user => {
+      .then((user) => {
         if (!user) {
-          console.log("ok");
           return done(null, false, { message: "No User Found" });
         }
-        if (user.password !== password) {
+
+        let check = require("bcrypt").compareSync(password, user.password);
+        if (!check) {
           return done(null, false, { message: "Password Incorrect" });
         }
 
         return done(null, user);
       })
-      .catch(err => done(err));
+      .catch((err) => done(err));
   })
 );
 

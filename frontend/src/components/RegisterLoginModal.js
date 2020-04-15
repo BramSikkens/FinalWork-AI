@@ -3,19 +3,16 @@ import { connect } from "react-redux";
 import { login, register } from "../redux/actions/authentication";
 import {
   OpenLoginModal,
-  CloseLoginModal
+  CloseLoginModal,
 } from "../redux/actions/componentStateAction";
 
 function mapStateToProps(state) {
   return {
     open: state.componentState.registerLoginModal,
-    username: "",
-    password: "",
-    email: ""
   };
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
     OpenLoginModal: () => {
       dispatch(OpenLoginModal());
@@ -28,26 +25,41 @@ const mapDispatchToProps = dispatch => {
     },
     register: (username, password, email) => {
       dispatch(register(username, password, email));
-    }
+    },
   };
 };
 
 class RegisterLoginModal extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      loginInput: {
+        username: "",
+        password: "",
+      },
+      registerInput: {
+        username: "",
+        password: "",
+        email: "",
+      },
+    };
   }
 
   onSubmit(e) {
     e.preventDefault();
-    this.props.login(this.state.username, this.state.password);
+    console.log(this.state);
+    this.props.login(
+      this.state.loginInput.username,
+      this.state.loginInput.password
+    );
   }
 
   onSubmitRegister(e) {
     e.preventDefault();
     this.props.register(
-      this.state.username,
-      this.state.email,
-      this.state.password
+      this.state.registerInput.username,
+      this.state.registerInput.email,
+      this.state.registerInput.password
     );
   }
 
@@ -94,7 +106,7 @@ class RegisterLoginModal extends React.Component {
                   style={{ display: "none" }}
                 >
                   <div className="custom-form">
-                    <form onSubmit={e => this.onSubmit(e)}>
+                    <form onSubmit={(e) => this.onSubmit(e)}>
                       <label>
                         Username or Email Address <span>*</span>{" "}
                       </label>
@@ -103,8 +115,14 @@ class RegisterLoginModal extends React.Component {
                         type="text"
                         onclick="this.select()"
                         defaultValue
-                        onChange={e => {
-                          this.setState({ username: e.target.value });
+                        onChange={(e) => {
+                          let loginInput = { ...this.state.loginInput };
+                          loginInput.username = e.target.value;
+
+                          this.setState({
+                            ...this.state,
+                            loginInput: loginInput,
+                          });
                         }}
                       />
                       <label>
@@ -114,8 +132,14 @@ class RegisterLoginModal extends React.Component {
                         name="password"
                         type="password"
                         onclick="this.select()"
-                        onChange={e => {
-                          this.setState({ password: e.target.value });
+                        onChange={(e) => {
+                          let loginInput = { ...this.state.loginInput };
+                          loginInput.password = e.target.value;
+
+                          this.setState({
+                            ...this.state,
+                            loginInput: loginInput,
+                          });
                         }}
                         defaultValue
                       />
@@ -148,7 +172,7 @@ class RegisterLoginModal extends React.Component {
                         name="registerform"
                         className="main-register-form"
                         id="main-register-form2"
-                        onSubmit={e => this.onSubmitRegister(e)}
+                        onSubmit={(e) => this.onSubmitRegister(e)}
                       >
                         <label>
                           Full Name <span>*</span>{" "}
@@ -158,8 +182,14 @@ class RegisterLoginModal extends React.Component {
                           type="text"
                           onclick="this.select()"
                           defaultValue
-                          onChange={e => {
-                            this.setState({ username: e.target.value });
+                          onChange={(e) => {
+                            let registerInput = { ...this.state.registerInput };
+                            registerInput.username = e.target.value;
+
+                            this.setState({
+                              ...this.state,
+                              registerInput: registerInput,
+                            });
                           }}
                         />
                         <label>
@@ -170,8 +200,14 @@ class RegisterLoginModal extends React.Component {
                           type="text"
                           onclick="this.select()"
                           defaultValue
-                          onChange={e => {
-                            this.setState({ email: e.target.value });
+                          onChange={(e) => {
+                            let registerInput = { ...this.state.registerInput };
+                            registerInput.email = e.target.value;
+
+                            this.setState({
+                              ...this.state,
+                              registerInput: registerInput,
+                            });
                           }}
                         />
                         <label>
@@ -182,8 +218,14 @@ class RegisterLoginModal extends React.Component {
                           type="password"
                           onclick="this.select()"
                           defaultValue
-                          onChange={e => {
-                            this.setState({ password: e.target.value });
+                          onChange={(e) => {
+                            let registerInput = { ...this.state.registerInput };
+                            registerInput.password = e.target.value;
+
+                            this.setState({
+                              ...this.state,
+                              registerInput: registerInput,
+                            });
                           }}
                         />
                         <div className="filter-tags ft-list">

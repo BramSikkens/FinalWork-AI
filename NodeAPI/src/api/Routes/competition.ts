@@ -10,6 +10,8 @@ import {
   getSingleCompetition,
   getSingleCompetitionWithRaces,
   getCompetitionFromCSV,
+  getCompetitionFull,
+  getCompetitionFullRaw
 } from "../Controller/competitionController";
 // import { addRaceToCompetiton } from "../Controller/RaceController";
 
@@ -19,6 +21,9 @@ router.get("/:competitionId", getSingleCompetition);
 
 router.get("/:competitionId/races", getSingleCompetitionWithRaces);
 
+router.get("/:competitionId/full", getCompetitionFull);
+
+router.get("/:competitionId/full/raw", getCompetitionFullRaw);
 router.post("/", createCompetition);
 
 router.delete("/:competitionId", deleteSingleCompetition);

@@ -1,0 +1,19 @@
+.datepickerCustomTable {
+  font-weight: bold;
+  border-radius: 2%;
+  background-color: #d3d3d31a !important;
+  border: 1px solid #d4d4d4 !important;
+  background-color: whitesmoke !important;
+  position: absolute;
+  z-index: 10;
+}
+
+.datepickerCustomTable button {
+  color: #7d93b2;
+  border-radius: 5px;
+}
+
+.datepickerCustomTable button:hover {
+  color: #4db7fe;
+  font-weight: bold;
+}

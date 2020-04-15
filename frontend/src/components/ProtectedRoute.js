@@ -1,6 +1,18 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Redirect, withRouter } from "react-router-dom";
+import { connect } from "react-redux";
 
-const ProtectedRoute = () => (
-
+const PrivateRoute = ({ component: Component, ...rest }) => (
+  <Route
+    {...rest}
+    render={(props) =>
+      localStorage.getItem("user") ? (
+        <Component {...props} />
+      ) : (
+        <Redirect to="/" />
+      )
+    }
+  />
 );
+
+export default PrivateRoute;

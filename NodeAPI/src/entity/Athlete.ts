@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryColumn, OneToOne, JoinColumn } from "typeorm";
+import { Column, Entity, JoinColumn, ManyToOne, OneToOne, PrimaryColumn } from "typeorm";
 import { User } from "./User";
 
 @Entity("athlete", { schema: "final work" })
@@ -21,4 +21,10 @@ export class Athlete {
     this.birthDate = birthDate;
     this.country = country;
   }
+
+  @ManyToOne(
+    (type) => User,
+    (user) => user.athletes
+  )
+  user: User;
 }

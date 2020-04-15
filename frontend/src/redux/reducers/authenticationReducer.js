@@ -3,17 +3,19 @@ import { AUTH_LOGIN_SUCCESS, AUTH_LOGOUT } from "../constants";
 export default function authenticationReducer(
   state = {
     token: localStorage.getItem("token"),
-    user: localStorage.getItem("user"),
-    error: null
+    user: JSON.parse(localStorage.getItem("user")),
+    error: null,
   },
   action
 ) {
+  console.log(state);
+
   switch (action.type) {
     case AUTH_LOGIN_SUCCESS: {
       return {
         ...state,
         token: action.payload.token,
-        user: action.payload.user
+        user: action.payload.user,
       };
     }
     case AUTH_LOGOUT: {
@@ -21,7 +23,7 @@ export default function authenticationReducer(
       localStorage.removeItem("user");
       return {
         token: null,
-        user: null
+        user: null,
       };
     }
 

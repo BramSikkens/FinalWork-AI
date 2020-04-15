@@ -9,7 +9,7 @@ export async function createNewRace(req: Request, res: Response) {
     const getCompetition: Competition = await getRepository(
       Competition
     ).findOne({
-      where: { competitionId: req.params.competitionId }
+      where: { competitionId: req.params.competitionId },
     });
 
     const newRace: Race = new Race();
@@ -33,14 +33,14 @@ export async function createNewRace(req: Request, res: Response) {
 
 export async function getAllRaces(req: Request, res: Response) {
   let result = await getRepository(Race).find({
-    relations: ["raceTeams"]
+    relations: ["raceResults"],
   });
   res.status(200).json(result);
 }
 
 export async function getSingleRace(req: Request, res: Response) {
   let result = await getRepository(Race).find({
-    where: { raceId: req.params.raceId }
+    where: { raceId: req.params.raceId },
   });
   res.status(200).json(result);
 }
@@ -52,4 +52,28 @@ export async function deleteRace(req: Request, res: Response) {
     .from(Race)
     .where("raceId = :id", { id: req.params.raceId });
   res.status(204);
+}
+
+export async function getRacesFromAthlete(req, res) {
+  const result = await getConnection().manager.query(
+    `SELECT
+    Title,
+    Type,
+    place,
+    race.BoatType,
+    race.Category,
+    race.competitionRound,
+    race.distance,
+    results.splitTime1,
+    results.splitTime2,
+    results.splitTime3,
+    results.totalTime,
+    results.rank,
+    results.lane,
+    results_athletes_athlete.athleteName
+    FROM competition JOIN race ON competition.Id = race.competitionId JOIN results ON race.Id = results.raceId JOIN results_athletes_athlete ON results.Id = results_athletes_athlete.resultsId WHERE results_athletes_athlete.athleteName = ?`,
+    ["KUJAWSKI MARIUSZ"]
+  );
+
+  res.json(result);
 }

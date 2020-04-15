@@ -1,14 +1,25 @@
 import React from "react";
 import CompetitionCard from "../components/CompetitionCard";
 import CompetitionList from "../components/CompetitionList";
+import { fetchAllCompetitions } from "../services/competitionService";
 
 export default class MyCompetitionsSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      competitions: [{}, {}, {}, {}],
-      isLoading: false
+      competitions: [],
+      isLoading: false,
     };
+  }
+
+  async componentDidMount() {
+    let fetchedCompetitons = await fetchAllCompetitions({
+      createdBy: this.props.User.id,
+    });
+    this.setState((previousState) => ({
+      competitions: fetchedCompetitons,
+      isLoading: false,
+    }));
   }
 
   render() {
@@ -17,9 +28,8 @@ export default class MyCompetitionsSection extends React.Component {
         <div class="dashboard-title   fl-wrap">
           <h3>My Competitions</h3>
         </div>
-        <div class="profile-edit-container fl-wrap block_box">
-          <CompetitionList competitions={this.state.competitions} />
-        </div>
+
+        <CompetitionList competitions={this.state.competitions} />
       </div>
     );
   }

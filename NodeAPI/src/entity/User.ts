@@ -4,13 +4,14 @@ import {
   JoinColumn,
   OneToOne,
   PrimaryGeneratedColumn,
+  OneToMany
 } from "typeorm";
 import { Athlete } from "./Athlete";
 
 @Entity("user", { schema: "final work" })
 export class User {
-  @PrimaryGeneratedColumn({ type: "int", name: "id" })
-  id: number;
+  @PrimaryGeneratedColumn("uuid")
+  id: string;
 
   @Column("varchar", { name: "username", length: 255 })
   username: string;
@@ -24,7 +25,14 @@ export class User {
   @Column("varchar", { name: "role", length: 50 })
   role: string;
 
-  @OneToOne((type) => Athlete, { nullable: true })
+  @OneToMany(
+    type => Athlete,
+    athlete => athlete.user,
+    {
+      cascade: true,
+      nullable: true
+    }
+  )
   @JoinColumn()
-  athlete: Athlete;
+  athletes: Athlete[];
 }

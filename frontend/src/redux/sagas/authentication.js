@@ -15,14 +15,14 @@ export function* login(action) {
       {
         headers: {
           Accept: "application/json",
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         method: "POST",
         body: JSON.stringify({
           username: username,
           password,
-          password
-        })
+          password,
+        }),
       }
     );
 
@@ -32,15 +32,15 @@ export function* login(action) {
         type: AUTH_LOGIN_SUCCESS,
         payload: {
           token: json.token,
-          user: json.user
-        }
+          user: json.user,
+        },
       });
 
       localStorage.setItem("token", json.token);
-      localStorage.setItem("user", json.user);
+      localStorage.setItem("user", JSON.stringify(json.user));
 
       yield put({
-        type: CLOSE_LOGIN_MODAL
+        type: CLOSE_LOGIN_MODAL,
       });
     } else {
       yield put({ type: ADD_ERROR, error: "Wrong Credentials" });
@@ -52,11 +52,12 @@ export function* login(action) {
 
 export function* register(action) {
   const { username, email, password } = action.payload;
+
   try {
     const user = {
       username: username,
       email: email,
-      password: password
+      password: password,
     };
 
     const registerResponse = yield call(
@@ -65,10 +66,10 @@ export function* register(action) {
       {
         headers: {
           Accept: "application/json",
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         method: "POST",
-        body: JSON.stringify(user)
+        body: JSON.stringify(user),
       }
     );
   } catch (e) {}

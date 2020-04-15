@@ -13,8 +13,8 @@ export default class SingleCompetition extends React.Component {
     this.state = {
       loading: true,
       competition: {
-        races: []
-      }
+        races: [],
+      },
     };
   }
 
@@ -22,9 +22,9 @@ export default class SingleCompetition extends React.Component {
     const id = qs.parse(this.props.location.search, { ignoreQueryPrefix: true })
       .id;
     let fetchedCompetition = await fetchSingleCompetition(id);
-    this.setState(previousState => ({
+    this.setState((previousState) => ({
       competition: fetchedCompetition,
-      loading: false
+      loading: false,
     }));
 
     console.log(this.state);
@@ -33,8 +33,6 @@ export default class SingleCompetition extends React.Component {
   render() {
     return (
       <React.Fragment>
-          <LoaderWrap />
-
         <div id="wrapper">
           <div class="content">
             <section
@@ -75,35 +73,7 @@ export default class SingleCompetition extends React.Component {
                         </a>
                       </div>
                     </div>
-                    <div class="col-md-3">
-                      <a
-                        class="fl-wrap list-single-header-column custom-scroll-link "
-                        href="#sec5"
-                      >
-                        <div class="listing-rating-count-wrap single-list-count">
-                          <div class="review-score">4.1</div>
-                          <div
-                            class="listing-rating card-popup-rainingvis"
-                            data-starrating2="4"
-                          >
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <div class="card-popup-rainingvis_bg">
-                              <span class="card-popup-rainingvis_bg_item"></span>
-                              <span class="card-popup-rainingvis_bg_item"></span>
-                              <span class="card-popup-rainingvis_bg_item"></span>
-                              <span class="card-popup-rainingvis_bg_item"></span>
-                              <span class="card-popup-rainingvis_bg_item"></span>
-                              <div></div>
-                            </div>
-                          </div>
-                          <br />
-                          <div class="reviews-count">2 reviews</div>
-                        </div>
-                      </a>
-                    </div>
+                    <div class="col-md-3"></div>
                   </div>
                 </div>
                 <div class="list-single-header_bottom fl-wrap">
@@ -111,7 +81,7 @@ export default class SingleCompetition extends React.Component {
                     <div class="listing-item-category  red-bg">
                       <i class="fal fa-cheeseburger"></i>
                     </div>
-                    <span>Restaurants</span>
+                    <span>WorldChampîonships</span>
                   </a>
                   <div class="list-single-author">
                     {" "}
@@ -120,12 +90,10 @@ export default class SingleCompetition extends React.Component {
                         {" "}
                         <img alt="" src="images/avatar/1.jpg" />{" "}
                       </span>
-                      By Alisa Noory
+                      By Bram Sikkens
                     </a>
                   </div>
-                  <div class="geodir_status_date gsd_open">
-                    <i class="fal fa-lock-open"></i>Open Now
-                  </div>
+
                   <div class="list-single-stats">
                     <ul class="no-list-style">
                       <li>
@@ -150,12 +118,12 @@ export default class SingleCompetition extends React.Component {
                   <ul class="no-list-style">
                     <li>
                       <a class="act-scrlink" href="#sec1">
-                        <i class="fal fa-images"></i> Top
+                        <i class="fal fa-images"></i> Start List
                       </a>
                     </li>
                     <li>
                       <a href="#sec2">
-                        <i class="fal fa-info"></i>Details
+                        <i class="fal fa-info"></i>Results
                       </a>
                     </li>
                     <li>
@@ -165,12 +133,7 @@ export default class SingleCompetition extends React.Component {
                     </li>
                     <li>
                       <a href="#sec4">
-                        <i class="fal fa-utensils"></i>Menu
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#sec5">
-                        <i class="fal fa-comments-alt"></i>Reviews
+                        <i class="fal fa-utensils"></i>Analytics
                       </a>
                     </li>
                   </ul>
@@ -245,7 +208,7 @@ export default class SingleCompetition extends React.Component {
                     <div className="list-single-main-wrapper fl-wrap" id="sec2">
                       {/* list-single-main-item */}
 
-                      {this.state.competition.races.map(race => {
+                      {this.state.competition.races.map((race) => {
                         return <CompetitionRaceTable race={race} />;
                       })}
 
