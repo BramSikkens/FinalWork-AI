@@ -1,0 +1,894 @@
+[
+    {
+        "athlete_Name": "ADAM Jakub",
+        "data": [
+            {
+                "pb": 193,
+                "seasonsbest": 193,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "ALEXEYEV YEVGENIY",
+        "data": [
+            {
+                "pb": 206,
+                "seasonsbest": 206,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "ALGIN Ilia",
+        "data": [
+            {
+                "pb": 222,
+                "seasonsbest": 222,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "ALUPERE KAAREL",
+        "data": [
+            {
+                "pb": 201,
+                "seasonsbest": 201,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "AXELSEN William",
+        "data": [
+            {
+                "pb": 200,
+                "seasonsbest": 200,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "BARSK JOHANNES",
+        "data": [
+            {
+                "pb": 206,
+                "seasonsbest": 206,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "BATS Jasper",
+        "data": [
+            {
+                "pb": 203,
+                "seasonsbest": 203,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "BEREZINTSEV YURIY",
+        "data": [
+            {
+                "pb": 219,
+                "seasonsbest": 219,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "BIALKO Vitaliy",
+        "data": [
+            {
+                "pb": 193,
+                "seasonsbest": 193,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "BOE Niels",
+        "data": [
+            {
+                "pb": 200,
+                "seasonsbest": 200,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "BONDAR Maksim",
+        "data": [
+            {
+                "pb": 222,
+                "seasonsbest": 222,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "BOWLEY Mathew",
+        "data": [
+            {
+                "pb": 208,
+                "seasonsbest": 208,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "BROEKX Piet",
+        "data": [
+            {
+                "pb": 204,
+                "seasonsbest": 204,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "BROEKX Toon",
+        "data": [
+            {
+                "pb": 204,
+                "seasonsbest": 204,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "BURGER GUILLAUME",
+        "data": [
+            {
+                "pb": 199,
+                "seasonsbest": 199,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "CARRERAS GONZALO",
+        "data": [
+            {
+                "pb": 207,
+                "seasonsbest": 207,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "CAUWENBERGH OLIVIER",
+        "data": [
+            {
+                "pb": 201,
+                "seasonsbest": 201,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            },
+            {
+                "pb": 36,
+                "seasonsbest": 36,
+                "year": 2016,
+                "RaceType": "K1-MALE-200M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "CECCHINI Riccardo",
+        "data": [
+            {
+                "pb": 224,
+                "seasonsbest": 224,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "CHERVOV Nikolay",
+        "data": [
+            {
+                "pb": 197,
+                "seasonsbest": 197,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "CHIERINI Edoardo",
+        "data": [
+            {
+                "pb": 224,
+                "seasonsbest": 224,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "CLARKE ROB",
+        "data": [
+            {
+                "pb": 201,
+                "seasonsbest": 201,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "DANIELS Andrew",
+        "data": [
+            {
+                "pb": 213,
+                "seasonsbest": 213,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "DAVÍDEK Pavel",
+        "data": [
+            {
+                "pb": 194,
+                "seasonsbest": 194,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "DE GESUS JUAN PABLO",
+        "data": [
+            {
+                "pb": 207,
+                "seasonsbest": 207,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "DERGUNOV ALEXEY",
+        "data": [
+            {
+                "pb": 206,
+                "seasonsbest": 206,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "DOROFEEV Igor",
+        "data": [
+            {
+                "pb": 223,
+                "seasonsbest": 223,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "FITZGERALD Darryl",
+        "data": [
+            {
+                "pb": 203,
+                "seasonsbest": 203,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "FITZGERALD Jarrod",
+        "data": [
+            {
+                "pb": 210,
+                "seasonsbest": 210,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "FROESE TORBEN",
+        "data": [
+            {
+                "pb": 204,
+                "seasonsbest": 204,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "GROSS Marcus",
+        "data": [
+            {
+                "pb": 190,
+                "seasonsbest": 190,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "HAKALA Jeremy",
+        "data": [
+            {
+                "pb": 207,
+                "seasonsbest": 207,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "HARBRECHT GORDAN",
+        "data": [
+            {
+                "pb": 204,
+                "seasonsbest": 204,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "HEMSELIUS DANIEL",
+        "data": [
+            {
+                "pb": 206,
+                "seasonsbest": 206,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "HOLPERT Ervin",
+        "data": [
+            {
+                "pb": 244,
+                "seasonsbest": 244,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "HOOGERS JASPER",
+        "data": [
+            {
+                "pb": 214,
+                "seasonsbest": 214,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "JESSOP ANDREW",
+        "data": [
+            {
+                "pb": 201,
+                "seasonsbest": 201,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "KALF WALTER",
+        "data": [
+            {
+                "pb": 214,
+                "seasonsbest": 214,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "KUJAWSKI MARIUSZ",
+        "data": [
+            {
+                "pb": 200,
+                "seasonsbest": 200,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            },
+            {
+                "pb": 200,
+                "seasonsbest": 223,
+                "year": 2014,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "KUX FABIAN",
+        "data": [
+            {
+                "pb": 203,
+                "seasonsbest": 203,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "KU_ERA Patrik",
+        "data": [
+            {
+                "pb": 194,
+                "seasonsbest": 194,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "KWOK Ka Wai",
+        "data": [
+            {
+                "pb": 240,
+                "seasonsbest": 240,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "LI Kai",
+        "data": [
+            {
+                "pb": 230,
+                "seasonsbest": 230,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "LIAPIOSHKA Aliksandr",
+        "data": [
+            {
+                "pb": 210,
+                "seasonsbest": 210,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "LITVINCHUK Artur",
+        "data": [
+            {
+                "pb": 210,
+                "seasonsbest": 210,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "LIU Lifan",
+        "data": [
+            {
+                "pb": 230,
+                "seasonsbest": 230,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "MEDVEDEV Ilya",
+        "data": [
+            {
+                "pb": 192,
+                "seasonsbest": 192,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "NEKRIOSIUS Ricardas",
+        "data": [
+            {
+                "pb": 193,
+                "seasonsbest": 193,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "NG Ka Chun",
+        "data": [
+            {
+                "pb": 240,
+                "seasonsbest": 240,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "NG Ka Nam",
+        "data": [
+            {
+                "pb": 235,
+                "seasonsbest": 235,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "NYKÄNEN Miika",
+        "data": [
+            {
+                "pb": 207,
+                "seasonsbest": 207,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "ODVÁRKO Michael",
+        "data": [
+            {
+                "pb": 193,
+                "seasonsbest": 193,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "OLIJNIK Andrej",
+        "data": [
+            {
+                "pb": 193,
+                "seasonsbest": 193,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "PAJIC Dejan",
+        "data": [
+            {
+                "pb": 191,
+                "seasonsbest": 191,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "PANNECOUCKE LAURENS",
+        "data": [
+            {
+                "pb": 201,
+                "seasonsbest": 201,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "PAROL Aleksandr",
+        "data": [
+            {
+                "pb": 223,
+                "seasonsbest": 223,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "QUICKENDEN Zac",
+        "data": [
+            {
+                "pb": 210,
+                "seasonsbest": 210,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "REARDON BRADY",
+        "data": [
+            {
+                "pb": 199,
+                "seasonsbest": 199,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "RENDSCHMIDT Max",
+        "data": [
+            {
+                "pb": 190,
+                "seasonsbest": 190,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "RUTHERFORD Edward",
+        "data": [
+            {
+                "pb": 213,
+                "seasonsbest": 213,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "RYAKHOV Anton",
+        "data": [
+            {
+                "pb": 192,
+                "seasonsbest": 192,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "SALBU Daniel",
+        "data": [
+            {
+                "pb": 214,
+                "seasonsbest": 214,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "SCHMUDE DAVID",
+        "data": [
+            {
+                "pb": 203,
+                "seasonsbest": 203,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "SOLHAUG Jo Sondre",
+        "data": [
+            {
+                "pb": 214,
+                "seasonsbest": 214,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "SPESIVTSEV Maxim",
+        "data": [
+            {
+                "pb": 197,
+                "seasonsbest": 197,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "STABNO BARTOSZ",
+        "data": [
+            {
+                "pb": 215,
+                "seasonsbest": 215,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "STANOJEVIC Dusko",
+        "data": [
+            {
+                "pb": 191,
+                "seasonsbest": 191,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "SULTANBEKOV DAVLET",
+        "data": [
+            {
+                "pb": 219,
+                "seasonsbest": 219,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "SZANDRACH PAWE_",
+        "data": [
+            {
+                "pb": 200,
+                "seasonsbest": 200,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "TERRY Dean",
+        "data": [
+            {
+                "pb": 208,
+                "seasonsbest": 208,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "TERZIC Dejan",
+        "data": [
+            {
+                "pb": 244,
+                "seasonsbest": 244,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "TOOTSI TARMO",
+        "data": [
+            {
+                "pb": 201,
+                "seasonsbest": 201,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "TRUMMER ERWIN",
+        "data": [
+            {
+                "pb": 217,
+                "seasonsbest": 217,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "TSOI Yik San",
+        "data": [
+            {
+                "pb": 235,
+                "seasonsbest": 235,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "URBAN QUENTIN",
+        "data": [
+            {
+                "pb": 199,
+                "seasonsbest": 199,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "VAN KOEVERDEN ADAM",
+        "data": [
+            {
+                "pb": 199,
+                "seasonsbest": 199,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "WARSZAWSKI OSKAR",
+        "data": [
+            {
+                "pb": 215,
+                "seasonsbest": 215,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "WECHT ALEXANDER",
+        "data": [
+            {
+                "pb": 217,
+                "seasonsbest": 217,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "XUE Yuan",
+        "data": [
+            {
+                "pb": 225,
+                "seasonsbest": 225,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "ZHAO Yuefeng",
+        "data": [
+            {
+                "pb": 225,
+                "seasonsbest": 225,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    },
+    {
+        "athlete_Name": "ZHYHADLA Dzianis",
+        "data": [
+            {
+                "pb": 193,
+                "seasonsbest": 193,
+                "year": 2013,
+                "RaceType": "K2-MALE-1000M"
+            }
+        ]
+    }
+]

@@ -34,62 +34,68 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 var amqp = require("amqplib");
-var AthleteAnalyser_1 = require("../Analysers/AthleteAnalyser");
+var CompetitionAnalyser_1 = __importDefault(require("../Analysers/CompetitionAnalyser"));
 var BackendAPIService_1 = require("./BackendAPIService");
-// KLASSE VAN MAKEN
-function setupCompetitionListener() {
-    return __awaiter(this, void 0, void 0, function () {
-        var messageQueueConnectionString, connection, channel, isExchangeAsserted, queue;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    messageQueueConnectionString = "amqp://rsmilhrs:6mzmPZPPUg_2U-pUFgen2JFlaDcmy9Xm@kangaroo.rmq.cloudamqp.com/rsmilhrs";
-                    return [4 /*yield*/, amqp.connect(messageQueueConnectionString)];
-                case 1:
-                    connection = _a.sent();
-                    return [4 /*yield*/, connection.createChannel()];
-                case 2:
-                    channel = _a.sent();
-                    return [4 /*yield*/, channel.assertExchange("competition", "topic", { durable: true })];
-                case 3:
-                    isExchangeAsserted = _a.sent();
-                    return [4 /*yield*/, channel.assertQueue("", { exclusive: true })];
-                case 4:
-                    queue = _a.sent();
-                    return [4 /*yield*/, channel.bindQueue(queue.queue, "competition", "event.competition.*")];
-                case 5:
-                    _a.sent();
-                    channel.consume(queue.queue, function (msg) {
-                        return __awaiter(this, void 0, void 0, function () {
-                            var competitionId;
-                            var _this = this;
-                            return __generator(this, function (_a) {
-                                competitionId = JSON.parse(msg.content.toString("utf-8")).savedObject;
-                                console.log();
-                                // HANDLE MESSAGES
-                                switch (msg.fields.routingKey) {
-                                    case "event.competition.created": {
-                                        // DIT MOET MSS NIET IN EEN COLLECTIE
-                                        BackendAPIService_1.fetchFullCompetition(competitionId).then(function (data) { return __awaiter(_this, void 0, void 0, function () {
-                                            var athleteAnalyser;
-                                            return __generator(this, function (_a) {
-                                                athleteAnalyser = new AthleteAnalyser_1.AthleteAnalyser();
-                                                athleteAnalyser.Analyse(data);
-                                                return [2 /*return*/];
-                                            });
-                                        }); });
-                                    }
-                                }
-                                return [2 /*return*/];
-                            });
+var RabbitMQService = /** @class */ (function () {
+    function RabbitMQService() {
+        this.messageQueueConnectionString =
+            "amqp://rsmilhrs:6mzmPZPPUg_2U-pUFgen2JFlaDcmy9Xm@kangaroo.rmq.cloudamqp.com/rsmilhrs";
+    }
+    RabbitMQService.prototype.listenForCompetitionMessages = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var connection, channel, isExchangeAsserted, queue;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, amqp.connect(this.messageQueueConnectionString)];
+                    case 1:
+                        connection = _a.sent();
+                        return [4 /*yield*/, connection.createChannel()];
+                    case 2:
+                        channel = _a.sent();
+                        return [4 /*yield*/, channel.assertExchange("competition", "topic", { durable: true })];
+                    case 3:
+                        isExchangeAsserted = _a.sent();
+                        return [4 /*yield*/, channel.assertQueue("", { exclusive: true })];
+                    case 4:
+                        queue = _a.sent();
+                        return [4 /*yield*/, channel.bindQueue(queue.queue, "competition", "event.competition.*")];
+                    case 5:
+                        _a.sent();
+                        channel.consume(queue.queue, this.handleIncomingCompetitionMessages, {
+                            noAck: true,
                         });
-                    }, { noAck: true });
-                    return [2 /*return*/];
-            }
+                        return [2 /*return*/];
+                }
+            });
         });
-    });
-}
-exports.default = setupCompetitionListener;
+    };
+    RabbitMQService.prototype.handleIncomingCompetitionMessages = function (msg) {
+        return __awaiter(this, void 0, void 0, function () {
+            var competitionId;
+            var _this = this;
+            return __generator(this, function (_a) {
+                competitionId = JSON.parse(msg.content.toString("utf-8")).savedObject;
+                // HANDLE MESSAGES
+                switch (msg.fields.routingKey) {
+                    case "event.competition.created": {
+                        // DIT MOET MSS NIET IN EEN COLLECTIE
+                        BackendAPIService_1.fetchFullCompetition(competitionId).then(function (data) { return __awaiter(_this, void 0, void 0, function () { return __generator(this, function (_a) {
+                            return [2 /*return*/];
+                        }); }); });
+                        CompetitionAnalyser_1.default.startPythonScript(competitionId);
+                        // AthleteAnalyser.startPythonScript();
+                    }
+                }
+                return [2 /*return*/];
+            });
+        });
+    };
+    return RabbitMQService;
+}());
+exports.default = new RabbitMQService();
 //# sourceMappingURL=RabbitMQService.js.map

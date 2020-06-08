@@ -40,7 +40,7 @@ export class Race {
   })
   category: "JUNIOR" | "U23" | "SENIOR" | "MASTER";
 
-  @ManyToOne((type) => Competition, (competition) => competition.races)
+  @ManyToOne((type) => Competition, (competition) => competition.races,{onDelete:'CASCADE'})
   competition: Competition;
 
   @OneToMany((type) => RaceResult, (raceResults) => raceResults.race, {

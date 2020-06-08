@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { getConnection, getRepository } from "typeorm";
 import { Competition } from "../../entity/Competition";
 import { Race } from "../../entity/Race";
-import { } from "../../services/MqService.js";
+import {} from "../../services/MqService.js";
 
 export async function createNewRace(req: Request, res: Response) {
   try {
@@ -64,15 +64,13 @@ export async function getRacesFromAthlete(req, res) {
     race.Category,
     race.competitionRound,
     race.distance,
-    results.splitTime1,
-    results.splitTime2,
-    results.splitTime3,
+
     results.totalTime,
     results.rank,
     results.lane,
     results_athletes_athlete.athleteName
     FROM competition JOIN race ON competition.Id = race.competitionId JOIN results ON race.Id = results.raceId JOIN results_athletes_athlete ON results.Id = results_athletes_athlete.resultsId WHERE results_athletes_athlete.athleteName = ?`,
-    ["KUJAWSKI MARIUSZ"]
+    [req.params.id]
   );
 
   res.json(result);

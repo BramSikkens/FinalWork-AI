@@ -1,8 +1,7 @@
-import { Response, Request } from "express";
-import { getRepository, getConnection, UpdateResult } from "typeorm";
-import { User } from "../../entity/User";
+import { Request, Response } from "express";
+import { getConnection, getRepository, UpdateResult } from "typeorm";
 import { Athlete } from "../../entity/Athlete";
-import { readSync } from "fs";
+import { User } from "../../entity/User";
 
 export async function updateUser(req: Request, res: Response) {
   try {
@@ -26,7 +25,8 @@ export async function updateUser(req: Request, res: Response) {
 export async function getUser(req: Request, res: Response) {
   try {
     let result = await getRepository(User).find({
-      where: { id: req.params.id }
+      where: { id: req.params.id },
+      relations: ["athlete"],
     });
 
     res.status(200).json(result);
@@ -41,23 +41,21 @@ export async function addAthleteToUser(req: Request, res: Response) {
 
     let user = await getRepository(User).findOne({
       where: { id: req.params.id },
-      relations: ["athletes"]
     });
 
     let athlete = await getRepository(Athlete).findOne({
       where: { Name: req.params.athleteName },
-      relations: ["user"]
     });
 
-    if (athlete.user) {
+    if (user.athlete) {
       throw {
-        message: "This Athlete already has an user",
-        code: "ATHLETE_HAS_USER"
+        message: "This  already has an user",
+        code: "ATHLETE_HAS_USER",
       };
     }
 
-    athlete.user = user;
-    let update = await getRepository(Athlete).save(athlete);
+    user.athlete = athlete;
+    let update = await getRepository(User).save(user);
     res.status(200).json(update);
   } catch (error) {
     res.status(400).json({ message: error.message, code: error.code });

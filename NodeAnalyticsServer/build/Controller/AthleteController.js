@@ -38,7 +38,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var Athlete_1 = __importDefault(require("../Mongoose/Schema/Athlete"));
+var AthleteAnalyse_1 = __importDefault(require("../Mongoose/Schema/AthleteAnalyse"));
 function getAthleteAnalytics(req, res) {
     return __awaiter(this, void 0, void 0, function () {
         var athlete, error_1;
@@ -46,7 +46,7 @@ function getAthleteAnalytics(req, res) {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 2, , 3]);
-                    return [4 /*yield*/, Athlete_1.default.findOne({ name: req.params.name })];
+                    return [4 /*yield*/, AthleteAnalyse_1.default.findOne({ name: req.params.name })];
                 case 1:
                     athlete = _a.sent();
                     console.log(athlete);

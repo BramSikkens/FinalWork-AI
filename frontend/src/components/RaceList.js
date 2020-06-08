@@ -6,10 +6,9 @@ const RaceList = (props) => {
   if (races.length == 0) {
     return <span>No Races</span>;
   } else {
-    
     var content = [];
     races.map((race) => {
-      content.push(<RaceRow />);
+      content.push(<RaceRow race={race} />);
     });
 
     return content;

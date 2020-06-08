@@ -5,7 +5,6 @@ export default function ComponentStateReducer(
   },
   action
 ) {
-  console.log(state);
   switch (action.type) {
     case OPEN_LOGIN_MODAL: {
         return { ...state, registerLoginModal: true };

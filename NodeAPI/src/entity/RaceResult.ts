@@ -17,10 +17,12 @@ export class RaceResult {
   @PrimaryGeneratedColumn({ type: "int", name: "Id" })
   Id: number;
 
-  @ManyToOne((type) => Race, (race) => race.raceResults)
+  @ManyToOne((type) => Race, (race) => race.raceResults, {
+    onDelete: "CASCADE",
+  })
   race: Race;
 
-  @ManyToMany((type) => Athlete, { cascade: true })
+  @ManyToMany((type) => Athlete, { cascade: true, onDelete: "CASCADE", onUpdate:"CASCADE"})
   @JoinTable()
   athletes: Athlete[];
 
@@ -30,37 +32,21 @@ export class RaceResult {
   @Column({ nullable: true })
   rank: number;
 
-  @Column({ nullable: true })
-  splitTime1: string;
-
-  @Column({ nullable: true })
-  splitTime2: string;
-
-  @Column({ nullable: true })
-  splitTime3: string;
+  @Column("simple-array", { default: "" })
+  splitTimes: string[];
 
   @Column({ nullable: true })
   totalTime: string;
 
-  @OneToOne((type) => User,{nullable:true})
+  @OneToOne((type) => User, { nullable: true })
   @JoinColumn()
   createdBy: User;
 
   time: string;
 
-  constructor(
-    lane?: number,
-    rank?: number,
-    splitTime1?: string,
-    splitTime2?: string,
-    splitTime3?: string,
-    totalTime?: string
-  ) {
+  constructor(lane?: number, rank?: number, totalTime?: string) {
     this.lane = lane;
     this.rank = rank;
-    this.splitTime1 = splitTime1;
-    this.splitTime2 = splitTime2;
-    this.splitTime3 = splitTime3;
     this.totalTime = totalTime;
   }
 }

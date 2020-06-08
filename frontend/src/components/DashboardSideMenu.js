@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Route,
-  Switch,
-  useRouteMatch,
-  withRouter,
-  Link,
-} from "react-router-dom";
+import { Link, useRouteMatch, withRouter } from "react-router-dom";
 function DashboardSideMenu() {
   let { path, url } = useRouteMatch();
 
@@ -63,7 +57,13 @@ function DashboardSideMenu() {
 
           <div class="user-profile-menu">
             <h3>Analytics</h3>
-            <ul class="no-list-style"></ul>
+            <ul class="no-list-style">
+              <li>
+                <Link to={url + "/analytics"}>
+                  <i class="fal fa-file-plus"></i> Check Analytics
+                </Link>
+              </li>
+            </ul>
           </div>
 
           <button class="logout_btn color2-bg">

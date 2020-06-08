@@ -1,38 +1,33 @@
 import express = require("express");
 const router = express.Router();
 const multer = require("multer");
+import CompetitionController from "../Controller/competitionController";
 
-import {
-  createCompetition,
-  createCompetitionAndAddCSV,
-  deleteSingleCompetition,
-  getAllCompetitions,
-  getSingleCompetition,
-  getSingleCompetitionWithRaces,
-  getCompetitionFromCSV,
-  getCompetitionFull,
-  getCompetitionFullRaw
-} from "../Controller/competitionController";
-// import { addRaceToCompetiton } from "../Controller/RaceController";
+router.get("/", CompetitionController.getAllCompetitions);
+router.get("/:competitionId", CompetitionController.getSingleCompetition);
+router.get(
+  "/:competitionId/races",
+  CompetitionController.getSingleCompetitionWithRaces
+);
+router.get("/:competitionId/full", CompetitionController.getCompetitionFull);
+router.get(
+  "/:competitionId/full/raw",
+  CompetitionController.getCompetitionFullRaw
+);
 
-router.get("/", getAllCompetitions);
+router.delete("/:id", CompetitionController.removeCompetition);
 
-router.get("/:competitionId", getSingleCompetition);
+router.post("/json/save", CompetitionController.saveCompetitionFromJSON);
 
-router.get("/:competitionId/races", getSingleCompetitionWithRaces);
-
-router.get("/:competitionId/full", getCompetitionFull);
-
-router.get("/:competitionId/full/raw", getCompetitionFullRaw);
-router.post("/", createCompetition);
-
-router.delete("/:competitionId", deleteSingleCompetition);
-
-router.post("/races/csv", multer().single("csv"), getCompetitionFromCSV);
+router.post(
+  "/races/csv",
+  multer().single("csv"),
+  CompetitionController.getCompetitionFromCSV
+);
 router.post(
   "/races/csv/save",
   multer().single("csv"),
-  createCompetitionAndAddCSV
+  CompetitionController.saveCompetitionFromCSV
 );
 
 export = router;

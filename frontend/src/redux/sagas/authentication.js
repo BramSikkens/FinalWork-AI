@@ -1,5 +1,10 @@
 import { put, call } from "redux-saga/effects";
-import { AUTH_LOGIN_SUCCESS, CLOSE_LOGIN_MODAL, ADD_ERROR } from "../constants";
+import {
+  AUTH_LOGIN_SUCCESS,
+  CLOSE_LOGIN_MODAL,
+  ADD_ERROR,
+  USER_REFRESH_SUCCES,
+} from "../constants";
 
 export function* login(action) {
   const { username, password } = action.payload;
@@ -73,4 +78,27 @@ export function* register(action) {
       }
     );
   } catch (e) {}
+}
+
+export function* refreshUser(action) {
+  const { id } = action.payload;
+
+  try {
+    const userResponse = yield call(fetch, "http://localhost:3000/user/" + id, {
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      method: "GET",
+    });
+
+    const json = yield userResponse.json();
+    localStorage.setItem("user", JSON.stringify(json[0]));
+    yield put({
+      type: USER_REFRESH_SUCCES,
+      payload: {
+        user: json,
+      },
+    });
+  } catch (error) {}
 }

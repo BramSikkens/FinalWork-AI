@@ -1,15 +1,15 @@
 const express = require("express");
 const app = express();
-const http = require("http");
 const bodyParser = require("body-parser");
-const amqp = require("amqplib");
 const port = 3003;
 import mongoose = require("mongoose");
+import AthleteRouter from "./api/Routes/AthleteRouter";
+import CompetitionRouter from "./api/Routes/CompetitionRouter";
+import RaceAnalyseRouter from "./api/Routes/RaceAnalyseRouter";
+import RabbitMQService from "./Services/RabbitMQService";
+import TestPredictor from "./MachineLearning/TesPredictor";
 
-import setupCompetitionListener from "./Services/RabbitMQService";
-import AthleteRouter from "./Routes/AthleteRouter";
 import cors = require("cors");
-
 app.use(cors());
 
 mongoose
@@ -18,10 +18,12 @@ mongoose
     { useNewUrlParser: true, useCreateIndex: true, useFindAndModify: false }
   )
   .then(() => {
-    setupCompetitionListener();
-
+    TestPredictor.TrainModel();
+    RabbitMQService.listenForCompetitionMessages();
     app.use(bodyParser.json());
     app.use("/athlete", AthleteRouter);
+    app.use("/competition", CompetitionRouter);
+    app.use("/race", RaceAnalyseRouter);
     app.listen(port, () =>
       console.log(`Example app listening at http://localhost:${port}`)
     );

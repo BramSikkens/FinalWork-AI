@@ -6,13 +6,32 @@ export default class RaceRow extends React.Component {
   }
 
   render() {
+    const {
+      BoatType,
+      Category,
+      Title,
+      distance,
+      rank,
+      competitionRound,
+    } = this.props.race;
+
     return (
       <div className="dashboard-list fl-wrap">
         <div className="dashboard-message">
           <div className="dashboard-message-text">
-            <i className="fal  red-bg">1</i>
+            <i className="fal  red-bg">{rank}</i>
             <p>
-              <a href="#"> RACICE (CZE) WorldChampionships 2018 K2 MEN 1000 HEAT </a>
+              <a href="#">
+                {Title +
+                  "-" +
+                  BoatType +
+                  " " +
+                  Category +
+                  " " +
+                  distance +
+                  " " +
+                  competitionRound}
+              </a>
             </p>
           </div>
           <div className="dashboard-message-time"></div>

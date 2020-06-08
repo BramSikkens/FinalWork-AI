@@ -1,0 +1,1 @@
+{"version":3,"file":"AthleteResults.js","sourceRoot":"","sources":["../../../../src/Services/Mongoose/Schema/AthleteResults.ts"],"names":[],"mappings":";;;;;AAAA,sDAAgC;AAChC,IAAI,mBAAmB,GAAG,kBAAQ,CAAC,MAAM,CAAC;IACxC,WAAW,EAAE,MAAM;IACnB,MAAM,EAAE;QACN,IAAI,EAAE,MAAM;QACZ,QAAQ,EAAE,KAAK;KAChB;CACF,CAAC,CAAC;AAEH,kBAAe,kBAAQ,CAAC,KAAK,CAAC,eAAe,EAAE,mBAAmB,CAAC,CAAC"}

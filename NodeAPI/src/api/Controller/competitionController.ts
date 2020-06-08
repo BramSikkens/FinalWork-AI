@@ -1,51 +1,46 @@
-import date from "date-and-time";
 import { NextFunction, Request, Response } from "express";
-import { findIndex } from "lodash";
-import { getConnection, getRepository, InsertResult } from "typeorm";
-import { Athlete } from "../../entity/Athlete";
+import { getRepository, getConnection } from "typeorm";
 import { Competition } from "../../entity/Competition";
+import { publishToCompetitionExchange } from "../../services/MqService";
+import CompetitionService from "../../services/TypeOrmServices/CompetitionService";
 import { Race } from "../../entity/Race";
 import { RaceResult } from "../../entity/RaceResult";
-import { User } from "../../entity/User";
-import { publishToCompetitionExchange } from "../../services/MqService";
-import { cpus } from "os";
+import { Athlete } from "../../entity/Athlete";
+import { resolveSoa } from "dns";
 
-export async function createCompetition(req: any, res: any) {
-  let values: any[] = [];
-  // Get data from request
-  req.body.map((singleCompetition: any) => {
-    values.push({
-      place: singleCompetition.place,
-      type: singleCompetition.type,
-      year: singleCompetition.year,
-      title: singleCompetition.title,
-      startDate: singleCompetition.startDate,
-      endDate: singleCompetition.endDate
-    });
-  });
+class CompetitionController {
+  constructor() {}
 
-  let result: InsertResult = await getConnection()
-    .createQueryBuilder()
-    .insert()
-    .into(Competition)
-    .values(values)
-    .execute();
-  res.status(201);
-  res.json(result);
-}
+  async getSingleCompetition(req: Request, res: any) {
+    const competition = await CompetitionService.getOne(
+      req.params.competitionId
+    );
 
-export async function getSingleCompetition(req: Request, res: any) {
-  let result = await getRepository(Competition).find({
-    where: { competitionId: req.params.competitionId }
-  });
-  res.status(200).json(result);
-}
+    res.status(200).json(competition);
+  }
 
-export async function getSingleCompetitionWithRaces(
-  req: Request,
-  res: Response
-) {
-  try {
+  async getSingleCompetitionWithRaces(req: Request, res: Response) {
+    try {
+      let result = await getRepository(Competition).findOne({
+        where: { Id: req.params.competitionId },
+        join: {
+          alias: "competition",
+          leftJoinAndSelect: {
+            races: "competition.races",
+            RaceResult: "races.raceResults",
+            athletes: "RaceResult.athletes",
+          },
+        },
+      });
+      if (!result)
+        throw { message: "No Competition Found", code: "NO_COMPETITION_FOUND" };
+      res.status(200).json(result);
+    } catch (error) {
+      res.json({ message: error.message, code: error.code });
+    }
+  }
+
+  async getCompetitionFull(req, res) {
     let result = await getRepository(Competition).findOne({
       where: { Id: req.params.competitionId },
       join: {
@@ -53,242 +48,135 @@ export async function getSingleCompetitionWithRaces(
         leftJoinAndSelect: {
           races: "competition.races",
           RaceResult: "races.raceResults",
-          athletes: "RaceResult.athletes"
-        }
-      }
+          athletes: "RaceResult.athletes",
+          user: "athletes.user",
+        },
+      },
     });
-    if (!result)
-      throw { message: "No Competition Found", code: "NO_COMPETITION_FOUND" };
     res.status(200).json(result);
-  } catch (error) {
-    res.json({ message: error.message, code: error.code });
   }
-}
 
-export async function getCompetitionFull(req, res) {
-  let result = await getRepository(Competition).findOne({
-    where: { Id: req.params.competitionId },
-    join: {
-      alias: "competition",
-      leftJoinAndSelect: {
-        races: "competition.races",
-        RaceResult: "races.raceResults",
-        athletes: "RaceResult.athletes",
-        user: "athletes.user"
-      }
-    }
-  });
-  res.status(200).json(result);
-}
-
-export async function getCompetitionFullRaw(req, res) {
-  let result = await getRepository(Competition)
-    .createQueryBuilder("competition")
-    .where("competition.id = :id", { id: req.params.competitionId })
-    .leftJoinAndSelect("competition.races", "race")
-    .leftJoinAndSelect("race.raceResults", "result")
-    .leftJoinAndSelect("result.athletes", "athlete")
-    .leftJoinAndSelect("athlete.user", "user")
-    .getRawMany();
-  res.status(200).json(result);
-}
-
-export async function deleteSingleCompetition(req: any, res: any) {
-  let result = await getConnection()
-    .createQueryBuilder()
-    .delete()
-    .from(Competition)
-    .where("competitionId = :id", { id: req.params.competitionId });
-}
-
-export async function getAllCompetitions(req: Request, res: Response) {
-  console.time("getAllCompetitions");
-  let result: Competition[] = await getRepository(Competition).find({
-    where: req.body,
-    relations: ["createdBy"]
-  });
-  console.timeEnd("getAllCompetitions");
-  console.log(result);
-  res.status(200).json(result);
-}
-
-export async function deleteCompetiton(req: Request, res: Response) {
-  let result = await getConnection()
-    .createQueryBuilder()
-    .delete()
-    .from(Competition)
-    .where("competitionId = :id", { id: req.params.competitionId });
-  res.status(204);
-}
-
-export async function createCompetitionAndAddCSV(
-  req: any,
-  res: Response,
-  next: NextFunction
-) {
-  let competitionYear: number =
-    new Date(date.parse(req.body.startDate, "DD.MM.YYYY")).getFullYear() ||
-    new Date(date.parse(req.body.startDate, "D.MM.YYYY")).getFullYear();
-
-  // Constructor maken
-  const competition = new Competition(
-    req.body.place,
-    req.body.type,
-    req.body.title,
-    req.body.startDate,
-    req.body.endDate,
-    competitionYear
-  );
-
-  const csv = require("csvtojson");
-  let csvToJson = await csv({
-    delimiter: ";"
-  }).fromString(req.file.buffer.toString("utf-8"));
-
-  let uniqueRaces: Race[] = [];
-  let uniqueResults: RaceResult[] = [];
-  csvToJson.forEach(race => {
-    const newRace: Race = new Race(race.distance);
-    newRace.time = race.Time;
-    newRace.sex = "MALE"; // enum gaat niet in ctor
-    newRace.boatType = "K2"; // enum gaat niet in ctor
-    newRace.category = "SENIOR"; // enum gaat niet in ctor
-    newRace.competitionRound = race["Competition Round"];
-    newRace.date = new Date();
-
-    let NewAthletes: Athlete[] = [];
-    let athletes = race.athletes.split("+");
-    athletes.forEach(athleteName => {
-      NewAthletes.push(new Athlete(athleteName, "", race.Country));
-    });
-
-    // Constructor maken
-    const newResult: RaceResult = new RaceResult(
-      race.Lane,
-      race["Final Rank"],
-      race["split time 1"],
-      race["split time 2"],
-      race["split time 3"],
-      race["Total Time"]
-    );
-    newResult.time = race.Time;
-    newResult.athletes = NewAthletes;
-
-    if (findIndex(uniqueRaces, newRace) === -1) {
-      uniqueRaces.push(newRace);
-    }
-
-    if (findIndex(uniqueResults, newResult) === -1) {
-      uniqueResults.push(newResult);
-    }
-  });
-
-  uniqueRaces.forEach((race: Race) => {
-    race.raceResults = uniqueResults.filter((result: RaceResult) => {
-      return race.time === result.time;
-    });
-  });
-
-  competition.races = uniqueRaces;
-  csvToDb(competition);
-  res.json(competition);
-}
-
-export async function getCompetitionFromCSV(
-  req: any,
-  res: Response,
-  next: NextFunction
-) {
-  const CreatedUser: User = await getConnection().manager.findOne(User, 1);
-
-  let competitionYear: number =
-    new Date(date.parse(req.body.startDate, "DD.MM.YYYY")).getFullYear() ||
-    new Date(date.parse(req.body.startDate, "D.MM.YYYY")).getFullYear();
-
-  // Constructor maken
-  const competition = new Competition(
-    req.body.place,
-    req.body.type,
-    req.body.title,
-    req.body.startDate,
-    req.body.endDate,
-    competitionYear
-  );
-
-  competition.createdBy = CreatedUser;
-
-  const csv = require("csvtojson");
-  let csvToJson = await csv({
-    delimiter: ";"
-  }).fromString(req.file.buffer.toString("utf-8"));
-
-  let uniqueRaces: Race[] = [];
-  let uniqueResults: RaceResult[] = [];
-  csvToJson.forEach(race => {
-    const newRace: Race = new Race(race.distance);
-    newRace.time = race.Time;
-    newRace.sex = "MALE"; // enum gaat niet in ctor
-    newRace.boatType = "K2"; // enum gaat niet in ctor
-    newRace.category = "SENIOR"; // enum gaat niet in ctor
-    newRace.competitionRound = race["Competition Round"];
-    newRace.date = new Date();
-
-    newRace.createdBy = CreatedUser;
-
-    let NewAthletes: Athlete[] = [];
-    let athletes = race.athletes.split("+");
-    athletes.forEach(athleteName => {
-      NewAthletes.push(new Athlete(athleteName, "", race.Country));
-    });
-
-    // Constructor maken
-    const newResult: RaceResult = new RaceResult(
-      race.Lane,
-      race["Final Rank"],
-      race["split time 1"],
-      race["split time 2"],
-      race["split time 3"],
-      race["Total Time"]
-    );
-    newResult.time = race.Time;
-    newResult.athletes = NewAthletes;
-    // newResult.createdBy = CreatedUser;
-
-    if (findIndex(uniqueRaces, newRace) === -1) {
-      uniqueRaces.push(newRace);
-    }
-
-    if (findIndex(uniqueResults, newResult) === -1) {
-      uniqueResults.push(newResult);
-    }
-  });
-
-  uniqueRaces.forEach((race: Race) => {
-    race.raceResults = uniqueResults.filter((result: RaceResult) => {
-      return race.time === result.time;
-    });
-  });
-
-  competition.races = uniqueRaces;
-  try {
-    await csvToDb(competition);
-    res.json(competition);
-  } catch (error) {
-    res.json({ message: error.message, code: error.code });
+  async getCompetitionFullRaw(req, res) {
+    let result = await getRepository(Competition)
+      .createQueryBuilder("competition")
+      .where("competition.id = :id", { id: req.params.competitionId })
+      .leftJoinAndSelect("competition.races", "race")
+      .leftJoinAndSelect("race.raceResults", "result")
+      .leftJoinAndSelect("result.athletes", "athlete")
+      .leftJoinAndSelect("athlete.user", "user")
+      .getRawMany();
+    res.status(200).json(result);
   }
-}
 
-async function csvToDb(competition: Competition) {
-  try {
-    let savedCompetition = await getConnection().manager.save(competition);
-    // // Create a Rabbit competition.event.create message
+  async getAllCompetitions(req: Request, res: Response) {
+    console.time("getAllCompetitions");
+    let result: Competition[] = await getRepository(Competition).find({
+      where: req.body,
+      relations: ["createdBy"],
+    });
+    console.timeEnd("getAllCompetitions");
+    console.log(result);
+    res.status(200).json(result);
+  }
+
+  // Save Competition From CSV
+
+  async saveCompetitionFromCSV(req: any, res: Response, next: NextFunction) {
+    let competition = await CompetitionService.transformCSVToCompetitionObject(
+      req.file,
+      req.body
+    );
+    let savedCompetition = await CompetitionService.save(competition);
+    if (savedCompetition.error)
+      return res.status(savedCompetition.statusCode).json(savedCompetition);
+
     publishToCompetitionExchange(
       "event.competition.created",
       JSON.stringify({
-        savedObject: savedCompetition.Id
+        savedObject: savedCompetition.result.Id,
       })
     );
-  } catch (error) {
-    throw error;
+    res.json(savedCompetition.result);
+  }
+
+  // Save Competition From JSON
+  async saveCompetitionFromJSON(req: any, res: Response) {
+    let competitionFromJSON = Object.assign(new Competition(), req.body);
+
+    let competitionToSave = new Competition(
+      competitionFromJSON.place,
+      competitionFromJSON.type,
+      competitionFromJSON.title,
+      competitionFromJSON.startDate,
+      competitionFromJSON.endDate,
+      competitionFromJSON.year
+    );
+
+    const savedCompetition = await getConnection().manager.save(
+      competitionToSave
+    );
+
+    // // Save Competition
+    competitionFromJSON.races.forEach(async (race) => {
+      let raceToSave = new Race(race.distance);
+      raceToSave.date = race.date;
+      raceToSave.boatType = race.boatType;
+      raceToSave.category = race.category;
+      raceToSave.competitionRound = race.competitionRound;
+      raceToSave.sex = race.sex;
+      raceToSave.time = race.time;
+      raceToSave.competition = savedCompetition;
+      // Save Race
+      let savedRace = await getConnection().manager.save(raceToSave);
+
+      race.raceResults.forEach(async (result) => {
+        let resultToSave = new RaceResult(
+          result.lane,
+          result.rank,
+          result.totalTime
+        );
+        resultToSave.race = savedRace;
+
+        let promises = [];
+
+        result.athletes.forEach((athlete) => {
+          let athleteToSave = new Athlete(
+            athlete.Name.toUpperCase().replace(",", ""),
+            athlete.birthDate,
+            athlete.country
+          );
+          promises.push(getConnection().manager.save(athleteToSave));
+        });
+
+        Promise.all(promises).then(async (values) => {
+          resultToSave.athletes = values;
+          const savedResult = await getConnection().manager.save(resultToSave);
+        });
+      });
+    });
+
+
+    publishToCompetitionExchange(
+      "event.competition.created",
+      JSON.stringify({
+        savedObject: savedCompetition.Id,
+      })
+    );
+    res.json(savedCompetition.Id);
+  }
+
+  // Returns JSON from CSV
+  async getCompetitionFromCSV(req: any, res: Response, next: NextFunction) {
+    const competition = await CompetitionService.transformCSVToCompetitionObject(
+      req.file,
+      req.body
+    );
+    res.json(competition);
+  }
+
+  async removeCompetition(req: Request, res: Response) {
+    CompetitionService.delete(req.params.id);
   }
 }
+
+export default new CompetitionController();

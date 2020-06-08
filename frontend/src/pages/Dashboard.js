@@ -2,29 +2,48 @@ import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { Route, Switch, useRouteMatch, withRouter } from "react-router-dom";
 //Sections
-import CreateCompetitionSection from "../components/CreateCompetitionSection";
+import CreateCompetitionSection from "./DashboardSections/CreateCompetitionSection";
 import DashboardSideMenu from "../components/DashboardSideMenu";
-import MyCompetionsSection from "../components/MyCompetionsSection";
-import MyRaceSection from "../components/MyRaceSection";
-import EditProfileSection from "../components/EditProfileSection";
-import ChangePasswordSection from "../components/ChangePasswordSection";
+import MyCompetionsSection from "./DashboardSections/MyCompetionsSection";
+import MyRaceSection from "./DashboardSections/MyRaceSection";
+import EditProfileSection from "./DashboardSections/EditProfileSection";
+import ChangePasswordSection from "./DashboardSections/ChangePasswordSection";
+import AnalyticSection from "./DashboardSections/AnalyticsSection";
 
-const mapStateToProps = state => ({
-  auth: state.authentication
+const mapStateToProps = (state) => ({
+  auth: state.authentication,
 });
 
 function Dashboard(props) {
   let { path } = useRouteMatch();
   const [stats, setStats] = useState({});
+  const [profileImage, setProfileImage] = useState("");
 
-  async function fetchData() {
-    console.log("ok");
-    const res = await fetch("http://localhost:3003/athlete/WARSZAWSKI OSKAR");
-    res.json().then(res => setStats(res));
+  async function fetchData(name) {
+    const res = await fetch("http://localhost:3003/athlete/" + name);
+    res.json().then((res) => setStats(res));
+  }
+
+  async function fetchProfileImage(props) {
+    let data = JSON.stringify({
+      bucket: "bramfinalwork",
+      key: props.auth.user.profileImage,
+      edits: {
+        resize: {
+          width: 200,
+          height: 200,
+          fit: "cover",
+        },
+      },
+    });
+
+    data = "https://d2vyjf3191krcr.cloudfront.net/" + btoa(data);
+    setProfileImage(data);
   }
 
   useEffect(() => {
-    fetchData();
+    fetchData(props.auth.user.athlete.Name);
+    fetchProfileImage(props);
   }, []);
 
   return (
@@ -56,7 +75,7 @@ function Dashboard(props) {
               <div class="container">
                 <div class="dashboard-header_conatiner fl-wrap">
                   <div class="dashboard-header-avatar">
-                    <img src="images/avatar/1.jpg" alt=""></img>
+                    <img src={profileImage} alt=""></img>
                     <a
                       href="dashboard-myprofile.html"
                       class="color-bg edit-prof_btn"
@@ -95,9 +114,11 @@ function Dashboard(props) {
                             <div className="dashboard-header-stats-item">
                               <i className="fal fa-chart-bar" />
                               Total Races
-                              {stats
-                                ? stats.raceCount || "No  stats"
-                                : "No stats"}
+                              <span>
+                                {stats
+                                  ? stats.raceCount || "No  stats"
+                                  : "No stats"}
+                              </span>
                             </div>
                           </div>
                           {/*  dashboard-header-stats-item end */}
@@ -195,21 +216,21 @@ function Dashboard(props) {
                 <Route path={`${path}/addCompetition`}>
                   <CreateCompetitionSection User={props.auth.user} />
                 </Route>
+                <Route path={`${path}/analytics`}>
+                  <AnalyticSection />
+                </Route>
                 <Route path={`${path}/myraces`}>
                   <MyRaceSection User={props.auth.user} />
                 </Route>
                 <Route path={`${path}/myCompetitions`}>
                   <MyCompetionsSection User={props.auth.user} />
                 </Route>
-
                 <Route path={`${path}/editProfile`}>
                   <EditProfileSection />
                 </Route>
-
                 <Route path={`${path}/changePassword`}>
                   <ChangePasswordSection />
                 </Route>
-
                 <Route>
                   <MyCompetionsSection User={props.auth.user} />
                 </Route>

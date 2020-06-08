@@ -18,7 +18,7 @@ function App() {
       <Switch>
         <PrivateRoute path="/dashboard" component={Dashboard} />
         <Route path="/competitions" component={Competitions} />
-        <Route path="/competition" component={SingleCompetition} />
+        <Route path="/competition/:id" component={SingleCompetition} />
         <Route path="/categoryResult" component={CategoryResults} />
         <Route component={NotFound} />
       </Switch>

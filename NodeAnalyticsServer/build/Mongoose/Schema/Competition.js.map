@@ -1,1 +1,1 @@
-{"version":3,"file":"Competition.js","sourceRoot":"","sources":["../../../src/Mongoose/Schema/Competition.ts"],"names":[],"mappings":""}
+{"version":3,"file":"Competition.js","sourceRoot":"","sources":["../../../src/Mongoose/Schema/Competition.ts"],"names":[],"mappings":";;;;;AAAA,sDAAgC;AAEhC,IAAM,iBAAiB,GAAG,kBAAQ,CAAC,MAAM,CAAC;IACxC,aAAa,EAAE;QACb,IAAI,EAAE,MAAM;QACZ,MAAM,EAAE,IAAI;KACb;IACD,KAAK,EAAE,MAAM;IACb,IAAI,EAAE,MAAM;IACZ,IAAI,EAAE,MAAM;CACb,CAAC,CAAC;AAEH,kBAAe,kBAAQ,CAAC,KAAK,CAAC,aAAa,EAAE,iBAAiB,CAAC,CAAC"}

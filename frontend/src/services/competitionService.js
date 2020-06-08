@@ -27,10 +27,22 @@ export async function fetchSingleCompetition(competitionId) {
 
 export async function fetchResultsFromUser(username) {
   try {
-    const url = "http://localhost:3000/race/athlete/1";
+    const url = "http://localhost:3000/race/athlete/" + username;
+
+    console.log(url);
     let response = await axios.get(url);
     return response.data;
   } catch (error) {
     return null, error;
   }
+}
+
+export async function removeCompetition(id) {
+  try {
+    let result = await fetch("http://localhost:3000/competition/" + id, {
+      method: "DELETE",
+    });
+
+    return result;
+  } catch (error) {}
 }

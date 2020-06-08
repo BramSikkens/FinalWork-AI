@@ -4,7 +4,6 @@ import ResultRow from "../components/ResultRow";
 
 export const CompetitionRaceTable = (props) => {
   const { race } = props;
-  console.log(race);
 
   return (
     <div className="list-single-main-item fl-wrap block_box">

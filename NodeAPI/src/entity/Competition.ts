@@ -5,7 +5,7 @@ import {
   OneToMany,
   Unique,
   OneToOne,
-  JoinColumn
+  JoinColumn,
 } from "typeorm";
 import { Race } from "./Race";
 import { User } from "./User";
@@ -34,17 +34,13 @@ export class Competition {
   @Column("datetime", { name: "EndDate", nullable: true })
   endDate: Date;
 
-  @OneToMany(
-    type => Race,
-    race => race.competition,
-    {
-      cascade: true,
-      nullable: true
-    }
-  )
+  @OneToMany((type) => Race, (race) => race.competition, {
+    cascade: true,
+    nullable: true,
+  })
   races: Race[];
 
-  @OneToOne(type => User, { nullable: true, cascade: true })
+  @OneToOne((type) => User, { nullable: true, cascade: true })
   @JoinColumn()
   createdBy: User;
 

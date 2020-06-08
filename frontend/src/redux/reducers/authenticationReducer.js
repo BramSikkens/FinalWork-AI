@@ -1,4 +1,9 @@
-import { AUTH_LOGIN_SUCCESS, AUTH_LOGOUT } from "../constants";
+import {
+  AUTH_LOGIN_SUCCESS,
+  AUTH_LOGOUT,
+  USER_REFRESH_SUCCES,
+  USER_REFRESH,
+} from "../constants";
 
 export default function authenticationReducer(
   state = {
@@ -8,8 +13,6 @@ export default function authenticationReducer(
   },
   action
 ) {
-  console.log(state);
-
   switch (action.type) {
     case AUTH_LOGIN_SUCCESS: {
       return {
@@ -24,6 +27,13 @@ export default function authenticationReducer(
       return {
         token: null,
         user: null,
+      };
+    }
+
+    case USER_REFRESH_SUCCES: {
+      return {
+        ...state,
+        user: action.payload.user[0],
       };
     }
 

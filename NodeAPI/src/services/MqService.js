@@ -2,8 +2,8 @@ import amqp from "amqplib/callback_api";
 const config = require("config");
 
 let ch = null;
-amqp.connect(config.get("rabbitConfig.conn_url"), function(err, conn) {
-  conn.createChannel(function(err, channel) {
+amqp.connect(config.get("rabbitConfig.conn_url"), function (err, conn) {
+  conn.createChannel(function (err, channel) {
     ch = channel;
   });
 });
@@ -18,7 +18,7 @@ export const publishToRaceExchange = async (topic, data) => {
   console.log("sent message to " + topic);
 };
 
-process.on("exit", code => {
+process.on("exit", (code) => {
   ch.close();
   console.log(`Closing rabbitmq channel`);
 });

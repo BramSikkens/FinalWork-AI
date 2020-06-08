@@ -15,3 +15,7 @@ export const OPEN_LOGIN_MODAL = "OPEN_LOGIN_MODAL";
 
 export const ADD_ERROR = "ADD_ERROR";
 export const REMOVE_ERROR = "REMOVE_ERROR";
+
+export const USER_REFRESH = "USER_REFRESH";
+export const USER_REFRESH_SUCCES = "USER_REFRESH_SUCCES";
+export const USER_REFRESH_FAIL = "USER_REFRESH_FAIL";

@@ -6,12 +6,31 @@ import {
 } from "../redux/actions/componentStateAction";
 import { logout } from "../redux/actions/authentication";
 import { Link } from "react-router-dom";
+import S3Service from "../services/S3Service";
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       showMenuOverLay: false,
+      headerimage: "",
     };
+  }
+
+  componentDidMount() {
+    let imagename = "";
+    if (this.props.auth.user !== null) {
+      imagename = this.props.auth.user.profileImage;
+    }
+    const url = S3Service.ReceiveImageUrlFromBucket(imagename, {
+      resize: {
+        width: 192,
+        height: 192,
+        fit: "cover",
+      },
+    });
+
+    this.setState({ headerimage: url });
   }
 
   renderAccount(user) {
@@ -25,7 +44,7 @@ class Header extends React.Component {
             }}
           >
             <span>
-              <img src="images/avatar/1.jpg" alt=""></img>
+              <img src={this.state.headerimage} alt=""></img>
             </span>
             Hello , {user.username || "No Username"}
           </div>

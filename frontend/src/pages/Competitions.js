@@ -1,10 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import CompetitionCard from "../components/CompetitionCard";
 import CompetitionList from "../components/CompetitionList";
-
 import { fetchAllCompetitions } from "../services/competitionService";
+
 
 export default class Competitions extends React.Component {
   constructor(props) {
